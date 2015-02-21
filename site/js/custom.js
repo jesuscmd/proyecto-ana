@@ -5,8 +5,43 @@ if(whichBrs() == 'Internet Explorer') browserIE = true;
 // Detect Mobile
 var browserMobile = jQuery.browser.mobile;
 
-// alert(browserMobile);
+// Elements
+// var $wrapper = $('#wrapper'),
+// 	$btnHeader = $('#header_btn-menu'),
+// 	$header = $('#header'),
+// 	$section = $('#section'),
+// 	$footer = $('#footer'),
+// 	$valign = $('.valign'),
+// 	$fullHeight = $('.full-height'),
+// 	$imgFit = $('.img-fit'),
+// 	$toLoad = $('.to-load'),
+// 	$parallax = $('.parallax'),
+// 	$parallaxIcon = $('.parallax-icon');
+var $fullHeight = $('.full-height');
 
+$(window).load(function(){
+
+	/* ////////////////////////////////////////
+	//
+	// Init
+	//
+	/////////////////////////////////////// */
+
+	positionContent();
+	$('#loading-mask').fadeOut(750, function(){
+	});
+
+});
+/* ////////////////////////////////////////////////////////////////////////////
+//
+// Position Content
+//
+/////////////////////////////////////////////////////////////////////////// */
+
+function positionContent(){
+	// Full Height
+	$fullHeight.height($(window).height());
+};
 
 
 /* ////////////////////////////////////////////////////////////////////////////
