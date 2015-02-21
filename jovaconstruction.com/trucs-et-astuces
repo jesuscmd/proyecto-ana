@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta name="description" content="" />
+	<meta charset="utf-8" />
+	<meta id="viewport" content="width=1120,target-densityDpi=device-dpi,user-scalable=0;" name="viewport">
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<title>Jova // Trucs et astuces</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Oswald|Anonymous+Pro:400,700|Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript/modernizr.custom.js"></script>
+</head>
+<body data-language="fr" >
+	<div id="loading-mask"></div>
+
+	<div id="wrapper">
+
+		<a href="" id="header_btn-menu">
+			<span>
+				<span data-hover="Menu">Menu</span>
+			</span>
+		</a>
+		<header id="header">
+			<div class="card-container home">
+	<div>
+		<div>
+			<div class="frame top"><div></div></div>
+			<div class="frame right"><div></div></div>
+			<div class="frame bottom"><div></div></div>
+			<div class="frame left"><div></div></div>
+			
+			<div class="content">
+									<h2>
+						<a href="/" class="logo">Jova</a>
+						<a href="tips-and-tricks" class="btn-lang">English</a>
+						<div class="border bottom"><div></div></div>
+					</h2>
+					<h3>
+						<span class="left">Construction</span>
+						<span class="right">Rénovation</span>
+						<div class="border bottom"><div></div></div>
+					</h3>
+
+					<ul class="menu">
+						<li class="hover-effect-1">
+							<a href="realisations">
+								<span class="effect" data-hover="Portfolio">
+									<span class="small">Réalisations</span>
+									<span class="big">
+										<span>Portfolio</span>
+									</span>
+								</span>
+							</a>
+							<div class="border right"><div></div></div>
+						</li>
+						<li class="hover-effect-1">
+							<a href="a-propos">
+								<span class="effect" data-hover="Jova">
+									<span class="small">À propos de</span>
+									<span class="big">
+										<span>Jova</span>
+									</span>
+								</span>
+							</a>
+							<div class="border right"><div></div></div>
+						</li>
+						<li class="hover-effect-1">
+							<a href="nous-contacter">
+								<span class="effect" data-hover="Nous contacter">
+									<span class="small">Coordonnées</span>
+									<span class="big">
+										<span>Nous contacter</span>
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="hover-effect-1">
+							<a href="services-offerts">
+								<span class="effect" data-hover="Services offerts">
+									<span class="small">Liste des</span>
+									<span class="big">
+										<span>Services offerts</span>
+									</span>
+								</span>
+							</a>
+							<div class="border right"><div></div></div>
+							<div class="border top"><div></div></div>
+						</li>
+						<li class="hover-effect-1">
+							<a href="trucs-et-astuces">
+								<span class="effect" data-hover="Trucs et astuces">
+									<span class="small">Bon à savoir</span>
+									<span class="big">
+										<span>Trucs et astuces</span>
+									</span>
+								</span>
+							</a>
+							<div class="border top"><div></div></div>
+						</li>
+					</ul>
+
+					<a href="" class="btn-previous">
+						<span class="small">Préc.</span>
+						<div class="border right"><div></div></div>
+					</a>
+					<a href="" class="btn-next">
+						<span class="small">Suiv.</span>
+						<div class="border left"><div></div></div>
+					</a>
+							</div>
+		</div>
+	</div>
+</div>		</header>
+
+	<section id="tips">
+
+		<!-- Block1 -->
+		<div id="block1">
+			<div class="centered">
+				<div class="text-grid">
+					<div class="line to-load">
+						<div class="white"><span>T</span></div>
+						<div class="white"><span>R</span></div>
+						<div class="white"><span>U</span></div>
+						<div class="white"><span>C</span></div>
+						<div class="white"><span>S</span></div>
+					</div>
+
+					<div class="line to-load">
+						<div class="white"><span>E</span></div>
+						<div class="white"><span>T</span></div>
+					</div>
+
+					<div class="line to-load">
+						<div class="white"><span>A</span></div>
+						<div class="white"><span>S</span></div>
+						<div class="white"><span>T</span></div>
+						<div class="white"><span>U</span></div>
+						<div class="white"><span>C</span></div>
+						<div class="white"><span>E</span></div>
+						<div class="white"><span>S</span></div>
+					</div>
+				</div>
+
+				<div class="bullet">
+					<span class="nb">01</span>
+					<div>
+						<h2>Bon à savoir</h2>
+						<p>Voici quelques informations pratiques qui peuvent vous être utiles pour tout projet de rénovation, du simple changement de comptoir à l’agrandissement de votre maison.</p>
+					</div>
+				</div>
+
+				<div class="sidebar">
+					<div class="framed-block to-load">
+						<div class="frame top"><div></div></div>
+						<div class="frame right"><div></div></div>
+						<div class="frame bottom"><div></div></div>
+						<div class="frame left"><div></div></div>
+
+						<div class="content">
+							<ul>
+								<li class="hover-effect-1">
+									<a href="" class="btn-anchor" data-anchor="tips1">
+										<span class="effect" data-hover="Salle de bain">Salle de bain</span>
+									</a>
+									<div class="border bottom"><div></div></div>
+								</li>
+								<li class="hover-effect-1">
+									<a href="" class="btn-anchor" data-anchor="tips2">
+										<span class="effect" data-hover="Cuisine">Cuisine</span>
+									</a>
+									<div class="border bottom"><div></div></div>
+								</li>
+								<li class="hover-effect-1">
+									<a href="" class="btn-anchor" data-anchor="tips3">
+										<span class="effect" data-hover="Domotique">Domotique</span>
+									</a>
+									<div class="border bottom"><div></div></div>
+								</li>
+								<li class="hover-effect-1">
+									<a href="" class="btn-anchor" data-anchor="tips4">
+										<span class="effect" data-hover="Agrandissement">Agrandissement</span>
+									</a>
+									<div class="border bottom"><div></div></div>
+								</li>
+								<li class="hover-effect-1">
+									<a href="" class="btn-anchor" data-anchor="tips5">
+										<span class="effect" data-hover="Loft intelligent">Loft intelligent</span>
+									</a>
+									<div class="border bottom"><div></div></div>
+								</li>
+								<li class="hover-effect-1">
+									<a href="" class="btn-anchor" data-anchor="tips6">
+										<span class="effect" data-hover="Récupérer votre argent">Récupérer votre argent</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<a href="" class="card-container hover-effect-1 btn-anchor" data-anchor="block2">
+						<div>
+							<div>
+								<div class="frame top"><div></div></div>
+								<div class="frame right"><div></div></div>
+								<div class="frame bottom"><div></div></div>
+								<div class="frame left"><div></div></div>
+								
+								<div class="content">
+									<span>
+										<span>
+											<span class="effect" data-hover="Outils en ligne">Outils en ligne</span>
+										</span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<ul class="listing">
+					<li id="tips1">
+						<div class="framed-block to-load">
+							<div class="frame top"><div></div></div>
+							<div class="frame right"><div></div></div>
+							<div class="frame bottom"><div></div></div>
+							<div class="frame left"><div></div></div>
+
+							<div class="content">
+								<div class="section">
+									<!-- Infinite Slider -->
+									<div id="slider-container-1" class="slider-container">
+										<img src="images/layout/sizer_tips-slider.gif" alt="" />
+										<ul class="slider-controls"></ul>
+										
+										<ul class="slider-arrows">
+											<li class="previous"><a href="">Previous</a></li>
+											<li class="count"></li>
+											<li class="next">
+												<a href="">
+													<span class="bg"></span>
+													<span class="icon"></span>
+												</a>
+											</li>
+										</ul>
+
+										<div class="slider">					
+											<ul>
+												<li><div><div><img src="images/trucs/SDB_01.jpg"></div></div></li>
+												<li><div><div><img src="images/trucs/SDB_02.jpg"></div></div></li>
+												<li><div><div><img src="images/trucs/SDB_03.jpg"></div></div></li>
+											</ul>
+										</div>
+									</div>
+									<!-- \Infinite Slider -->
+
+									<h3>Salle de bain<span>01</span></h3>
+									<p>Mis à part les garde-robes, la salle de bain est souvent la plus petite pièce d’une habitation et vous l’occupez plusieurs fois par jour. Il est important qu'elle soit pratique et à votre goût. Nous pouvons vous conseiller afin de maximiser cet espace, la rajeunir et en moderniser son apparence tout en respectant votre budget.</p>
+									<p>Ayant tous les produits et modèles disponibles sur le marché, nous sommes en mesure de vous offrir un service de design intérieur de qualité et vous aider à trouver des matériaux à prix compétitifs chez nos fournisseurs tels que <span class="colored">Baliscus</span>, <span class="colored">Plomberium</span>, <span class="colored">Tuile Olympia</span>, <span class="colored">Ital-Bec</span>, <span class="colored">Ital-Nord et autres</span>, tout dépendant de votre secteur et de votre budget.</p>
+								</div>
+
+								<div class="section to-load">
+									<h4>Voici quelques petits conseils de rénovation qui peuvent faire toute une différence :</h4>
+									<ul>
+										<li>Pour demeurer dans un budget raisonnable, respectez les arrivées et évacuations d'eau (les travaux de plomberie coûtent cher).</li>
+										<li>Un nouveau plancher suivi d’un petit coup de peinture et le tour est joué !</li>
+										<li>Changer les poignées sur un meuble peut le rajeunir. Si le budget le permet, changez ses portes sans toucher aux armoires.</li>
+										<li>Rafraîchissez vos accessoires (porte-savon, corbeille, porte-serviette, chandelles, etc.)</li>
+										<li>L'éclairage fait toute la différence ! (Suggestion : ajoutez un variateur de lumière)</li>
+										<li>Soyez créatifs : Vous désirez quelque chose que vous n'avez jamais eu? Faites quelque chose que vous n'avez jamais fait ! Ajoutez une couleur vive (sur les murs ou dans vos accessoires), un miroir sur le mur au dessus du bain, de beaux cadres, etc.</li>
+									</ul>
+									<p>Vous pouvez effectuer vous-même plusieurs de ces changements. Amusez-vous, feuilletez des revues de décoration et de rénovation, achetez des accessoires afin de découvrir vos goûts personnels et assurez-vous qu’ils puissent être échangeables ou remboursables s’ils ne conviennent pas à votre décor (ça ne vous coûtera que du temps), faîtes-en un loisir. Voir plus bas la liste des meilleurs <a href="" class="btn-anchor" data-anchor="block2">outils en ligne</a> pour vous aider à rénover et décorer votre salle de bain.</p>
+
+									<div class="border top"><div></div></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="parallax-icon icon-2"></div>
+						<div class="parallax-icon icon-3"></div>
+						<div class="parallax-icon icon-4"></div>
+					</li>
+
+					<li id="tips2">
+						<div class="framed-block to-load">
+							<div class="frame top"><div></div></div>
+							<div class="frame right"><div></div></div>
+							<div class="frame bottom"><div></div></div>
+							<div class="frame left"><div></div></div>
+
+							<div class="content">
+								<div class="section">
+									<!-- Infinite Slider -->
+									<div id="slider-container-2" class="slider-container">
+										<img src="images/layout/sizer_tips-slider.gif" alt="" />
+										<ul class="slider-controls"></ul>
+										
+										<ul class="slider-arrows">
+											<li class="previous"><a href="">Previous</a></li>
+											<li class="count"></li>
+											<li class="next">
+												<a href="">
+													<span class="bg"></span>
+													<span class="icon"></span>
+												</a>
+											</li>
+										</ul>
+
+										<div class="slider">					
+											<ul>
+												<li><div><div><img src="images/trucs/cuisine_01.jpg"></div></div></li>
+											</ul>
+										</div>
+									</div>
+									<!-- \Infinite Slider -->
+
+									<h3>Cuisine<span>02</span></h3>
+									<p class="colored">Pour réaliser la rénovation d’une cuisine avec succès, chaque étape doit être calculée et JOVA Construction, a la recette parfaite pour vous servir une cuisine au goût du jour!</p>
+									<p>La rénovation d'une cuisine est l’un des meilleurs investissements que vous pouvez effectuer dans votre résidence : le retour sur votre investissement est de plus de 75%. Vous pouvez en changer le style, créer un espace davantage fonctionnel, augmenter votre espace de rangement et mettre à jour vos électroménagers.</p>
+									<p>Nous vous offrons la possibilité de travailler avec un cuisiniste qui vous assistera dans la création de la cuisine de vos rêves. Le cuisiniste est un conseiller et un concepteur d’espace qui vous guide et vous conseille dans votre choix de matériaux et qui élabore avec vous le plan de votre future cuisine.</p>
+									<h5>Une cuisine est fonctionnelle à son maximum lorsque l’on respecte ces 3 critères :</h5>
+									<ul>
+										<li>Rangement</li>
+										<li>Préparation</li>
+										<li>Nettoyage</li>
+									</ul>
+									<p>Une cuisine bien conçue utilise ces trois éléments dans un modèle triangulaire afin de maximiser l'efficacité de l’aire de travail. JOVA Construction met à votre disposition un service de cuisiniste ou de designer afin de vous guider durant ce processus, le tout présenté sur plan 3D.</p>
+								</div>
+
+								<div class="section to-load">
+									<h4 class="colored">Rénovation de cuisine, par où commencer ?</h4>
+									<p>Voici des réponses, questions et conseils qui vous guideront dans la bonne direction et vous aideront à sauver du temps.</p>
+									
+									<p>
+										<strong>1. Faites une liste</strong><br/>
+										Pourquoi désirez-vous rénover votre cuisine? Désirez-vous plus de rangement? Moderniser le style? Quels éléments désirez-vous changer : armoires, comptoir, électroménagers, plancher, dosseret ? Désirez-vous ajouter un îlot? Dressez une liste de tout ce que vous désirez rénover en ordre d'importance. Ainsi, plus tard au courant du processus, si vous devez éliminer certaines options pour demeurer dans votre budget, vous pourrez éliminer celles du bas de votre liste !
+									</p>
+									<p>
+										<strong>2. Le budget</strong><br/>
+										C'est la base de tout. Il vous permettra de savoir ce que vous aurez la possibilité de combler sur votre liste et vous permet d'établir le montant qui sera attribué à chaque tâche. Ex: 7000$ pour les armoires de cuisines, 2500$ pour les électroménagers, 400$ pour la peinture, etc. (Il est possible que vous ne sachiez pas le coût de certains des travaux, référez-vous au 3ème point.) Rappelez-vous d'allouer 80% du budget initial pour la totalité des travaux et des achats. De cette façon, si des modifications ou des imprévues devaient survenir, vous pourrez demeurer à l'intérieur de votre budget. 
+									</p>
+									<p>
+										<strong>3. Demandez une soumission et un plan </strong><br/>
+										JOVA Construction peut réaliser vos projets et vous offrir un service incomparable. Faire un plan et un devis vous permet d'éviter des pertes de temps et des changements coûteux. <br/>
+										 Avec un plan réalisé par une cuisiniste, la coordination des quarts de métier est établie à l'avance ce qui réduit de beaucoup les délais et les imprévus. <br/>
+										 L'argent investi pour un plan et un devis vous reviendra car vous pourrez éviter les surprises coûteuses et les changements qui peuvent affecter votre budget.
+									</p>
+									<p>
+										<strong>4. Les matériaux</strong><br/>
+									    Soyez prêts : magasinez vos matériaux (meubles, accessoires, couleurs, etc.) en feuilletant des magazines tel que <a href="http://www.decormag.com/Accueil/" target="_blank">DécorMag</a>, <a href="http://www.pratico-pratiques.com/accueil" target="_blank">JeDécore</a> ou en consultant des sites web tel que <a href="http://www.houzz.com/" target="_blank">Houzz</a>. Ceci vous permettra d'éviter de faire des choix à la hâte et vous assurera un look que vous aimerez.<br/>
+									    Si votre budget vous le permet, engagez un designer intérieur de chez JOVA Construction qui vous guidera dans vos choix de produits et trouvera le style unique qui vous convient.
+									</p>
+									<p>
+										<strong>5. Quoi prévoir</strong><br/>
+									    L'obtention d'un permis de la ville (chaque ville possède des critères différents) <br/>
+									    L'espace pour l'installation d'une cuisine temporaire<br/>
+									    La possibilité d'emménager ailleurs si vous devez procéder à des rénovations majeures<br/>
+									    Avisez vos voisins des travaux à venir (bruits, conteneur à déchets, etc.
+									</p>
+
+									<div class="border top"><div></div></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="parallax-icon icon-1"></div>
+						<div class="parallax-icon icon-3"></div>
+						<div class="parallax-icon icon-7"></div>
+					</li>
+
+					<li id="tips3">
+						<div class="framed-block to-load">
+							<div class="frame top"><div></div></div>
+							<div class="frame right"><div></div></div>
+							<div class="frame bottom"><div></div></div>
+							<div class="frame left"><div></div></div>
+
+							<div class="content">
+								<div class="section">
+									<!-- Infinite Slider -->
+									<div id="slider-container-3" class="slider-container">
+										<img src="images/layout/sizer_tips-slider.gif" alt="" />
+										<ul class="slider-controls"></ul>
+										
+										<ul class="slider-arrows">
+											<li class="previous"><a href="">Previous</a></li>
+											<li class="count"></li>
+											<li class="next">
+												<a href="">
+													<span class="bg"></span>
+													<span class="icon"></span>
+												</a>
+											</li>
+										</ul>
+
+										<div class="slider">					
+											<ul>
+												<li><div><div><img src="images/trucs/domotique_01.jpg"></div></div></li>
+												<li><div><div><img src="images/trucs/domotique_02.jpg"></div></div></li>
+											</ul>
+										</div>
+									</div>
+									<!-- \Infinite Slider -->
+
+									<h3>Domotique<span>03</span></h3>
+									<h4 class="colored">Nous sommes spécialisés dans les rénovations avec contrôle domotique qui vous permettent :</h4>
+									
+									<p>
+										<strong>Cinéma maison</strong><br/>
+										Simplifiez le contrôle de l'audio, vidéo et des composantes de votre cinéma maison en éliminant l’utilisation de plusieurs télécommandes.
+									</p>
+									<p>
+										<strong>Musique multi-pièces</strong><br/>
+										Profitez et accédez à votre collection de musique numérique (XM, Sirius, votre bibliothèque personnelle, etc.) n'importe où dans votre maison.
+									</p>
+									<p>
+										<strong>Éclairage intelligent</strong><br/>
+										Contrôle de l'éclairage ambiant en utilisant des minuteries, détecteurs de mouvement, gradateurs pour créer des ambiances et réduire les coûts d'énergie.
+									</p>
+									<p>
+										<strong>Contrôle de température</strong><br/>
+										Aide à l’économie d'énergie et assure le confort à partir d’un simple écran.
+									</p>
+									<p>
+										<strong>Sécurité</strong><br/>
+										Intégration d’un système de sécurité pour surveiller votre maison et votre famille à partir de pratiquement n'importe où dans le monde.
+									</p>
+
+									<p>JOVA Construction propose des services de rénovation avec système domotique. Une technologie simple à utiliser qui vous permet de contrôler vos systèmes électroniques à partir d'écrans tactiles encastrés, de votre ordinateur, de votre tablette électronique et même à distance à partir de votre téléphone intelligent!</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="parallax-icon icon-3"></div>
+						<div class="parallax-icon icon-4"></div>
+					</li>
+
+					<li id="tips4">
+						<div class="framed-block to-load">
+							<div class="frame top"><div></div></div>
+							<div class="frame right"><div></div></div>
+							<div class="frame bottom"><div></div></div>
+							<div class="frame left"><div></div></div>
+
+							<div class="content">
+								<div class="section">
+									<!-- Infinite Slider -->
+									<div id="slider-container-4" class="slider-container">
+										<img src="images/layout/sizer_tips-slider.gif" alt="" />
+										<ul class="slider-controls"></ul>
+										
+										<ul class="slider-arrows">
+											<li class="previous"><a href="">Previous</a></li>
+											<li class="count"></li>
+											<li class="next">
+												<a href="">
+													<span class="bg"></span>
+													<span class="icon"></span>
+												</a>
+											</li>
+										</ul>
+
+										<div class="slider">					
+											<ul>
+												<li><div><div><img src="images/trucs/agrandissement_01.jpg"></div></div></li>
+												<li><div><div><img src="images/trucs/agrandissement_02.jpg"></div></div></li>
+											</ul>
+										</div>
+									</div>
+									<!-- \Infinite Slider -->
+
+									<h3>Agrandissement<span>04</span></h3>
+									<p>Pour tous vos projets de rénovation impliquant un agrandissement, JOVA Construction vous offre un service certifié et garanti. Votre projet sera réalisé tout en respectant <a href="https://www.rbq.gouv.qc.ca/" target="_blank">les normes RBQ</a> et pris en charge par un équipe de professionnels qui effectueront un travail durable et ce en peu de temps.</p>
+									<p>En choisissant JOVA Construction pour vos travaux d’agrandissement, vous recevrez un service incomparable. Vos idées sont réalisées telles que vous les imaginez. Vous pourrez suivre votre projet grâce à nos étapes de construction. Vous aurez un plan et un devis, un calendrier du contrat (que vous pourrez suivre avec nous), un contrat signé ainsi que des ouvriers et des sous-contractants qualifiés tout en respectant le code du bâtiment.</p>
+									<p class="colored">De l'excavation à la toiture, nous prenons soin de livrer votre agrandissement en peu de temps avec un calendrier bien respecté.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="parallax-icon icon-1"></div>
+					</li>
+
+					<li id="tips5">
+						<div class="framed-block to-load">
+							<div class="frame top"><div></div></div>
+							<div class="frame right"><div></div></div>
+							<div class="frame bottom"><div></div></div>
+							<div class="frame left"><div></div></div>
+
+							<div class="content">
+								<div class="section">
+									<!-- Infinite Slider -->
+									<div id="slider-container-5" class="slider-container">
+										<img src="images/layout/sizer_tips-slider.gif" alt="" />
+										<ul class="slider-controls"></ul>
+										
+										<ul class="slider-arrows">
+											<li class="previous"><a href="">Previous</a></li>
+											<li class="count"></li>
+											<li class="next">
+												<a href="">
+													<span class="bg"></span>
+													<span class="icon"></span>
+												</a>
+											</li>
+										</ul>
+
+										<div class="slider">					
+											<ul>
+												<li><div><div><img src="images/trucs/loft_intelligent_01.jpg"></div></div></li>
+											</ul>
+										</div>
+									</div>
+									<!-- \Infinite Slider -->
+
+									<h3>Loft intelligent<span>05</span></h3>
+									<p>Jova Construction et <a href="http://www.maisondomo.com/" target="_blank">Maison Domo</a> étaient fiers de vous avoir présenté un « loft intelligent » à l’édition 2012 du <a href="http://www.salonhabitat.ca/" target="_blank">Salon de l'Habitat</a> s’étant déroulé au stade Olympique du 2 au 5 février et du <a href="http://www.salonchalets.com/" target="_blank">Salon du Chalet</a> également présenté au stade Olympique du 16 au 19 février de la même année.</p>
+									<p>Un local de 700 pieds carrés avec surfaces dimensionnelles, importations uniques et système domotique a été construit pour ces deux occasions. Nous avions rassemblé nos fournisseurs ainsi que des produits uniques pour créer une mini salle d’exposition afin de vous présenter notre savoir-faire et ce qu'il y a de mieux sur le marché.</p>
+								</div>
+
+								<div class="section to-load">
+									<p>Des artistes formidables avaient été invités et des produits de qualité furent exposés. Une équipe de représentants professionnels prêts à répondre à vos questions était au rendez-vous. Avec ses plafonds de 11 pieds de hauteur, nous avions choisi de reproduire un loft/studio à aire ouverte avec plafonds suspendus. Le local au complet, de la chambre à coucher à la cuisine, était relié par un système domotique afin de vous démontrer véritablement ce qui peut être réalisé dans votre demeure.</p>
+									<p>Avec plus de 10 ans d'expérience dans la construction commerciale, Jova Construction apporte une influence des plus unique dans le domaine résidentiel avec des surfaces dimensionnelles et des produits que l’on peut retrouver dans les magasines, boutiques et bureaux.</p>
+									<p>Nous étions très fier de vous présenter ce projet que nous avons attaqué avec beaucoup de passion et de détermination, étant les seuls à offrir un tel espace.</p>
+								
+									<div class="border top"><div></div></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="parallax-icon icon-5"></div>
+						<div class="parallax-icon icon-6"></div>
+					</li>
+
+					<li id="tips6">
+						<div class="framed-block to-load">
+							<div class="frame top"><div></div></div>
+							<div class="frame right"><div></div></div>
+							<div class="frame bottom"><div></div></div>
+							<div class="frame left"><div></div></div>
+
+							<div class="content">
+								<div class="section">
+									<!-- Infinite Slider -->
+									<div id="slider-container-6" class="slider-container">
+										<img src="images/layout/sizer_tips-slider.gif" alt="" />
+										<ul class="slider-controls"></ul>
+										
+										<ul class="slider-arrows">
+											<li class="previous"><a href="">Previous</a></li>
+											<li class="count"></li>
+											<li class="next">
+												<a href="">
+													<span class="bg"></span>
+													<span class="icon"></span>
+												</a>
+											</li>
+										</ul>
+
+										<div class="slider">					
+											<ul>
+												<li><div><div><img src="images/trucs/argent_01.jpg"></div></div></li>
+											</ul>
+										</div>
+									</div>
+									<!-- \Infinite Slider -->
+
+									<h3>Récupérer votre argent<span>06</span></h3>
+									<p class="colored">Rénover est une bonne chose mais il faut s’assurer que l’investissement sera rentable. La clef du succès réside dans la rentabilité des améliorations effectuées sur une propriété. Voici, en pourcentage, quelques exemples de retour sur votre investissement :</p>
+									<ul>
+										<li>Toiture <span class="colored">(50 à 80%)</span></li>
+										<li>Cuisine <span class="colored">(75 à 100%)</span></li>
+										<li>Salle de bain <span class="colored">(75 à 100%)</span></li>
+										<li>Nouvelles portes et fenêtres <span class="colored">(50 à 75%)</span></li>
+										<li>Ajout d’un garage <span class="colored">(50 à 75%)</span></li>
+										<li>Piscine <span class="colored">(10 à 40%)</span></li>
+										<li>Aménagement paysager <span class="colored">(25 à 50%)</span></li>
+										<li>Puits de lumière <span class="colored">(0 à 25%)</span></li>
+										<li>Remplacement de fosse septique <span class="colored">(80 à 100%)</span></li>
+										<li>Installation chauffage et climatisation centrale <span class="colored">(25 à 75%)</span></li>
+										<li>Installation d’un foyer <span class="colored">(50 à 75%)</span></li>
+									</ul>
+									<p>Notre site web a pour but de vous guider dans vos rénovations en vous proposant des photos de nos réalisations et des articles tirés de magazines ou de fournisseurs que nous consultons, étant constamment à la recherche de nouveaux produits ou des dernières tendances. Chaque année, de nouvelles options ou améliorations sont apportées aux produits du marché pour économiser l’énergie et/ou pour innover en sauvant de l’espace. <span class="colored">Nous suivons ces tendances et pouvons vous les proposer</span>.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="parallax-icon icon-7"></div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<!-- Block2 -->
+		<div id="block2">
+			<div class="centered">
+				<div class="framed-block to-load">
+					<div class="frame top"><div></div></div>
+					<div class="frame right"><div></div></div>
+					<div class="frame bottom"><div></div></div>
+					<div class="frame left"><div></div></div>
+
+					<div class="content">
+						<h2 class="to-load">
+							<span>Outils en ligne à consulter</span>
+							<div class="border bottom"><div></div></div>
+						</h2>
+						<ul>
+							<li><a href="http://www.pratico-pratiques.com/publications/je-decore/" target="_blank">Je Décore et Pratico Pratiques :</a> Conseils et idées innovatrices pour la maison. </li>
+							<li><a href="http://www.decormag.com/" target="_blank">DecorMag :</a> Magazine de décoration intérieure et extérieure.</li>
+							<li><a href="http://www.lonny.com/" target="_blank">Lonny Mag :</a> Magazine de décoration gratuit en ligne. Cliquez sur chacune des images pour savoir où vous procurer cet item.</li>
+							<li><a href="https://olioboard.com/" target="_blank">Olioboard :</a> Décorez la pièce de votre choix avec une série infinie d'accessoires virtuels. </li>
+							<li><a href="http://www.homesense.ca/en/index.asp" target="_blank">HomeSense :</a> Tendances, idées déco, promotions et plus. </li>
+							<li><a href="http://www.floorplanner.com/" target="_blank">Floor Planner :</a> Le site le plus créatif : réaménagez votre maison en 3D, vos meubles, votre disposition.</li>
+							<li><a href="http://www.houzz.com/" target="_blank">Houzz :</a> Idées décoration.</li>
+							<li><a href="http://www.sico.ca/fr-CA/Labo-deco-couleurs.aspx" target="_blank">Decorateur Virtuel Sico :</a> Peinturez vos murs avec une photo.</li>
+							<li><a href="http://www.sherwin-williams.com/" target="_blank">Sherwin-Williams :</a> Peinturez vos murs avec une photo.</li>
+							<li><a href="http://www.behr.com/consumer_ca/" target="_blank">Behr Centre Virtuel de Couleur :</a> Peinturez vos murs avec une photo.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+		<footer id="footer">
+			<div class="centered">
+									<a href="/" class="logo">Jova</a>
+
+					<ul class="blocks">
+						<li>
+							<div>
+								<h2>Nous rejoindre</h2>
+								<div>514-917-JOVA (5682)</div>	
+							</div>
+						</li>
+						<li>
+							<div>
+								<h2>À votre service</h2>
+								<p>Laissez-nous vous démontrer notre professionnalisme grâce à l’exactitude de l’information fournie, à nos prix et à notre échéancier raisonnable. </p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h2>Demandez votre soumission</h2>
+								<p>Il nous fera plaisir de vous fournir une soumission pour tous vos projets de rénovation.</p>
+								<a href="mailto:jonathan@constructionjova.com" class="btn-arrow inverted">
+									<span class="txt">
+										<span class="small">Cliquez ici pour</span>
+										<span class="big">
+											<span>Obtenir votre soumission</span>
+										</span>
+									</span>
+									<span class="bg"></span>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h2>Suivez-nous</h2>
+								<ul>
+									<li><a href="https://www.facebook.com/pages/Construction-Jova/208991192445452" target="_blank">Facebook</a></li>
+									<li><a href="https://twitter.com/llllllJOVAlllll" target="_blank">Twitter</a></li>
+									<!--li><a href="" target="_blank">Pinterest</a></li-->
+								</ul>
+							</div>
+						</li>
+					</ul>
+
+					<ul class="logos">
+						<li class="left"><a href="https://www.rbq.gouv.qc.ca/en.html" target="_blank"><img src="images/layout/footer_logo-regie-quebec.png" alt="" /></a></li>
+						<li class="right"><a><img src="images/layout/footer_logo-prix.png" alt="" /></a></li>
+					</ul>
+
+					<div class="copyright">Copyright 2015 &copy; Construction Jova. Tous droits réservés.</div>
+					<div class="credits"><a href="mailto:jonathan@constructionjova.com" target="_blank">jonathan@constructionjova.com</a></div>
+							</div>
+		</footer>
+
+	</div>
+
+	<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+	<script type="text/javascript" src="javascript/jqueryEasing.js"></script>
+	<script type="text/javascript" src="javascript/StackBlur.js"></script>
+	<script type="text/javascript" src="javascript/infiniteSlider.js"></script>
+	<script type="text/javascript" src="javascript/infiniteSliderHome.js"></script>
+	<script type="text/javascript" src="javascript/ui.js"></script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-55019066-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>
+
