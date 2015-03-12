@@ -30,19 +30,13 @@ $(window).load(function(){
 	// Init
 	//
 	/////////////////////////////////////// */
-	$('.menuIntroBack').css({'height':pageHeight*.75, 'margin-top':-pageHeight*.75});
+	$('.menuIntroBack').css({'height':pageHeight*0.8, 'margin-top':-pageHeight*.8});
 
 	positionContent();
 	$('#loading-mask').fadeOut(750, function(){
 		$('.menuIntroBack').transition({ 'margin-top': 0}, 500, 'ease', function() {
-
+			// body...
 		});
-		setTimeout(function(){
-			$('.logoContainer').addClass('loaded');
-			setTimeout(function(){
-				$('#block1 .card-container').addClass('loaded');
-			}, 550);
-		}, 450);
 	});
 });
 /* ////////////////////////////////////////////////////////////////////////////
