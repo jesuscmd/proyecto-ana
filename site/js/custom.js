@@ -19,6 +19,10 @@ var browserMobile = jQuery.browser.mobile;
 // 	$parallaxIcon = $('.parallax-icon');
 var $fullHeight = $('.full-height');
 
+//global vars
+
+var pageHeight	= $(window).height();
+
 $(window).load(function(){
 
 	/* ////////////////////////////////////////
@@ -26,11 +30,14 @@ $(window).load(function(){
 	// Init
 	//
 	/////////////////////////////////////// */
+	$('.menuIntroBack').css({'height':pageHeight*0.8, 'margin-top':-pageHeight*.8});
 
 	positionContent();
 	$('#loading-mask').fadeOut(750, function(){
+		$('.menuIntroBack').transition({ 'margin-top': 0}, 500, 'ease', function() {
+			// body...
+		});
 	});
-
 });
 /* ////////////////////////////////////////////////////////////////////////////
 //

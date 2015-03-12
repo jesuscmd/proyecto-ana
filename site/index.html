@@ -18,27 +18,157 @@
     <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-72x72.png" />
     <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-144x144.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
-
 </head>
 <body data-language="en">
     <div id="loading-mask"></div>
     <div id="wrapper">
-        <a id="languajeSwitch" href="#">ENGLISH</a>
-        <div id="imagenBack" class="full-height"></div>
+        <a id="languajeSwitch" href="#">ENG<span class="hidden-xs">LISH</span></a>
+        <a id="mainMenu" src="#">
+            <object data="img/menu.svg" type="image/svg+xml">
+                    <img src="img/menu.jpg" />
+            </object>
+        </a>
+        <div id="imagenBack" class="full-height">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-3 col-xs-2"></div>
+                    <div class="col-md-4 col-sm-6 col-xs-8">
+                        <div class="menuIntroCont">
+                            <div class="menuIntroBack">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-3 col-xs-3"></div>
+                                    <div class="col-md-4 col-sm-6 col-xs-6 logoContainer">
+                                        <object data="img/logo.svg" type="image/svg+xml">
+                                            <img src="img/logo.jpg" />
+                                        </object>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1 col-sm-3 col-xs-3"></div>
+                                    <div class="col-md-10 col-sm-3 col-xs-3">
+                                        <div class="card-container home">
+                                            <div>
+                                                <div>
+                                                    <div class="frame top"><div></div></div>
+                                                    <div class="frame right"><div></div></div>
+                                                    <div class="frame bottom"><div></div></div>
+                                                    <div class="frame left"><div></div></div>
+                                                    
+                                                    <div class="content">
+                                                            <h2>
+                                                                <a href="/home" class="logo">Jova</a>
+                                                                <a href="" class="btn-lang">Français</a>
+                                                                <div class="border bottom"><div></div></div>
+                                                            </h2>
+                                                            <h3>
+                                                                <span class="left">Construction</span>
+                                                                <span class="right">Renovation</span>
+                                                                <div class="border bottom"><div></div></div>
+                                                            </h3>
+
+                                                            <ul class="menu">
+                                                                <li class="hover-effect-1">
+                                                                    <a href="portfolio">
+                                                                        <span class="effect" data-hover="Portfolio">
+                                                                            <span class="small">Latest Work</span>
+                                                                            <span class="big">
+                                                                                <span>Portfolio</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <div class="border right"><div></div></div>
+                                                                </li>
+                                                                <li class="hover-effect-1">
+                                                                    <a href="about-us">
+                                                                        <span class="effect" data-hover="Jova">
+                                                                            <span class="small">About</span>
+                                                                            <span class="big">
+                                                                                <span>Jova</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <div class="border right"><div></div></div>
+                                                                </li>
+                                                                <li class="hover-effect-1">
+                                                                    <a href="contact-us">
+                                                                        <span class="effect" data-hover="Contact Us">
+                                                                            <span class="small">Coordinates</span>
+                                                                            <span class="big">
+                                                                                <span>Contact Us</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="hover-effect-1">
+                                                                    <a href="services-offered">
+                                                                        <span class="effect" data-hover="Services Offered">
+                                                                            <span class="small">List of</span>
+                                                                            <span class="big">
+                                                                                <span>Services Offered</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <div class="border right"><div></div></div>
+                                                                    <div class="border top"><div></div></div>
+                                                                </li>
+                                                                <li class="hover-effect-1">
+                                                                    <a href="tips-and-tricks">
+                                                                        <span class="effect" data-hover="Tips and Tricks">
+                                                                            <span class="small">Good to know</span>
+                                                                            <span class="big">
+                                                                                <span>Tips and Tricks</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <div class="border top"><div></div></div>
+                                                                </li>
+                                                            </ul>
+
+                                                            <a href="" class="btn-previous">
+                                                                <span class="small">Prev.</span>
+                                                                <div class="border right"><div></div></div>
+                                                            </a>
+                                                            <a href="" class="btn-next">
+                                                                <span class="small">Next</span>
+                                                                <div class="border left"><div></div></div>
+                                                            </a>
+                                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>     
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <object class="triScroll" data="img/trianguloScroll.svg" type="image/svg+xml">
+                                            <img src="img/trianguloScroll.png" />
+                                        </object>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section id="homepage">
             <div id="block1" class="full-height">
-                
             </div>
             
         </section>
     </div>
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/jqueryEasing.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.transit.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
 
 </body>
