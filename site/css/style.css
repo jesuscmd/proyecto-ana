@@ -5,11 +5,29 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/* generales
+--------------------------------------------------------------------------------------- */
 body {
   font-family: bebas;
+  color: #fff;
 }
+h2 {
+  font-size: 40px;
+}
+.verCent>div{
+  display: table;
+  height: 122px;
+}
+.verCent>div>div{
+  display: table-cell;
+  vertical-align: middle;
+}
+.verCent h2{
+  margin: 0;
+}
+
 #imagenBack {
-  color: red;
   background: url('../img/backHome.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -18,8 +36,8 @@ body {
 }
 #mainMenu{
   position: fixed;
-  left: 35px;
-  top: 40px;
+  left: 30px;
+  top: 56px;
 }
 #mainMenu object{
   width: 50px;
@@ -28,9 +46,10 @@ body {
 #languajeSwitch {
   position: fixed;
   border: 1px solid white;
-  right: 35px;
-  top: 40px;
-  padding: 7px 10px;
+  right: 30px;
+  top: 56px;
+  padding: 6px 19px 1px;
+  font-size: 18px;
 }
 #loading-mask {
   display: block;
@@ -53,47 +72,69 @@ a {
 .menuIntroBack{
   width: 100%;
   background-color:#ff9100;
-  background-color: rgba(255, 145, 0, 0.7);
+  background-color: rgba(255, 145, 0, 0.8);
 }
 .logoContainer{
   height: 130px;
   background-color: #fff;
   background-color: rgba(255,255,255,0.2);
+  -webkit-transition-duration: 0.55s;
+  -webkit-transition-property: top;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-timing-function: 'ease-in-out';
+  transition-duration: 0.55s;
+  transition-property: top;
+  transition-delay: 0s;
+  transition-timing-function: 'ease-in-out';
+  top: -130px;
+}
+.logoContainer.loaded {
+  top: 0;
 }
 .logoContainer object{
   max-width: 94px;
   margin: 50px auto 0 auto;
   display: block;
+  -webkit-transition-duration: 0.75s;
+  -webkit-transition-property: opacity;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-timing-function: 'ease-in-out';
+  transition-duration: 0.75s;
+  transition-property: opacity;
+  transition-delay: 0s;
+  transition-timing-function: 'ease-in-out';
+  opacity: 0;
 }
-.card-container{
-  width: 100%;
-  background-color: red;
+.logoContainer.loaded object{
+  opacity: 1
 }
 .triScroll{
   max-width: 35px;
-  margin: 0 auto;
+  margin: 40px auto 0;
   display: block;
 }
 /* animacion inicio
 --------------------------------------------------------------------------------------- */
-#wrapper .card-container > div > div .frame > div {
+#wrapper .card-container > div > div .frame {
+  position: absolute;
+}
+#wrapper .card-container > div > div .frame > div,
+#wrapper .border > div {
   -webkit-transition-duration: 0.75s;
   -webkit-transition-property: width,height;
-  -webkit-transition-delay: 0.75s;
   -webkit-transition-timing-function: 'ease-in-out';
   transition-duration: 0.75s;
   transition-property: width,height;
-  transition-delay: 0.75s;
   transition-timing-function: 'ease-in-out';
   overflow: hidden;
   position: absolute;
-  background: #1d1d1d;
+  background: #fff;
 }
 #wrapper .card-container > div > div .frame.top {
   left: 0;
   top: 0;
   width: 100%;
-  height: 4px;
+  height: 2px;
 }
 #wrapper .card-container > div > div .frame.top > div {
   left: 0;
@@ -104,7 +145,7 @@ a {
 #wrapper .card-container > div > div .frame.right {
   right: 0;
   top: 0;
-  width: 4px;
+  width: 2px;
   height: 100%;
 }
 #wrapper .card-container > div > div .frame.right > div {
@@ -117,7 +158,7 @@ a {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 4px;
+  height: 2px;
 }
 #wrapper .card-container > div > div .frame.bottom > div {
   right: 0;
@@ -128,75 +169,10 @@ a {
 #wrapper .card-container > div > div .frame.left {
   left: 0;
   bottom: 0;
-  width: 4px;
+  width: 2px;
   height: 100%;
 }
 #wrapper .card-container > div > div .frame.left > div {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 0;
-}
-#wrapper .card-container > div > div .border {
-  position: absolute;
-  z-index: 15;
-}
-#wrapper .card-container > div > div .border > div {
-  -webkit-transition-duration: 0.75s;
-  -webkit-transition-property: width,height;
-  -webkit-transition-delay: 1s;
-  -webkit-transition-timing-function: 'ease-in-out';
-  transition-duration: 0.75s;
-  transition-property: width,height;
-  transition-delay: 1s;
-  transition-timing-function: 'ease-in-out';
-  overflow: hidden;
-  position: absolute;
-  background: #595959;
-}
-#wrapper .card-container > div > div .border.top {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 2px;
-}
-#wrapper .card-container > div > div .border.top > div {
-  left: 0;
-  top: 0;
-  width: 0;
-  height: 100%;
-}
-#wrapper .card-container > div > div .border.right {
-  right: 0;
-  top: 0;
-  width: 2px;
-  height: 100%;
-}
-#wrapper .card-container > div > div .border.right > div {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 0;
-}
-#wrapper .card-container > div > div .border.bottom {
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-}
-#wrapper .card-container > div > div .border.bottom > div {
-  right: 0;
-  top: 0;
-  width: 0;
-  height: 100%;
-}
-#wrapper .card-container > div > div .border.left {
-  left: 0;
-  bottom: 0;
-  width: 2px;
-  height: 100%;
-}
-#wrapper .card-container > div > div .border.left > div {
   left: 0;
   bottom: 0;
   width: 100%;
@@ -207,15 +183,52 @@ a {
 }
 #wrapper .card-container.loaded > div {
   width: 100%;
+  position: relative;
 }
+#wrapper .loaded .border > div,
 #wrapper .card-container.loaded > div > div .frame > div {
   width: 100%;
   height: 100%;
 }
-#wrapper .card-container.loaded > div > div .border > div {
-  width: 100%;
+#wrapper .border{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 3px;
   height: 100%;
 }
-#wrapper .card-container.loaded > div > div .content > * {
-  color: #1d1d1d;
+#wrapper .border div{
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-delay: .25s;
+  -webkit-transition-delay: .25s;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+}
+#wrapper h2{
+  -webkit-transition-duration: 0.73s;
+  -webkit-transition-property: color;
+  -webkit-transition-delay: .59s;
+  -webkit-transition-timing-function: 'easeInExpo';
+  transition-duration: 0.73s;
+  transition-property: color;
+  transition-delay: .59s;
+  transition-timing-function: 'easeInExpo';
+  color: transparent;
+}
+#wrapper .loaded h2{
+  color:#fff;
+}
+.verCent .text-right {
+  position: relative;
+}
+.verCent .text-right>div{
+  margin-right: -15px;
+}
+.test{
+  position: absolute;
+  right: 40px;
+  bottom: 50px;
 }
