@@ -30,13 +30,19 @@ $(window).load(function(){
 	// Init
 	//
 	/////////////////////////////////////// */
-	$('.menuIntroBack').css({'height':pageHeight*0.8, 'margin-top':-pageHeight*.8});
+	$('.menuIntroBack').css({'height':pageHeight*.75, 'margin-top':-pageHeight*.75});
 
 	positionContent();
 	$('#loading-mask').fadeOut(750, function(){
 		$('.menuIntroBack').transition({ 'margin-top': 0}, 500, 'ease', function() {
-			// body...
+
 		});
+		setTimeout(function(){
+			$('.logoContainer').addClass('loaded');
+			setTimeout(function(){
+				$('#block1 .card-container').addClass('loaded');
+			}, 550);
+		}, 450);
 	});
 });
 /* ////////////////////////////////////////////////////////////////////////////
@@ -50,6 +56,22 @@ function positionContent(){
 	$fullHeight.height($(window).height());
 };
 
+/* ////////////////////////////////////////////////////////////////////////////
+//
+// Second section
+//
+/////////////////////////////////////////////////////////////////////////// */
+var controller = new ScrollMagic.Controller();
+// build scene
+var scene = new ScrollMagic.Scene({
+					//triggerElement: "#trigger1"
+					duration: pageHeight*2/3,
+					offset:pageHeight/3,
+				})
+				.setTween("#imagenBack", 0.5, {opacity: "0"}) // trigger a TweenMax.to tween
+				.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+				.addTo(controller);
+					
 
 /* ////////////////////////////////////////////////////////////////////////////
 //
