@@ -18,6 +18,12 @@ section{
 h2 {
   font-size: 40px;
 }
+h3 {
+  font-size: 25px;
+}
+h4{
+  font-size: 24px;
+}
 .verCent>div{
   display: table;
   height: 122px;
@@ -53,6 +59,7 @@ h2 {
   position: fixed;
   left: 30px;
   top: 56px;
+  z-index: 2;
 }
 #mainMenu object{
   width: 50px;
@@ -65,6 +72,7 @@ h2 {
   top: 56px;
   padding: 6px 19px 1px;
   font-size: 18px;
+  z-index: 2;
 }
 #loading-mask {
   display: block;
@@ -246,4 +254,78 @@ a {
   position: absolute;
   right: 40px;
   bottom: 50px;
+}
+
+/*formas*/
+.sustrato{
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  color: #4a4a4a;
+  padding: 10px 0;
+}
+.form-control{
+  font-family: Futura, Verdana, Arial;
+  color: #4a4a4a;
+  border-radius: 0;
+  border: none; 
+}
+.form-horizontal .control-label{
+  font-size: 21px;
+  text-align: left;
+}
+.btn{
+  border-radius: 0;
+  border: none; 
+  background: #ff7200;
+  font-size: 16px;
+  color: #fff;
+}
+.btn:hover{
+  background-color: #4a4a4a;
+  color: #fff;
+}
+
+
+
+/*ESTRUCTUTA*/
+
+
+#ourgrukology{
+  background: #f0f0ee;
+}
+
+
+#contacto p{
+  font-size: 21px;
+}
+#backPortrai{
+  background: url(../img/portrait.jpg);
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: multiply, normal;
+  -webkit-background-blend-mode: multiply, normal;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+#contacto .overlay{
+  background: rgba(255, 150, 0, .8);
+}
+#carreras .overlay{
+  background: rgba(213, 50, 0, .8);
+}
+#glog .overlay{
+  background: rgba(118, 0, 147, .8);
+}
+/*GLOG*/
+#glog h1{
+  font-size: 92px;
+  text-align: center;
 }
