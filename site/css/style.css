@@ -290,9 +290,22 @@ a {
 
 /*ESTRUCTUTA*/
 
-
+#imgSocios{
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+#quehacemos{
+  background-color: #353535;
+}
+.imgArchemyFigure object{
+  mix-blend-mode: luminosity;
+}
+#infography{
+  background-color: #ff8a00
+}
 #ourgrukology{
-  background: #f0f0ee;
+  background-color: #f0f0ee;
 }
 
 
@@ -306,8 +319,6 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-blend-mode: multiply, normal;
-  -webkit-background-blend-mode: multiply, normal;
 }
 .overlay{
   height: 100%;
