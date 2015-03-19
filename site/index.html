@@ -153,28 +153,34 @@
                             <p>Laboratorio de alquimia en negocios.<br> Alquimistas dedicados a descubrir oportunidades en la industria turística, ya sea a través de técnicas en Business Intelligence, Gamification y Canales Digitales.</p>
                         </div>
                         <div class="socios"></div>    
-                        
                     </div>
-<img id="imgSocios" src="img/socios.png">
-
+                    <img id="imgSocios" src="img/socios.png">
                 </div>
-            
             </div>
         </section>
         <section id="quehacemos" class="">
             <div class="container">
                 <div class="row">
-
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-offset-md-12 col-md-10">
+                                <h2>¿qué hacemos?</h2>
+                                <h3>“es fácil ver el futuro”</h3>
+                                <p>Los ingredientes para nuestra receta secreta de Business Intelligence provienen de minería de datos mezclados con marketing cualitativo y cuantitativo.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-md-3"></div>
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="col-md-1"></div>
+                            <div class="col-md-1 borderNanja left"></div>
                             <div class="col-md-10">
                                 <h3>En 6 meses generaremos un plan de ventas que ningún cliente podrá resistir.</h3>
                             </div>
-                            <div class="col-md-1"></div>
+                            <div class="col-md-1 borderNanja right"></div>
                         </div>
                     </div>
                     <div class="col-md-3"></div>
@@ -184,16 +190,24 @@
         <section id="infography" class="">
             <div class="container">
                 <div class="row">
-
+                    <div class="col-md-12">
+                        <object class="triangleInfo" data="img/trinaguloInfo.svg" type="image/svg+xml">
+                            <img src="img/trinaguloInfo.jpg" />
+                        </object>
+                    </div>
                 </div>
+                
+                
             </div>
         </section>
         <section id="ourgrukology" class="full-height">
-            <img src="img/liquid.jpg">
+            
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div></div>
+                        <div>
+                            <h1 class="naranja">Our Grukology</h1>
+                        </div>
                         <p>Iniciamos como un laboratorio. Nuestra filosofía es la fuerza infinita de la imaginación y su magia creadora de sueños. Como alquimistas, hacemos estos sueños realidad. Creemos en el encuentro de mentes brillantes para alcanzar el limite de la imaginación. Somos generadores de historias que cambian el mundo a través de la fuerza de acción.</p>
                     </div>
                     <div class="col-md-8">
@@ -209,7 +223,7 @@
                             <div class="col-md-12">
                                 <div></div>
                                 <div>
-                                    <h2>Buscamos inspirar <br> 
+                                    <h2 class="naranja">Buscamos inspirar <br> 
                                     y ser inspirados en todas direcciones, <br>
                                     sin limites, con propósitos. </h2>
                                 </div>
@@ -217,6 +231,7 @@
                         </div>
                     </div>
                 </div>
+                <img id="imageLiquid" class="img-responsive" src="img/liquid.jpg">
             </div>
         </section>
         <div id="backPortrai">
@@ -225,48 +240,50 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <!--logo-->
+                            <object id="logoContacto" data="img/logo.svg" type="image/svg+xml">
+                                <img src="img/logo.jpg" />
+                            </object>
                             <div class="separador"></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="row">
-                                <div class="col-md-offset-2 col-md-8">
-                                    <h3 class="sustrato">contacto:</h3>
-                                    <p>Maxcani 1, Playa del Carmen, México</p>
-                                    <p><span class="telefono"></span> 52 (984) 8019380</p>
-                                    <p><span class="mail"></span> hello@gruk.me</p>
+                                <div class="col-md-offset-4 col-md-5">
+                                    <h3 class="sustrato direccion">contacto:</h3>
+                                    <p>Maxcani 1, Playa del Carmen México</p>
+                                    <p><span class="icon telefono"><i class="icon-phone"></i></span> 52 (984) 1095256</p>
+                                    <p><span class="icon mail"><i class="icon-mail"></i></span> hello@gruk.me</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="row">
-                                <div class="col-md-offset-2 col-md-8">
+                                <div class="col-md-offset-1 col-md-7 formaSolicita">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <h3 class="sustrato">Solicita un Gruk</h3>
                                             <form class="form-horizontal" id="iSolicitud">
                                                 <div class="form-group">
-                                                    <label for="iSolicitaNombre" class="col-sm-3 control-label">Nombre</label>
+                                                    <label for="iSolicitaNombre" class="col-sm-3 control-label">Nombre:</label>
                                                     <div class="col-sm-9">
-                                                        <input type="text" class="form-control" id="iSolicitaNombre" placeholder="Nombre">
+                                                        <input type="text" class="form-control" id="iSolicitaNombre">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="iSolicitaTel" class="col-sm-3 control-label">Teléfono</label>
+                                                    <label for="iSolicitaTel" class="col-sm-3 control-label">Teléfono:</label>
                                                     <div class="col-sm-9">
-                                                        <input type="number" class="form-control" id="iSolicitaTel" placeholder="Teléfono">
+                                                        <input type="number" class="form-control" id="iSolicitaTel">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="iSolicitaEmail" class="col-sm-3 control-label">Email</label>
+                                                    <label for="iSolicitaEmail" class="col-sm-3 control-label">Email:</label>
                                                     <div class="col-sm-9">
-                                                        <input type="email" class="form-control" id="iSolicitaEmail" placeholder="Email">
+                                                        <input type="email" class="form-control" id="iSolicitaEmail">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="iSolicitaSolicitud" class="col-sm-3 control-label">Solicitud</label>
+                                                    <label for="iSolicitaSolicitud" class="col-sm-3 control-label">Solicitud:</label>
                                                     <div class="col-sm-9">
                                                         <textarea class="form-control" id="iSolicitaSolicitud"></textarea>
                                                     </div>
@@ -291,32 +308,43 @@
                     <div class="row">
                         <div class="col-md-offset-4 col-md-4">
                              <div class="row">
-                                <div class="col-md-12">
-                                    <h3 class="sustrato">Carreras</h3>
+                                <div class="col-md-12 formaCarreras">
+                                    <h3 class="sustrato carreras">Carreras</h3>
                                     <h4>Te estamos buscando, llena el siguiente formulario y conviértete en un Gruk!</h4>
                                     <form class="form-horizontal" id="iCarrera">
                                         <div class="form-group">
-                                            <label for="iSolicitaNombre" class="col-sm-3 control-label">Nombre</label>
+                                            <label for="iSolicitaNombre" class="col-sm-3 control-label">Nombre:</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="iCarreraNombre" placeholder="Nombre">
+                                                <input type="text" class="form-control" id="iCarreraNombre">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="iCarreraTel" class="col-sm-3 control-label">Teléfono</label>
+                                            <label for="iCarreraTel" class="col-sm-3 control-label">Teléfono:</label>
                                             <div class="col-sm-9">
-                                                <input type="number" class="form-control" id="iCarreraTel" placeholder="Teléfono">
+                                                <input type="number" class="form-control" id="iCarreraTel">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="iCarreraEmail" class="col-sm-3 control-label">Email</label>
+                                            <label for="iCarreraEmail" class="col-sm-3 control-label">Email:</label>
                                             <div class="col-sm-9">
-                                                <input type="email" class="form-control" id="iCarreraEmail" placeholder="Email">
+                                                <input type="email" class="form-control" id="iCarreraEmail">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="iCarreraSolicitud" class="col-sm-3 control-label">Solicitud</label>
+                                            <label for="iCarreraSolicitud" class="col-sm-3 control-label">Solicitud:</label>
                                             <div class="col-sm-9">
-                                                <input class="btn btn-default btn-block" type="file" id="iCarreraCV" value="Upload">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <input type="text" class="form-control" id="iCarreraFileName">
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <label class="customUpload">
+                                                            <input type="file" id="iCarreraCV" value="Upload">
+                                                            <span class="btn btn-default btn-block">Seleccionar archivo</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                
                                             </div>
                                         </div>
                                         <div class="form-group">
