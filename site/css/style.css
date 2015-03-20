@@ -1,74 +1,77 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'bebas';
-  src: url('../fonts/BebasNeue.eot');
-    src: url('../fonts/BebasNeue.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/BebasNeue.woff2') format('woff2'),
-         url('../fonts/BebasNeue.woff') format('woff'),
-         url('../fonts/BebasNeue.ttf') format('truetype'),
-         url('../fonts/BebasNeue.svg#futura_bkbook') format('svg');  font-weight: normal;
+  src: url("../fonts/BebasNeue.eot");
+  src: url("../fonts/BebasNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue.woff2") format("woff2"), url("../fonts/BebasNeue.woff") format("woff"), url("../fonts/BebasNeue.ttf") format("truetype"), url("../fonts/BebasNeue.svg#futura_bkbook") format("svg");
+  font-weight: normal;
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'bebasLight';
-  src: url('../fonts/BebasNeueRegular.eot');
-    src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/BebasNeueRegular.woff2') format('woff2'),
-         url('../fonts/BebasNeueRegular.woff') format('woff'),
-         url('../fonts/BebasNeueRegular.ttf') format('truetype'),
-         url('../fonts/BebasNeueRegular.svg#futura_bkbook') format('svg');  font-weight: normal;
+  src: url("../fonts/BebasNeueRegular.eot");
+  src: url("../fonts/BebasNeueRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueRegular.woff2") format("woff2"), url("../fonts/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeueRegular.ttf") format("truetype"), url("../fonts/BebasNeueRegular.svg#futura_bkbook") format("svg");
+  font-weight: normal;
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'fontello';
-  src: url('../fonts/fontello.eot?49887489');
-  src: url('../fonts/fontello.eot?49887489#iefix') format('embedded-opentype'),
-       url('../fonts/fontello.woff?49887489') format('woff'),
-       url('../fonts/fontello.ttf?49887489') format('truetype'),
-       url('../fonts/fontello.svg?49887489#fontello') format('svg');
+  src: url("../fonts/fontello.eot?49887489");
+  src: url("../fonts/fontello.eot?49887489#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?49887489") format("woff"), url("../fonts/fontello.ttf?49887489") format("truetype"), url("../fonts/fontello.svg?49887489#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-    font-family: 'futura_bkbook';
-    src: url('../fonts/ufonts.com_futura-book-webfont.eot');
-    src: url('../fonts/ufonts.com_futura-book-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ufonts.com_futura-book-webfont.woff2') format('woff2'),
-         url('../fonts/ufonts.com_futura-book-webfont.woff') format('woff'),
-         url('../fonts/ufonts.com_futura-book-webfont.ttf') format('truetype'),
-         url('../fonts/ufonts.com_futura-book-webfont.svg#futura_bkbook') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'futura_bkbook';
+  src: url("../fonts/ufonts.com_futura-book-webfont.eot");
+  src: url("../fonts/ufonts.com_futura-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ufonts.com_futura-book-webfont.woff2") format("woff2"), url("../fonts/ufonts.com_futura-book-webfont.woff") format("woff"), url("../fonts/ufonts.com_futura-book-webfont.ttf") format("truetype"), url("../fonts/ufonts.com_futura-book-webfont.svg#futura_bkbook") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 /* generales
 --------------------------------------------------------------------------------------- */
+/* line 47, style.scss */
 body {
   font-family: bebas;
   font-weight: normal;
   color: #fff;
 }
-section{
+
+/* line 52, style.scss */
+section {
   position: relative;
 }
+
+/* line 55, style.scss */
 h2 {
   font-size: 40px;
 }
+
+/* line 58, style.scss */
 h3 {
   font-size: 25px;
 }
-h4{
+
+/* line 61, style.scss */
+h4 {
   font-size: 24px;
 }
-p{
+
+/* line 64, style.scss */
+p {
   font: 18px/24px 'futura_bkbook';
 }
+
+/* line 67, style.scss */
 #contacto p,
 label,
-.btn{
+.btn {
   font-family: 'bebasLight';
   font-weight: 100;
 }
+
+/* line 73, style.scss */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
@@ -85,49 +88,47 @@ label,
   margin-left: .2em;
 }
 
-.icon-phone:before { content: '\e800'; } /* '' */
-.icon-mail:before { content: '\e801'; } /* '' */
-.verCent>div{
+/* line 89, style.scss */
+.icon-phone:before {
+  content: '\e800';
+}
+
+/* '¯áÇ' */
+/* line 90, style.scss */
+.icon-mail:before {
+  content: '\e801';
+}
+
+/* '¯áü' */
+/* line 93, style.scss */
+.verCent > div {
   display: table;
   height: 122px;
 }
-.verCent>div>div{
+/* line 96, style.scss */
+.verCent > div > div {
   display: table-cell;
   vertical-align: middle;
 }
-.verCent h2{
+/* line 101, style.scss */
+.verCent h2 {
   margin: 0;
 }
-#imageSecondSection,
-#imagenBack {
-  background: url('../img/backHome.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: fixed;
-  width: 100%;
-}
-#imageSecondSection{
-  background: url('../img/backAlchemy.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: fixed;
-  width: 100%;
-}
 
-#mainMenu{
+/* line 116, style.scss */
+#mainMenu {
   position: fixed;
   left: 30px;
   top: 56px;
   z-index: 2;
 }
-#mainMenu object{
+/* line 121, style.scss */
+#mainMenu object {
   width: 50px;
   height: 30px;
 }
+
+/* line 126, style.scss */
 #languajeSwitch {
   position: fixed;
   border: 1px solid white;
@@ -137,6 +138,8 @@ label,
   font-size: 18px;
   z-index: 2;
 }
+
+/* line 135, style.scss */
 #loading-mask {
   display: block;
   position: fixed;
@@ -147,32 +150,49 @@ label,
   height: 100%;
   z-index: 999;
 }
+
+/* line 145, style.scss */
 a {
   font-size: 13px;
   color: white;
 }
+
+/* line 149, style.scss */
 #ourgrukology .naranja,
-.naranja{
+.naranja {
   color: #ff8a00;
 }
-.separador{
+
+/* line 153, style.scss */
+.separador, .separadorNaranaja {
   background-color: #fff;
   width: 100%;
   height: 2px;
 }
-.menuIntroCont{
+
+/* line 158, style.scss */
+.separadorNaranaja {
+  background-color: #ff8a00;
+}
+
+/* line 162, style.scss */
+.menuIntroCont {
   width: 100%;
   height: 100%;
 }
-.menuIntroBack{
+
+/* line 166, style.scss */
+.menuIntroBack {
   width: 100%;
-  background-color:#ff9100;
+  background-color: #ff9100;
   background-color: rgba(255, 145, 0, 0.8);
 }
-.logoContainer{
+
+/* line 171, style.scss */
+.logoContainer {
   height: 130px;
   background-color: #fff;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   -webkit-transition-duration: 0.55s;
   -webkit-transition-property: top;
   -webkit-transition-delay: 0s;
@@ -183,10 +203,14 @@ a {
   transition-timing-function: 'ease-in-out';
   top: -130px;
 }
+
+/* line 185, style.scss */
 .logoContainer.loaded {
   top: 0;
 }
-.logoContainer object{
+
+/* line 188, style.scss */
+.logoContainer object {
   max-width: 94px;
   margin: 50px auto 0 auto;
   display: block;
@@ -200,19 +224,27 @@ a {
   transition-timing-function: 'ease-in-out';
   opacity: 0;
 }
-.logoContainer.loaded object{
-  opacity: 1
+
+/* line 202, style.scss */
+.logoContainer.loaded object {
+  opacity: 1;
 }
-.triScroll{
+
+/* line 205, style.scss */
+.triScroll {
   max-width: 35px;
   margin: 40px auto 0;
   display: block;
 }
+
 /* animacion inicio
 --------------------------------------------------------------------------------------- */
+/* line 212, style.scss */
 #wrapper .card-container > div > div .frame {
   position: absolute;
 }
+
+/* line 215, style.scss */
 #wrapper .card-container > div > div .frame > div,
 #wrapper .border > div {
   -webkit-transition-duration: 0.75s;
@@ -225,74 +257,100 @@ a {
   position: absolute;
   background: #fff;
 }
+
+/* line 227, style.scss */
 #wrapper .card-container > div > div .frame.top {
   left: 0;
   top: 0;
   width: 100%;
   height: 2px;
 }
+
+/* line 233, style.scss */
 #wrapper .card-container > div > div .frame.top > div {
   left: 0;
   top: 0;
   width: 0;
   height: 100%;
 }
+
+/* line 239, style.scss */
 #wrapper .card-container > div > div .frame.right {
   right: 0;
   top: 0;
   width: 2px;
   height: 100%;
 }
+
+/* line 245, style.scss */
 #wrapper .card-container > div > div .frame.right > div {
   left: 0;
   top: 0;
   width: 100%;
   height: 0;
 }
+
+/* line 251, style.scss */
 #wrapper .card-container > div > div .frame.bottom {
   right: 0;
   bottom: 0;
   width: 100%;
   height: 2px;
 }
+
+/* line 257, style.scss */
 #wrapper .card-container > div > div .frame.bottom > div {
   right: 0;
   top: 0;
   width: 0;
   height: 100%;
 }
+
+/* line 263, style.scss */
 #wrapper .card-container > div > div .frame.left {
   left: 0;
   bottom: 0;
   width: 2px;
   height: 100%;
 }
+
+/* line 269, style.scss */
 #wrapper .card-container > div > div .frame.left > div {
   left: 0;
   bottom: 0;
   width: 100%;
   height: 0;
 }
+
+/* line 275, style.scss */
 #wrapper .card-container > div > div .content {
   position: relative;
 }
+
+/* line 278, style.scss */
 #wrapper .card-container.loaded > div {
   width: 100%;
   position: relative;
 }
+
+/* line 282, style.scss */
 #wrapper .loaded .border > div,
 #wrapper .card-container.loaded > div > div .frame > div {
   width: 100%;
   height: 100%;
 }
-#wrapper .border{
+
+/* line 287, style.scss */
+#wrapper .border {
   position: absolute;
   right: 0;
   top: 0;
   width: 3px;
   height: 100%;
 }
-#wrapper .border div{
+
+/* line 294, style.scss */
+#wrapper .border div {
   transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   transition-delay: .25s;
@@ -302,7 +360,9 @@ a {
   width: 100%;
   height: 0;
 }
-#wrapper h2{
+
+/* line 304, style.scss */
+#wrapper h2 {
   -webkit-transition-duration: 0.73s;
   -webkit-transition-property: color;
   -webkit-transition-delay: .59s;
@@ -313,188 +373,290 @@ a {
   transition-timing-function: 'easeInExpo';
   color: transparent;
 }
-#wrapper .loaded h2{
-  color:#fff;
+
+/* line 315, style.scss */
+#wrapper .loaded h2 {
+  color: #fff;
 }
+
+/* line 318, style.scss */
 .verCent .text-right {
   position: relative;
 }
-.verCent .text-right>div{
+
+/* line 321, style.scss */
+.verCent .text-right > div {
   margin-right: -15px;
 }
-.test{
+
+/* line 324, style.scss */
+.test {
   position: absolute;
   right: 40px;
   bottom: 50px;
 }
 
 /*formas*/
-.sustrato{
+/* line 331, style.scss */
+.sustrato {
   background: #fff;
   width: 100%;
   text-align: center;
   color: #4a4a4a;
   padding: 8px 0 5px;
 }
+
+/* line 338, style.scss */
 .form-group {
   margin-bottom: 5px;
 }
-.form-control{
+
+/* line 341, style.scss */
+.form-control {
   font: 18px 'futura_bkbook';
   color: #4a4a4a;
   border-radius: 0;
-  border: none; 
+  border: none;
   height: 24px;
 }
-.form-horizontal .control-label{
+
+/* line 348, style.scss */
+.form-horizontal .control-label {
   font-size: 21px;
   text-align: left;
   padding-top: 0;
   margin-top: -2px;
 }
-.btn{
+
+/* line 354, style.scss */
+.btn {
   border-radius: 0;
-  border: none; 
+  border: none;
   background: #ff7200;
   font-size: 16px;
   color: #fff;
   padding: 1px 12px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.btn:hover{
+
+/* line 363, style.scss */
+.btn:hover {
   background-color: #4a4a4a;
   color: #fff;
 }
 
-
-
 /*ESTRUCTUTA*/
-
-
-
-#imgSocios{
-  bottom: 0;
-  right: 0;
-  position: absolute;
-}
-#quehacemos{
-  background-color: #353535;
-}
-.borderNanja{
-  border: 2px solid #ff7200;
-  display: inline-block;
-  height: 106px;
-  margin-bottom: 50px;
-}
-.borderNanja.left{
-    border-right: none;
-}
-.borderNanja.right{
-    border-left: none;
-}
-.imgArchemyFigure object{
-  mix-blend-mode: luminosity;
-}
-#infography{
-  background-color: #ff8a00
-}
-.triangleInfo{
-  width: 64px;
-  margin: 0 auto;
-  display: block;
-}
-#ourgrukology{
-  background-color: #f0f0ee;
-}
-#ourgrukology p{
-  color: #6e6e6e;
-  font-size: 18px;
-}
-#ourgrukology h2,
-#ourgrukology h3{
-  color: #959595;
-}
-#imageLiquid{
+/* line 371, style.scss */
+#imagenBack {
+  position: relative;
+  background: url("../img/backHome.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: fixed;
   width: 100%;
 }
 
-
-#contacto p{
-  font-size: 21px;
-  line-height: 24px;
-}
-.formaSolicita{
-  margin-bottom: 60px;
-}
-.direccion{
-  margin-bottom: 20px;
-}
-.icon{
-  margin-right: 10px;
-}
-.icon.telefono{
-  font-size: 20px;
-}
-.icon.mail{
-  font-size: 21px;
-}
-#backPortrai{
-  background: url(../img/portrait.jpg);
+/* line 376, style.scss */
+#archemy {
   position: relative;
+  background: url("../img/backAlchemy.jpg") no-repeat center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-#backPortrai h3{
-  margin-top: 40px;
+/* line 378, style.scss */
+#archemy .container {
+  position: relative;
 }
-#backPortrai h3.carreras{
-  margin-top: 110px;
+/* line 381, style.scss */
+#archemy .card-container {
+  margin-top: 65px;
 }
-.formaCarreras{
-  margin-bottom: 70px;
+/* line 384, style.scss */
+#archemy .alquimia {
+  margin-top: 135px;
 }
-.formaCarreras h4{
-  margin:12px 0 16px;
-  line-height: 27px;
+
+/* line 388, style.scss */
+#backPortrai {
+  position: relative;
+  background: url("../img/portrait.jpg") no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-.customUpload{
+
+/* line 391, style.scss */
+#imgSocios {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+/* line 396, style.scss */
+#quehacemos {
+  background-color: #353535;
+}
+/* line 398, style.scss */
+#quehacemos .generaremos {
+  font-size: 27px;
+}
+
+/* line 402, style.scss */
+.borderNanja {
+  border: 2px solid #ff7200;
+  display: inline-block;
+  height: 106px;
+  margin-bottom: 50px;
+}
+
+/* line 408, style.scss */
+.borderNanja.left {
+  border-right: none;
+}
+
+/* line 411, style.scss */
+.borderNanja.right {
+  border-left: none;
+}
+
+/* line 414, style.scss */
+.imgArchemyFigure object {
+  mix-blend-mode: luminosity;
+  width: 140%;
+  height: 140%;
+  margin-left: -20%;
+}
+
+/* line 420, style.scss */
+#infography {
+  background-color: #ff8a00;
+}
+
+/* line 423, style.scss */
+.triangleInfo {
+  width: 64px;
+  margin: 0 auto;
   display: block;
 }
+
+/* line 428, style.scss */
+#ourgrukology {
+  background-color: #f0f0ee;
+}
+/* line 430, style.scss */
+#ourgrukology .mainOur {
+  margin-top: 86px;
+  z-index: 2;
+  position: relative;
+}
+/* line 435, style.scss */
+#ourgrukology p {
+  color: #6e6e6e;
+  font-size: 18px;
+  margin-top: 70px;
+}
+/* line 440, style.scss */
+#ourgrukology h2 {
+  font-size: 30px;
+}
+/* line 443, style.scss */
+#ourgrukology h2, #ourgrukology h3 {
+  color: #959595;
+}
+/* line 446, style.scss */
+#ourgrukology .buscamos {
+  margin-top: 140px;
+}
+
+/* line 451, style.scss */
+#imageLiquid {
+  width: 100%;
+  z-index: 1;
+  top: -270px;
+  position: relative;
+}
+
+/* line 459, style.scss */
+#contacto p {
+  font-size: 21px;
+  line-height: 24px;
+}
+
+/* line 463, style.scss */
+.formaSolicita {
+  margin-bottom: 60px;
+}
+
+/* line 466, style.scss */
+.direccion {
+  margin-bottom: 20px;
+}
+
+/* line 469, style.scss */
+.icon {
+  margin-right: 10px;
+}
+/* line 471, style.scss */
+.icon.telefono {
+  font-size: 20px;
+}
+/* line 474, style.scss */
+.icon.mail {
+  font-size: 21px;
+}
+
+/* line 480, style.scss */
+#backPortrai h3 {
+  margin-top: 40px;
+}
+
+/* line 483, style.scss */
+#backPortrai h3.carreras {
+  margin-top: 110px;
+}
+
+/* line 486, style.scss */
+.formaCarreras {
+  margin-bottom: 70px;
+}
+
+/* line 489, style.scss */
+.formaCarreras h4 {
+  margin: 12px 0 16px;
+  line-height: 27px;
+}
+
+/* line 493, style.scss */
+.customUpload {
+  display: block;
+}
+/* line 495, style.scss */
 .customUpload input {
-    display: none;
+  display: none;
 }
-/*.customUpload {
-    border: 2px solid #AAA;
-    border-radius: 4px;
-    padding: 2px 5px;
-    margin: 2px;
-    background: #DDD;
-    display: inline-block;
-}
-.customUpload:hover {
-    background: #CCC;
-}
-.customUpload:active {
-    background: #CCF;
-}
-.customUpload :invalid + span {
-    color: #A44;
-}
-.customUpload :valid + span {
-    color: #4A4;
-}*/
 
-
-.overlay{
+/* line 500, style.scss */
+.overlay {
   height: 100%;
   width: 100%;
   position: absolute;
   mix-blend-mode: multiply;
 }
-#contacto .overlay{
-  background: rgba(255, 150, 0, .8);
+
+/* line 506, style.scss */
+#contacto .overlay {
+  background: rgba(255, 150, 0, 0.8);
 }
+
+/* line 509, style.scss */
 #logoContacto {
   width: 115px;
   margin: 0 auto;
@@ -502,15 +664,19 @@ a {
   padding: 55px 0 40px;
 }
 
+/* line 517, style.scss */
+#carreras .overlay {
+  background: rgba(213, 50, 0, 0.8);
+}
 
-#carreras .overlay{
-  background: rgba(213, 50, 0, .8);
+/* line 520, style.scss */
+#glog .overlay {
+  background: rgba(118, 0, 147, 0.8);
 }
-#glog .overlay{
-  background: rgba(118, 0, 147, .8);
-}
+
 /*GLOG*/
-#glog h1{
+/* line 524, style.scss */
+#glog h1 {
   font-size: 92px;
   text-align: center;
   margin: 112px 0;

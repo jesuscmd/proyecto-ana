@@ -1,0 +1,528 @@
+@import "compass";
+@font-face {
+  font-family: 'bebas';
+  src: url('../fonts/BebasNeue.eot');
+    src: url('../fonts/BebasNeue.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue.woff2') format('woff2'),
+         url('../fonts/BebasNeue.woff') format('woff'),
+         url('../fonts/BebasNeue.ttf') format('truetype'),
+         url('../fonts/BebasNeue.svg#futura_bkbook') format('svg');  font-weight: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bebasLight';
+  src: url('../fonts/BebasNeueRegular.eot');
+    src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+         url('../fonts/BebasNeueRegular.woff') format('woff'),
+         url('../fonts/BebasNeueRegular.ttf') format('truetype'),
+         url('../fonts/BebasNeueRegular.svg#futura_bkbook') format('svg');  font-weight: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?49887489');
+  src: url('../fonts/fontello.eot?49887489#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff?49887489') format('woff'),
+       url('../fonts/fontello.ttf?49887489') format('truetype'),
+       url('../fonts/fontello.svg?49887489#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'futura_bkbook';
+    src: url('../fonts/ufonts.com_futura-book-webfont.eot');
+    src: url('../fonts/ufonts.com_futura-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ufonts.com_futura-book-webfont.woff2') format('woff2'),
+         url('../fonts/ufonts.com_futura-book-webfont.woff') format('woff'),
+         url('../fonts/ufonts.com_futura-book-webfont.ttf') format('truetype'),
+         url('../fonts/ufonts.com_futura-book-webfont.svg#futura_bkbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* generales
+--------------------------------------------------------------------------------------- */
+body {
+  font-family: bebas;
+  font-weight: normal;
+  color: #fff;
+}
+section{
+  position: relative;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 25px;
+}
+h4{
+  font-size: 24px;
+}
+p{
+  font: 18px/24px 'futura_bkbook';
+}
+#contacto p,
+label,
+.btn{
+  font-family: 'bebasLight';
+  font-weight: 100;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+}
+
+.icon-phone:before { content: '\e800'; } /* '' */
+.icon-mail:before { content: '\e801'; } /* '' */
+
+.verCent {
+  >div{
+    display: table;
+    height: 122px;
+    >div{
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  h2{
+    margin: 0;
+  }
+}
+
+@mixin backgroundImage($imageName, $position:''){
+  position: relative;
+   background: url('../img/#{$imageName}.jpg') no-repeat center center #{$position};
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+#mainMenu{
+  position: fixed;
+  left: 30px;
+  top: 56px;
+  z-index: 2;
+  object{
+    width: 50px;
+   height: 30px;
+  }
+}
+#languajeSwitch {
+  position: fixed;
+  border: 1px solid white;
+  right: 30px;
+  top: 56px;
+  padding: 6px 19px 1px;
+  font-size: 18px;
+  z-index: 2;
+}
+#loading-mask {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #575c5c;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+a {
+  font-size: 13px;
+  color: white;
+}
+#ourgrukology .naranja,
+.naranja{
+  color: #ff8a00;
+}
+.separador{
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+}
+.separadorNaranaja {
+  @extend .separador;
+  background-color: #ff8a00; 
+}
+.menuIntroCont{
+  width: 100%;
+  height: 100%;
+}
+.menuIntroBack{
+  width: 100%;
+  background-color:#ff9100;
+  background-color: rgba(255, 145, 0, 0.8);
+}
+.logoContainer{
+  height: 130px;
+  background-color: #fff;
+  background-color: rgba(255,255,255,0.2);
+  -webkit-transition-duration: 0.55s;
+  -webkit-transition-property: top;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-timing-function: 'ease-in-out';
+  transition-duration: 0.55s;
+  transition-property: top;
+  transition-delay: 0s;
+  transition-timing-function: 'ease-in-out';
+  top: -130px;
+}
+.logoContainer.loaded {
+  top: 0;
+}
+.logoContainer object{
+  max-width: 94px;
+  margin: 50px auto 0 auto;
+  display: block;
+  -webkit-transition-duration: 0.75s;
+  -webkit-transition-property: opacity;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-timing-function: 'ease-in-out';
+  transition-duration: 0.75s;
+  transition-property: opacity;
+  transition-delay: 0s;
+  transition-timing-function: 'ease-in-out';
+  opacity: 0;
+}
+.logoContainer.loaded object{
+  opacity: 1
+}
+.triScroll{
+  max-width: 35px;
+  margin: 40px auto 0;
+  display: block;
+}
+/* animacion inicio
+--------------------------------------------------------------------------------------- */
+#wrapper .card-container > div > div .frame {
+  position: absolute;
+}
+#wrapper .card-container > div > div .frame > div,
+#wrapper .border > div {
+  -webkit-transition-duration: 0.75s;
+  -webkit-transition-property: width,height;
+  -webkit-transition-timing-function: 'ease-in-out';
+  transition-duration: 0.75s;
+  transition-property: width,height;
+  transition-timing-function: 'ease-in-out';
+  overflow: hidden;
+  position: absolute;
+  background: #fff;
+}
+#wrapper .card-container > div > div .frame.top {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2px;
+}
+#wrapper .card-container > div > div .frame.top > div {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+#wrapper .card-container > div > div .frame.right {
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+}
+#wrapper .card-container > div > div .frame.right > div {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+}
+#wrapper .card-container > div > div .frame.bottom {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+}
+#wrapper .card-container > div > div .frame.bottom > div {
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+#wrapper .card-container > div > div .frame.left {
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+}
+#wrapper .card-container > div > div .frame.left > div {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+}
+#wrapper .card-container > div > div .content {
+  position: relative;
+}
+#wrapper .card-container.loaded > div {
+  width: 100%;
+  position: relative;
+}
+#wrapper .loaded .border > div,
+#wrapper .card-container.loaded > div > div .frame > div {
+  width: 100%;
+  height: 100%;
+}
+#wrapper .border{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+}
+#wrapper .border div{
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-delay: .25s;
+  -webkit-transition-delay: .25s;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+}
+#wrapper h2{
+  -webkit-transition-duration: 0.73s;
+  -webkit-transition-property: color;
+  -webkit-transition-delay: .59s;
+  -webkit-transition-timing-function: 'easeInExpo';
+  transition-duration: 0.73s;
+  transition-property: color;
+  transition-delay: .59s;
+  transition-timing-function: 'easeInExpo';
+  color: transparent;
+}
+#wrapper .loaded h2{
+  color:#fff;
+}
+.verCent .text-right {
+  position: relative;
+}
+.verCent .text-right>div{
+  margin-right: -15px;
+}
+.test{
+  position: absolute;
+  right: 40px;
+  bottom: 50px;
+}
+
+/*formas*/
+.sustrato{
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  color: #4a4a4a;
+  padding: 8px 0 5px;
+}
+.form-group {
+  margin-bottom: 5px;
+}
+.form-control{
+  font: 18px 'futura_bkbook';
+  color: #4a4a4a;
+  border-radius: 0;
+  border: none; 
+  height: 24px;
+}
+.form-horizontal .control-label{
+  font-size: 21px;
+  text-align: left;
+  padding-top: 0;
+  margin-top: -2px;
+}
+.btn{
+  border-radius: 0;
+  border: none; 
+  background: #ff7200;
+  font-size: 16px;
+  color: #fff;
+  padding: 1px 12px;
+  @include transition(all 0.3s ease-in-out);
+}
+.btn:hover{
+  background-color: #4a4a4a;
+  color: #fff;
+}
+
+
+
+/*ESTRUCTUTA*/
+#imagenBack {
+  @include backgroundImage('backHome', 'fixed'); 
+  position: fixed;
+  width: 100%;
+}
+#archemy{
+  @include backgroundImage('backAlchemy');
+  .container {
+    position: relative;
+  }
+  .card-container{
+    margin-top: 65px;
+  }
+  .alquimia{
+    margin-top: 135px;
+  }
+}
+#backPortrai{
+  @include backgroundImage('portrait'); 
+}
+#imgSocios{
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+#quehacemos{
+  background-color: #353535;
+  .generaremos{
+    font-size: 27px;
+  }
+}
+.borderNanja{
+  border: 2px solid #ff7200;
+  display: inline-block;
+  height: 106px;
+  margin-bottom: 50px;
+}
+.borderNanja.left{
+    border-right: none;
+}
+.borderNanja.right{
+    border-left: none;
+}
+.imgArchemyFigure object{
+  mix-blend-mode: luminosity;
+  width: 140%;
+  height: 140%;
+  margin-left: -20%
+}
+#infography{
+  background-color: #ff8a00
+}
+.triangleInfo{
+  width: 64px;
+  margin: 0 auto;
+  display: block;
+}
+#ourgrukology{
+  background-color: #f0f0ee;
+  .mainOur{
+    margin-top: 86px;
+      z-index: 2;
+      position: relative;
+  }
+  p{
+    color: #6e6e6e;
+    font-size: 18px;
+    margin-top: 70px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  h2, h3{
+    color: #959595;
+  }
+  .buscamos{
+    margin-top: 140px;
+  }
+}
+
+#imageLiquid{
+  width: 100%;
+  z-index: 1;
+  top: -270px;
+  position: relative;
+}
+
+
+#contacto p{
+  font-size: 21px;
+  line-height: 24px;
+}
+.formaSolicita{
+  margin-bottom: 60px;
+}
+.direccion{
+  margin-bottom: 20px;
+}
+.icon{
+  margin-right: 10px;
+  &.telefono{
+    font-size: 20px;
+  }
+  &.mail{
+    font-size: 21px;
+  }
+}
+
+
+#backPortrai h3{
+  margin-top: 40px;
+}
+#backPortrai h3.carreras{
+  margin-top: 110px;
+}
+.formaCarreras{
+  margin-bottom: 70px;
+}
+.formaCarreras h4{
+  margin:12px 0 16px;
+  line-height: 27px;
+}
+.customUpload{
+  display: block;
+  input{
+    display: none;
+  }
+}
+
+.overlay{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+#contacto .overlay{
+  background: rgba(255, 150, 0, .8);
+}
+#logoContacto {
+  width: 115px;
+  margin: 0 auto;
+  display: block;
+  padding: 55px 0 40px;
+}
+
+
+#carreras .overlay{
+  background: rgba(213, 50, 0, .8);
+}
+#glog .overlay{
+  background: rgba(118, 0, 147, .8);
+}
+/*GLOG*/
+#glog h1{
+  font-size: 92px;
+  text-align: center;
+  margin: 112px 0;
+}
