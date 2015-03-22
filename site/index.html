@@ -6,8 +6,10 @@
 <head>
     <title>GRUK</title>
 
-    <meta name="description" content="" />
+    <meta name="description" content="GRUK" />
+    <meta http-equiv="Content-Language" content="es"/>
     <meta charset="utf-8" />
+    <meta name="Robots" content="all"/>
     <meta id="viewport" content="width=device-width,target-densityDpi=device-dpi,user-scalable=0, initial-scale=1, maximum-scale=1;" name="viewport">
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -21,7 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <link rel="stylesheet" href="css/reset.css"/>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"/> -->
     <link rel="stylesheet" href="css/style.css"/>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -30,11 +32,34 @@
 <body data-language="en">
     <div id="loading-mask"></div>
     <div id="wrapper">
-        <a id="languajeSwitch" href="#">ENG<span class="hidden-xs">LISH</span></a>
+        <a id="languajeSwitch" href="#">EN<span class="hidden-xs">GLISH</span></a>
         <a id="mainMenu" src="#">
-            <object data="img/menu.svg" type="image/svg+xml">
-                <img src="img/menu.jpg" />
-            </object>
+            <div id="button">
+                <svg viewBox="0 0 48 31" preserveAspectRatio="xMinYMin meet">
+                    <polygon fill="#fff" points="0,0 48,0 48,5, 0,5">
+
+                        <animate id="animation-to-check" begin="indefinite" fill="freeze" attributeName="points" dur="150ms" to="7,0 41,0 24,16, 24,16"/>
+                      
+                        <animate id="animation-to-star" begin="indefinite" fill="freeze" attributeName="points" dur="150ms" to="0,0 48,0 48,5, 0,5"/>                  
+                    </polygon>
+
+                    <polygon fill="#fff" points="0,13 48,13 48,18, 0,18">
+
+                        <animate id="animation-to-star2" begin="indefinite" fill="freeze" attributeName="points" dur="160ms" to="0,13 48,13 48,18, 0,18"/>
+                     
+                        <animate id="animation-to-check2" begin="indefinite" fill="freeze" attributeName="points" dur="50ms" to="0,15 48,15 48,15, 0,15"/>
+
+                    </polygon>
+
+                    <polygon fill="#fff" points="0,26 48,26 48,31, 0,31">
+
+                        <animate id="animation-to-star3" begin="indefinite" fill="freeze" attributeName="points" dur="150ms" to="0,26 48,26 48,31, 0,31"/>
+                     
+                        <animate id="animation-to-check3" begin="indefinite" fill="freeze" attributeName="points" dur="150ms" to="24,16 24,16 41,31, 7,31"/>
+                    </polygon>
+                    
+                </svg>
+            </div>
         </a>
         <div id="imagenBack" class="full-height"></div>
         <section id="inicio" class="full-height">
@@ -369,6 +394,73 @@
                 </div>
             </section>
         </div>
+    </div>
+    <div class="menuOver full-height">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <object class="logoMenu" data="img/logo.svg" type="image/svg+xml">
+                        <img src="img/logo.jpg" />
+                    </object>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span class="separador top"></span>
+                                INICIO
+                                <span class="separador bottom"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="separador top"></span>
+                                ¿QUIÉNES SOMOS?
+                                <span class="separador bottom"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="separador top"></span>
+                                ¿QUÉ HACEMOS?
+                                <span class="separador bottom"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="separador top"></span>
+                                GRUKOLOGY
+                                <span class="separador bottom"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="separador top"></span>
+                                CONTACTO - SOLICITA UN GRUK
+                                <span class="separador bottom"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="separador top"></span>
+                                CARRERAS
+                                <span class="separador bottom"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="separador top"></span>
+                                GLOG
+                                <span class="separador bottom"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/jqueryEasing.js"></script>

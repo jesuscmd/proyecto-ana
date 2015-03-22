@@ -58,6 +58,45 @@ function positionContent(){
 
 /* ////////////////////////////////////////////////////////////////////////////
 //
+// Animaciones
+//
+/////////////////////////////////////////////////////////////////////////// */
+
+var icon = document.getElementById("mainMenu"),
+
+    animationToCheck = document.getElementById("animation-to-check"),
+    animationToStar = document.getElementById("animation-to-star"),
+    animationToCheck2 = document.getElementById("animation-to-check2"),
+    animationToStar2 = document.getElementById("animation-to-star2"),
+    animationToCheck3 = document.getElementById("animation-to-check3"),
+    animationToStar3 = document.getElementById("animation-to-star3")
+
+button.addEventListener('click', function() {
+  
+  if (button.classList.contains("abierto")) {
+  	$('.container').css('opacity', 1);
+    button.classList.remove("abierto");
+    //$('.menuOver .container').transition({ 'opacity': 0}, 500, 'ease', function() {
+	$('.menuOver').css('display', 'none');
+	$('.menuOver .container').css('opacity', '0');
+    //});
+    animationToStar.beginElement();
+    animationToStar2.beginElement();
+    animationToStar3.beginElement();
+  } else {
+    button.classList.add("abierto");
+    $('.menuOver').css('display', 'block');
+    $('.container').css('opacity', 0);
+    $('.menuOver .container').transition({ 'opacity': 1, delay:100}, 500, 'ease');
+    animationToCheck.beginElement();
+    animationToCheck2.beginElement();
+    animationToCheck3.beginElement();
+  }
+  
+}, false);
+
+/* ////////////////////////////////////////////////////////////////////////////
+//
 // Second section
 //
 /////////////////////////////////////////////////////////////////////////// */

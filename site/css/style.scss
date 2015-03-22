@@ -1,4 +1,7 @@
 @import "compass";
+//VARIABLES 
+$naranja: #ff8a00;
+
 @font-face {
   font-family: 'bebas';
   src: url('../fonts/BebasNeue.eot');
@@ -42,27 +45,40 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
+//OVER WRITE BOOTSTRAP VARIABLES
+
+
+
+//@import "bootstrap";
+
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+// Import Bootstrap for Sass
+$text-color:            #fff;
+$font-family-sans-serif:  "Bebas","Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-h1:            92px;
+$font-size-h2:            40px;
+$font-size-h3:            25px;
+$font-size-h4:            24px;
+$font-size-base:          18px;
+$line-height-base:        1.333;
+
+//breackpoints ya te he dicho que adoro SASS?
+$screen-xs:                  480px;
+
+@import "bootstrap";
+@import "breakpoint";
+
+
 /* generales
 --------------------------------------------------------------------------------------- */
-body {
-  font-family: bebas;
-  font-weight: normal;
-  color: #fff;
-}
 section{
   position: relative;
 }
-h2 {
-  font-size: 40px;
-}
-h3 {
-  font-size: 25px;
-}
-h4{
-  font-size: 24px;
-}
 p{
-  font: 18px/24px 'futura_bkbook';
+  font-family: 'futura_bkbook';
 }
 #contacto p,
 label,
@@ -117,10 +133,21 @@ label,
   position: fixed;
   left: 30px;
   top: 56px;
-  z-index: 2;
+  z-index: 4;
   object{
     width: 50px;
-   height: 30px;
+    height: 30px;
+  }
+  svg {
+    width: 48px;
+    height: 35px;
+  }
+  @include transition(all .2s, .8s);
+  @include breakpoint(max-width ($screen-xs - 1)) {
+    left: 16px;
+    svg{
+      width: 35px;
+    }
   }
 }
 #languajeSwitch {
@@ -131,6 +158,23 @@ label,
   padding: 6px 19px 1px;
   font-size: 18px;
   z-index: 2;
+  background-color: transparent;
+  @include transition(all .3s);
+  &:hover{
+    border-color: $naranja;
+    background-color: $naranja;
+    color: white;
+  }
+  &:focus{
+    background-color: shade($naranja, 10%);
+    border-color: shade($naranja, 10%);
+    @include transition(all .1s);
+  }
+  @include breakpoint(max-width ($screen-xs - 1)) {
+    right: 16px;
+    font-size: 14px;
+    padding: 5px 10px 4px;
+  }
 }
 #loading-mask {
   display: block;
@@ -145,10 +189,16 @@ label,
 a {
   font-size: 13px;
   color: white;
+  cursor: pointer;
+  &:hover,&:focus{
+    color: white;
+    text-decoration: none!important;
+    outline: none;
+  }
 }
 #ourgrukology .naranja,
 .naranja{
-  color: #ff8a00;
+  color: $naranja;
 }
 .separador{
   background-color: #fff;
@@ -157,7 +207,7 @@ a {
 }
 .separadorNaranaja {
   @extend .separador;
-  background-color: #ff8a00; 
+  background-color: $naranja; 
 }
 .menuIntroCont{
   width: 100%;
@@ -168,10 +218,12 @@ a {
   background-color:#ff9100;
   background-color: rgba(255, 145, 0, 0.8);
 }
+
 .logoContainer{
   height: 130px;
   background-color: #fff;
   background-color: rgba(255,255,255,0.2);
+  top: -130px;
   -webkit-transition-duration: 0.55s;
   -webkit-transition-property: top;
   -webkit-transition-delay: 0s;
@@ -180,15 +232,25 @@ a {
   transition-property: top;
   transition-delay: 0s;
   transition-timing-function: 'ease-in-out';
-  top: -130px;
+  // @include breackpoint(max-width ($screen-xd - 1 )){
+  //   height: 103px;
+  // }
+  @include breakpoint(max-width ($screen-xs - 1)) {
+     height: 103px;
+  }
+
 }
+
 .logoContainer.loaded {
   top: 0;
 }
-.logoContainer object{
+.logoMenu{
   max-width: 94px;
   margin: 50px auto 0 auto;
   display: block;
+}
+.logoContainer object{
+  @extend .logoMenu;
   -webkit-transition-duration: 0.75s;
   -webkit-transition-property: opacity;
   -webkit-transition-delay: 0s;
@@ -365,8 +427,45 @@ a {
   color: #fff;
 }
 
-
-
+/*MENU*/
+.menuOver{
+  width: 100%;
+  background-color: rgba( $naranja, .9 );
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  display: none;
+  .container{
+    opacity: 0;
+  }
+  ul{
+    padding-top: 5%;
+    text-align: center;
+  }
+  a{
+    width: 100%;
+    font: 20px'futura_bkbook';
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+    &:hover .separador {
+      background-color:#fff;
+    }
+  }
+  .separador{
+    max-width: 34px;
+    margin:0 auto;
+    display: block;
+    background-color: transparent;
+    @include transition(all .5s);
+  }
+  .top{
+    margin-bottom: 3px;
+  }
+  .bottom{
+    margin-top: 3px;
+  }
+}
 /*ESTRUCTUTA*/
 #imagenBack {
   @include backgroundImage('backHome', 'fixed'); 
@@ -375,6 +474,7 @@ a {
 }
 #archemy{
   @include backgroundImage('backAlchemy');
+  overflow: hidden;
   .container {
     position: relative;
   }
@@ -418,7 +518,7 @@ a {
   margin-left: -20%
 }
 #infography{
-  background-color: #ff8a00
+  background-color: $naranja;
 }
 .triangleInfo{
   width: 64px;
@@ -447,15 +547,12 @@ a {
     margin-top: 140px;
   }
 }
-
 #imageLiquid{
   width: 100%;
   z-index: 1;
   top: -270px;
   position: relative;
 }
-
-
 #contacto p{
   font-size: 21px;
   line-height: 24px;
@@ -475,20 +572,18 @@ a {
     font-size: 21px;
   }
 }
-
-
 #backPortrai h3{
   margin-top: 40px;
-}
-#backPortrai h3.carreras{
-  margin-top: 110px;
+  .carreras{
+    margin-top: 110px;
+  }
 }
 .formaCarreras{
   margin-bottom: 70px;
-}
-.formaCarreras h4{
-  margin:12px 0 16px;
-  line-height: 27px;
+  h4{
+    margin:12px 0 16px;
+    line-height: 27px;
+  }
 }
 .customUpload{
   display: block;
@@ -496,7 +591,6 @@ a {
     display: none;
   }
 }
-
 .overlay{
   height: 100%;
   width: 100%;
@@ -512,8 +606,6 @@ a {
   display: block;
   padding: 55px 0 40px;
 }
-
-
 #carreras .overlay{
   background: rgba(213, 50, 0, .8);
 }
@@ -522,7 +614,6 @@ a {
 }
 /*GLOG*/
 #glog h1{
-  font-size: 92px;
   text-align: center;
   margin: 112px 0;
 }
