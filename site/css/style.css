@@ -8700,7 +8700,7 @@ label,
   top: 56px;
   padding: 6px 19px 1px;
   font-size: 18px;
-  z-index: 2;
+  z-index: 4;
   background-color: transparent;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
