@@ -102,14 +102,28 @@ button.addEventListener('click', function() {
 /////////////////////////////////////////////////////////////////////////// */
 var controller = new ScrollMagic.Controller();
 // build scene
-/*var scene = new ScrollMagic.Scene({
-					//triggerElement: "#trigger1"
-					duration: pageHeight*2/3,
-					offset:pageHeight/3,
-				})
-				.setTween("#imagenBack", 0.5, {opacity: "0"}) // trigger a TweenMax.to tween
-				.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-				.addTo(controller);*/
+var scene = new ScrollMagic.Scene({
+		//triggerElement: "#trigger1"
+		duration: pageHeight*1.2,
+		offset:pageHeight/3,
+	})
+	.setClassToggle("#archemy .container > div ", "loaded")
+	//.setTween("#imagenBack", 0.5, {opacity: "0"}) // trigger a TweenMax.to tween
+	.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+	.addTo(controller);
+
+new ScrollMagic.Scene({triggerElement: ".alquimia h2"})
+	.setClassToggle(".alquimia h2", "loaded") // add class toggle
+	.addIndicators() // add indicators (requires plugin)
+	.addTo(controller)
+	.on('enter leave', function (e) {
+    if (e.type === "leave") {
+        //TweenForThisScene.play();
+    } else {
+        //TweenForThisScene.reverse();
+    }
+});
+
 					
 
 /* ////////////////////////////////////////////////////////////////////////////
