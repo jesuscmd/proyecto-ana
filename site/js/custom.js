@@ -35,12 +35,13 @@ $(window).load(function(){
 	positionContent();
 	$('#loading-mask').fadeOut(750, function(){
 		$('.menuIntroBack').transition({ 'margin-top': 0}, 500, 'ease', function() {
-
 		});
 		setTimeout(function(){
 			$('.logoContainer').addClass('loaded');
 			setTimeout(function(){
 				$('#block1 .card-container').addClass('loaded');
+				$('.triScroll').addClass('loaded');
+
 			}, 550);
 		}, 450);
 	});
@@ -102,28 +103,61 @@ button.addEventListener('click', function() {
 /////////////////////////////////////////////////////////////////////////// */
 var controller = new ScrollMagic.Controller();
 // build scene
-var scene = new ScrollMagic.Scene({
-		//triggerElement: "#trigger1"
-		duration: pageHeight*1.2,
-		offset:pageHeight/3,
+new ScrollMagic.Scene({
+		triggerElement: ".title2",
+		//duration: pageHeight*1.2,
+		offset: pageHeight/3,
+		triggerHook: 1
 	})
 	.setClassToggle("#archemy .container > div ", "loaded")
 	//.setTween("#imagenBack", 0.5, {opacity: "0"}) // trigger a TweenMax.to tween
-	.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+	.addIndicators() // add indicators (requires plugin)
 	.addTo(controller);
 
-new ScrollMagic.Scene({triggerElement: ".alquimia h2"})
+new ScrollMagic.Scene({
+		triggerElement: ".alquimia h2",
+		offset: pageHeight/3,
+		triggerHook: 1
+	})
 	.setClassToggle(".alquimia h2", "loaded") // add class toggle
 	.addIndicators() // add indicators (requires plugin)
 	.addTo(controller)
-	.on('enter leave', function (e) {
-    if (e.type === "leave") {
-        //TweenForThisScene.play();
-    } else {
-        //TweenForThisScene.reverse();
-    }
-});
+;
 
+/* ////////////////////////////////////////////////////////////////////////////
+//
+// d
+//
+/////////////////////////////////////////////////////////////////////////// */
+
+jQuery(document).ready(function($){
+	// browser window scroll (in pixels) after which the "back to top" link is shown
+	var offset = 300,
+		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+		offset_opacity = 1200,
+		//duration of the top scrolling animation (in ms)
+		scroll_top_duration = 700,
+		//grab the "back to top" link
+		$back_to_top = $('.topScroller');
+
+	//hide or show the "back to top" link
+	$(window).scroll(function(){
+		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+		if( $(this).scrollTop() > offset_opacity ) { 
+			$back_to_top.addClass('cd-fade-out');
+		}
+	});
+
+	//smooth scroll to top
+	$back_to_top.on('click', function(event){
+		event.preventDefault();
+		$('body,html').animate({
+			scrollTop: 0 ,
+		 	}, scroll_top_duration
+		);
+	});
+
+});
 					
 
 /* ////////////////////////////////////////////////////////////////////////////
