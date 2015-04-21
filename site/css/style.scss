@@ -159,7 +159,13 @@ a {
   background: #fff;
 }
 
-.card-container > div > div {
+//titulo animado
+.loaded .card-container > div {
+  width: 100%;
+  position: relative;
+}
+
+.card-container{
   .content {
     position: relative;
   }
@@ -259,6 +265,9 @@ a {
   .menuIntroCont {
     height: 100%;
   }
+  #homepage{
+    margin-top: 40%;
+  }
   .menuIntroBack{
     width: 100%;
     height: 0;
@@ -272,13 +281,13 @@ a {
     margin-top: -100%;
     height: 100%;
     $inicioDelay : $inicioDelay + .45s;
-    @include single-transition(all,0.55s, ease-in-out, $inicioDelay);
+    @include single-transition(all,0.75s, ease-in-out, $inicioDelay);
     object{
       max-width: 94px;
       margin: 50px auto 0 auto;
       display: block;
       margin-bottom: 20px;
-      $inicioDelay : $inicioDelay + .55s;
+      $inicioDelay : $inicioDelay + .75s;
       @include single-transition(all,0.75s, ease-in-out, $inicioDelay);
       @include breakpoint(max-width $screen-sm-max) {
         max-width: 74px;
@@ -286,6 +295,19 @@ a {
         margin-bottom: 15px;
       }
     }
+  }
+  $inicioDelay : $inicioDelay + 1.5s;
+  .card-container .frame > div {
+    @include transition-delay($inicioDelay);
+  }
+  $inicioDelay : $inicioDelay + .75s;
+  h2{
+    @include templateAnimation( 0.73s, color, $inicioDelay, 'easeInExpo');
+    color: transparent;
+  }
+  $inicioDelay : $inicioDelay;
+  .border > div{
+    @include transition-delay($inicioDelay);
   }
   .loaded {
     .menuIntroBack {
@@ -297,21 +319,13 @@ a {
         opacity: 1;
       }
     }
-    //titulo animado
-    .card-container > div {
-      width: 100%;
-      position: relative;
-    }
-  }
-  h2{
-    @include templateAnimation( 0.73s, color, .59s, 'easeInExpo');
-    color: transparent;
-  }
-  .loaded h2 {
+    h2 {
       color:#fff;
+    }
+    
   }
+  
 }
-
 
 
 #ourgrukology .naranja,
@@ -468,9 +482,9 @@ a {
 }
 
 .test{
-  position: absolute;
-  right: 40px;
-  bottom: 50px;
+  //position: absolute;
+  // right: 40px;
+  // bottom: 50px;
   @include breakpoint(max-width $screen-sm-max) {
   }
 }
@@ -800,6 +814,10 @@ input[type="number"]{
   }
   .buscamos{
     margin-top: 140px;
+  }
+  .verCent > div {
+    height: 60px;
+
   }
 }
 #imageLiquid{

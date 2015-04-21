@@ -54,6 +54,9 @@ $(window).load(function(){
 			// }, 550);
 		}, 450);
 	});
+
+	
+
 	
 });
 
@@ -70,7 +73,7 @@ function positionContent(){
 
 /* ////////////////////////////////////////////////////////////////////////////
 //
-// Animaciones
+// Animaciones menú
 //
 /////////////////////////////////////////////////////////////////////////// */
 
@@ -84,28 +87,45 @@ var icon = document.getElementById("mainMenu"),
     animationToStar3 = document.getElementById("animation-to-star3")
 
 button.addEventListener('click', function() {
-  
   if (button.classList.contains("abierto")) {
-  	$('.container').css('opacity', 1);
+  	cerrarMenu();
+  } else {
+    abrirMenu();
+  }
+}, false);
+
+
+$(".menuOver a").on('click', function(){
+	cerrarMenu($(this).data('anchor'));
+//cerramos el menu y mostramos el contenido y hacemos un fadeOut
+})
+
+var cerrarMenu = function(anchor){
+	$('.container').css('opacity', 1);
     button.classList.remove("abierto");
-    //$('.menuOver .container').transition({ 'opacity': 0}, 500, 'ease', function() {
 	$('.menuOver').css('display', 'none');
 	$('.menuOver .container').css('opacity', '0');
-    //});
     animationToStar.beginElement();
     animationToStar2.beginElement();
     animationToStar3.beginElement();
-  } else {
-    button.classList.add("abierto");
+    if(anchor){
+    	scrollToAnchor(anchor);
+    }
+};
+var abrirMenu = function(){
+	button.classList.add("abierto");
     $('.menuOver').css('display', 'block');
     $('.container').css('opacity', 0);
     $('.menuOver .container').transition({ 'opacity': 1, delay:100}, 500, 'ease');
     animationToCheck.beginElement();
     animationToCheck2.beginElement();
     animationToCheck3.beginElement();
-  }
-  
-}, false);
+};
+
+var scrollToAnchor = function(anchor){
+    var aTag = $("#"+ anchor);
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
 
 /* ////////////////////////////////////////////////////////////////////////////
 //
@@ -122,7 +142,7 @@ new ScrollMagic.Scene({
 	})
 	.setClassToggle("#archemy .container > div ", "loaded")
 	//.setTween("#imagenBack", 0.5, {opacity: "0"}) // trigger a TweenMax.to tween
-	.addIndicators() // add indicators (requires plugin)
+	//.addIndicators() // add indicators (requires plugin)
 	.addTo(controller);
 
 new ScrollMagic.Scene({
@@ -131,7 +151,7 @@ new ScrollMagic.Scene({
 		triggerHook: 1
 	})
 	.setClassToggle(".alquimia h2", "loaded") // add class toggle
-	.addIndicators() // add indicators (requires plugin)
+	//.addIndicators() // add indicators (requires plugin)
 	.addTo(controller)
 ;
 
@@ -168,6 +188,118 @@ jQuery(document).ready(function($){
 		);
 	});
 
+});
+
+/* ////////////////////////////////////////////////////////////////////////////
+//
+// mailing
+//
+/////////////////////////////////////////////////////////////////////////// */
+
+$(document).ready(function() {
+    $("#submit_contacto").click(function() { 
+       
+        var proceed = true;
+        //simple validation at client's end
+        //loop through each field and we simply change border color to red for invalid fields       
+        $(".formaSolicita input[required=true], .formaSolicita textarea[required=true]").each(function(){
+            $(this).css('border-color',''); 
+            if(!$.trim($(this).val())){ //if this field is empty 
+                $(this).css('border-color','red'); //change border color to red   
+                proceed = false; //set do not proceed flag
+            }
+            //check invalid email
+            var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; 
+            if($(this).attr("type")=="email" && !email_reg.test($.trim($(this).val()))){
+                $(this).css('border-color','red'); //change border color to red   
+                proceed = false; //set do not proceed flag              
+            }   
+        });
+       
+        if(proceed) //everything looks good! proceed...
+        {
+            //get input field values data to be sent to server
+            post_data = {
+                'user_name'     : $('input#iSolicitaNombre').val(), 
+                'user_email'    : $('input#iSolicitaEmail').val(), 
+                //'country_code'  : $('input[name=phone1]').val(), 
+                'phone_number'  : $('input#iSolicitaTel').val(), 
+                //'subject'       : $('select[name=subject]').val(), 
+                'msg'           : $('textarea#iSolicitaSolicitud').val()
+            };
+            
+            //Ajax post data to server
+            $.post('partials/contact_us.php', post_data, function(response){  
+                if(response.type == 'error'){ //load json data from server and output message     
+                    output = '<div class="error">'+response.text+'</div>';
+                }else{
+                    output = '<div class="success">'+response.text+'</div>';
+                    //reset values in all input fields
+                    $(".formaSolicita  input[required=true], .formaSolicita textarea[required=true]").val(''); 
+                    //$(".formaSolicita #contact_body").slideUp(); //hide form after success
+                }
+                $(".formaSolicita #contact_results").hide().html(output).slideDown();
+            }, 'json');
+        }
+    });
+    
+    //reset previously set border colors and hide all message on .keyup()
+    $(".formaSolicita  input[required=true], .formaSolicita textarea[required=true]").keyup(function() { 
+        $(this).css('border-color',''); 
+        $("#result").slideUp();
+    });
+
+    $("#submit_carrera").click(function() { 
+       
+        var proceed = true;
+        //simple validation at client's end
+        //loop through each field and we simply change border color to red for invalid fields       
+        $("#iCarrera input[required=true], #iCarrera textarea[required=true]").each(function(){
+            $(this).css('border-color',''); 
+            if(!$.trim($(this).val())){ //if this field is empty 
+                $(this).css('border-color','red'); //change border color to red   
+                proceed = false; //set do not proceed flag
+            }
+            //check invalid email
+            var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; 
+            if($(this).attr("type")=="email" && !email_reg.test($.trim($(this).val()))){
+                $(this).css('border-color','red'); //change border color to red   
+                proceed = false; //set do not proceed flag              
+            }   
+        });
+       
+        if(proceed) //everything looks good! proceed...
+        {
+            //get input field values data to be sent to server
+            post_data = {
+                'user_name'     : $('input#iCarreraNombre').val(), 
+                'user_email'    : $('input#iCarreraEmail').val(), 
+                //'country_code'  : $('input[name=phone1]').val(), 
+                'phone_number'  : $('input#iCarreraTel').val(), 
+                //'subject'       : $('select[name=subject]').val(), 
+                //'msg'           : $('textarea#iSolicitaSolicitud').val()
+            };
+            
+            //Ajax post data to server
+            $.post('partials/carreras.php', post_data, function(response){  
+                if(response.type == 'error'){ //load json data from server and output message     
+                    output = '<div class="error">'+response.text+'</div>';
+                }else{
+                    output = '<div class="success">'+response.text+'</div>';
+                    //reset values in all input fields
+                    $("#iCarrera  input[required=true], #iCarrera textarea[required=true]").val(''); 
+                    //$("#iCarrera #contact_body").slideUp(); //hide form after success
+                }
+                $("#iCarrera #contact_results").hide().html(output).slideDown();
+            }, 'json');
+        }
+    });
+    
+    //reset previously set border colors and hide all message on .keyup()
+    $("#iCarrera  input[required=true], #iCarrera textarea[required=true]").keyup(function() { 
+        $(this).css('border-color',''); 
+        $("#result").slideUp();
+    });
 });
 
 /* ////////////////////////////////////////////////////////////////////////////
