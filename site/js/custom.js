@@ -22,6 +22,8 @@ var $fullHeight = $('.full-height');
 //global vars
 
 var pageHeight	= $(window).height();
+	
+
 
 $(window).load(function(){
 
@@ -30,22 +32,31 @@ $(window).load(function(){
 	// Init
 	//
 	/////////////////////////////////////// */
-	$('.menuIntroBack').css({'height':pageHeight*.75, 'margin-top':-pageHeight*.75});
+	
+
+	//$('.menuIntroBack').css({'height':pageHeight*.75, 'margin-top':-pageHeight*.75});
 
 	positionContent();
 	$('#loading-mask').fadeOut(750, function(){
-		$('.menuIntroBack').transition({ 'margin-top': 0}, 500, 'ease', function() {
-		});
-		setTimeout(function(){
-			$('.logoContainer').addClass('loaded');
-			setTimeout(function(){
-				$('#block1 .card-container').addClass('loaded');
-				$('.triScroll').addClass('loaded');
 
-			}, 550);
+		setTimeout(function(){
+			$('#inicio .container').addClass('loaded');
+			// setTimeout(function(){
+			// 	$('#block1 .card-container').addClass('loaded');
+			// 	// $(document).on('click','.triScroll', function() {
+			// 	//   alert('User clicked on "foo."');
+			// 	// });
+				
+			// 	$('.triScroll').addClass('loaded');
+
+			// 	//atachArrowOver();
+				
+			// }, 550);
 		}, 450);
 	});
+	
 });
+
 /* ////////////////////////////////////////////////////////////////////////////
 //
 // Position Content
@@ -126,7 +137,7 @@ new ScrollMagic.Scene({
 
 /* ////////////////////////////////////////////////////////////////////////////
 //
-// d
+// back to top
 //
 /////////////////////////////////////////////////////////////////////////// */
 
@@ -138,7 +149,7 @@ jQuery(document).ready(function($){
 		//duration of the top scrolling animation (in ms)
 		scroll_top_duration = 700,
 		//grab the "back to top" link
-		$back_to_top = $('.topScroller');
+		$back_to_top = $('#topScroller');
 
 	//hide or show the "back to top" link
 	$(window).scroll(function(){
@@ -158,6 +169,17 @@ jQuery(document).ready(function($){
 	});
 
 });
+
+/* ////////////////////////////////////////////////////////////////////////////
+//
+// resize
+//
+/////////////////////////////////////////////////////////////////////////// */
+
+$(window).resize(function(){
+	positionContent();
+});
+
 					
 
 /* ////////////////////////////////////////////////////////////////////////////
