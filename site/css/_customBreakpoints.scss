@@ -1,0 +1,6 @@
+//break points
+
+$screen-lg : 1200px;
+$screen-lg-min : $screen-lg - 1;
+
+$small-desk: (min-width $screen-md-min) (max-width $screen-lg-min);

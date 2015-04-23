@@ -8624,34 +8624,34 @@ button.close {
 /*=========================================
 =            Estilos generales            =
 =========================================*/
-/* line 15, style.scss */
+/* line 16, style.scss */
 html {
   height: 100%;
 }
 
-/* line 18, style.scss */
+/* line 19, style.scss */
 body {
   min-height: 100%;
 }
 
-/* line 22, style.scss */
+/* line 23, style.scss */
 section {
   position: relative;
 }
 
-/* line 25, style.scss */
+/* line 26, style.scss */
 p {
   font-family: 'futura_bkbook';
 }
 
-/* line 28, style.scss */
+/* line 29, style.scss */
 #contacto p,
 label,
 .btn {
   font-weight: lighter;
 }
 
-/* line 33, style.scss */
+/* line 34, style.scss */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
@@ -8668,26 +8668,26 @@ label,
   margin-left: .2em;
 }
 
-/* line 49, style.scss */
+/* line 50, style.scss */
 .icon-phone:before {
   content: '\e800';
 }
 
 /* '' */
-/* line 50, style.scss */
+/* line 51, style.scss */
 .icon-mail:before {
   content: '\e801';
 }
 
 /* '' */
-/* line 52, style.scss */
+/* line 53, style.scss */
 .logoMenu {
   max-width: 94px;
   margin: 50px auto 0 auto;
   display: block;
 }
 
-/* line 58, style.scss */
+/* line 59, style.scss */
 #mainMenu {
   position: fixed;
   left: 30px;
@@ -8697,29 +8697,29 @@ label,
   -o-transition: all 0.2s, 0.8s;
   transition: all 0.2s, 0.8s;
 }
-/* line 63, style.scss */
+/* line 64, style.scss */
 #mainMenu object {
   width: 50px;
   height: 30px;
 }
-/* line 67, style.scss */
+/* line 68, style.scss */
 #mainMenu svg {
   width: 48px;
   height: 35px;
 }
 @media (max-width: 991px) {
-  /* line 58, style.scss */
+  /* line 59, style.scss */
   #mainMenu {
     top: 40px;
     left: 15px;
   }
-  /* line 75, style.scss */
+  /* line 76, style.scss */
   #mainMenu svg {
     width: 35px;
   }
 }
 
-/* line 80, style.scss */
+/* line 81, style.scss */
 #languajeSwitch {
   z-index: 4;
   top: 56px;
@@ -8728,7 +8728,7 @@ label,
   background-color: transparent;
 }
 @media (max-width: 991px) {
-  /* line 80, style.scss */
+  /* line 81, style.scss */
   #languajeSwitch {
     top: 40px;
     right: 15px;
@@ -8737,7 +8737,7 @@ label,
   }
 }
 
-/* line 94, style.scss */
+/* line 95, style.scss */
 #topScroller {
   font-size: 24px;
   text-align: center;
@@ -8748,7 +8748,7 @@ label,
   opacity: 0;
 }
 @media (max-width: 991px) {
-  /* line 94, style.scss */
+  /* line 95, style.scss */
   #topScroller {
     bottom: 0;
     right: 15px;
@@ -8757,17 +8757,17 @@ label,
     height: 35px;
   }
 }
-/* line 110, style.scss */
+/* line 111, style.scss */
 #topScroller object, #topScroller img {
   width: 16px;
   margin: 4px auto 0px;
   display: block;
 }
-/* line 115, style.scss */
+/* line 116, style.scss */
 #topScroller.cd-is-visible {
   opacity: 1;
 }
-/* line 118, style.scss */
+/* line 119, style.scss */
 #topScroller.cd-is-visible, #topScroller.cd-fade-out, #topScroller.no-touch:hover {
   -webkit-transition-property: "opacity, visibility";
   transition-property: "opacity, visibility";
@@ -8777,21 +8777,21 @@ label,
   transition-delay: 0;
   transition-timing-function: 0;
 }
-/* line 121, style.scss */
+/* line 122, style.scss */
 #topScroller.cd-is-visible {
   visibility: visible;
   opacity: 1;
 }
-/* line 125, style.scss */
+/* line 126, style.scss */
 #topScroller.cd-fade-out {
   opacity: .5;
 }
-/* line 128, style.scss */
+/* line 129, style.scss */
 #topScroller:hover {
   opacity: 1;
 }
 
-/* line 132, style.scss */
+/* line 133, style.scss */
 #loading-mask {
   display: block;
   position: fixed;
@@ -8803,13 +8803,13 @@ label,
   z-index: 999;
 }
 
-/* line 142, style.scss */
+/* line 143, style.scss */
 a {
   font-size: 13px;
   color: white;
   cursor: pointer;
 }
-/* line 146, style.scss */
+/* line 147, style.scss */
 a:hover, a:focus {
   color: white;
   text-decoration: none !important;
@@ -8819,7 +8819,7 @@ a:hover, a:focus {
 /*======================================
 =            titulo animado            =
 ======================================*/
-/* line 155, style.scss */
+/* line 156, style.scss */
 .border > div {
   -webkit-transition-property: "width,height";
   transition-property: "width,height";
@@ -8833,21 +8833,21 @@ a:hover, a:focus {
   background: #fff;
 }
 
-/* line 163, style.scss */
+/* line 164, style.scss */
 .loaded .card-container > div {
   width: 100%;
   position: relative;
 }
 
-/* line 169, style.scss */
+/* line 170, style.scss */
 .card-container .content {
   position: relative;
 }
-/* line 172, style.scss */
+/* line 173, style.scss */
 .card-container .frame {
   position: absolute;
 }
-/* line 174, style.scss */
+/* line 175, style.scss */
 .card-container .frame > div {
   -webkit-transition-property: "width,height";
   transition-property: "width,height";
@@ -8860,56 +8860,56 @@ a:hover, a:focus {
   position: absolute;
   background: #fff;
 }
-/* line 180, style.scss */
+/* line 181, style.scss */
 .card-container .frame.top {
   left: 0;
   top: 0;
   width: 100%;
   height: 2px;
 }
-/* line 185, style.scss */
+/* line 186, style.scss */
 .card-container .frame.top > div {
   left: 0;
   top: 0;
   width: 0;
   height: 100%;
 }
-/* line 192, style.scss */
+/* line 193, style.scss */
 .card-container .frame.right {
   right: 0;
   top: 0;
   width: 2px;
   height: 100%;
 }
-/* line 197, style.scss */
+/* line 198, style.scss */
 .card-container .frame.right > div {
   left: 0;
   top: 0;
   width: 100%;
   height: 0;
 }
-/* line 204, style.scss */
+/* line 205, style.scss */
 .card-container .frame.bottom {
   right: 0;
   bottom: 0;
   width: 100%;
   height: 2px;
 }
-/* line 209, style.scss */
+/* line 210, style.scss */
 .card-container .frame.bottom > div {
   right: 0;
   top: 0;
   width: 0;
   height: 100%;
 }
-/* line 216, style.scss */
+/* line 217, style.scss */
 .card-container .frame.left {
   left: 0;
   bottom: 0;
   width: 2px;
   height: 100%;
 }
-/* line 221, style.scss */
+/* line 222, style.scss */
 .card-container .frame.left > div {
   left: 0;
   bottom: 0;
@@ -8920,32 +8920,42 @@ a:hover, a:focus {
 /*===============================
 =            squares            =
 ===============================*/
-/* line 233, style.scss */
+/* line 234, style.scss */
 .square {
   background-color: #ff8a00;
   display: block;
 }
-/* line 236, style.scss */
+/* line 237, style.scss */
 .square.tiny {
   width: 12px;
   height: 12px;
 }
-/* line 240, style.scss */
+/* line 241, style.scss */
+.square.smaller {
+  width: 14px;
+  height: 14px;
+}
+/* line 245, style.scss */
 .square.small {
   width: 18px;
   height: 18px;
 }
-/* line 244, style.scss */
+/* line 249, style.scss */
 .square.normal {
   width: 28px;
   height: 28px;
 }
-/* line 248, style.scss */
+/* line 253, style.scss */
+.square.semiBig {
+  width: 38px;
+  height: 38px;
+}
+/* line 257, style.scss */
 .square.big {
   width: 48px;
   height: 48px;
 }
-/* line 252, style.scss */
+/* line 261, style.scss */
 .square.bordered {
   background-color: transparent;
   border: 3px solid #ff8a00;
@@ -8953,22 +8963,28 @@ a:hover, a:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+/* line 266, style.scss */
+.square.outer {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
 
 /*==============================
 =            Inicio            =
 ==============================*/
-/* line 262, style.scss */
+/* line 274, style.scss */
 #inicio .container,
 #inicio .container > .row,
 #inicio .container > .row > div,
 #inicio .menuIntroCont {
   height: 100%;
 }
-/* line 268, style.scss */
+/* line 280, style.scss */
 #inicio #homepage {
   margin-top: 40%;
 }
-/* line 271, style.scss */
+/* line 283, style.scss */
 #inicio .menuIntroBack {
   width: 100%;
   height: 0;
@@ -8978,7 +8994,7 @@ a:hover, a:focus {
   -o-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
 }
-/* line 278, style.scss */
+/* line 290, style.scss */
 #inicio .logoContainer {
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.2);
@@ -8988,7 +9004,7 @@ a:hover, a:focus {
   -o-transition: all 0.75s ease-in-out 0.45s;
   transition: all 0.75s ease-in-out 0.45s;
 }
-/* line 285, style.scss */
+/* line 297, style.scss */
 #inicio .logoContainer object {
   max-width: 94px;
   margin: 50px auto 0 auto;
@@ -8999,19 +9015,19 @@ a:hover, a:focus {
   transition: all 0.75s ease-in-out 1.2s;
 }
 @media (max-width: 991px) {
-  /* line 285, style.scss */
+  /* line 297, style.scss */
   #inicio .logoContainer object {
     max-width: 74px;
     margin-top: 30px;
     margin-bottom: 15px;
   }
 }
-/* line 300, style.scss */
+/* line 312, style.scss */
 #inicio .card-container .frame > div {
   -webkit-transition-delay: 1.5s;
   transition-delay: 1.5s;
 }
-/* line 304, style.scss */
+/* line 316, style.scss */
 #inicio h2 {
   -webkit-transition-property: color;
   transition-property: color;
@@ -9022,54 +9038,54 @@ a:hover, a:focus {
   transition-timing-function: "easeInExpo";
   color: transparent;
 }
-/* line 309, style.scss */
+/* line 321, style.scss */
 #inicio .border > div {
   -webkit-transition-delay: 2.25s;
   transition-delay: 2.25s;
 }
-/* line 313, style.scss */
+/* line 325, style.scss */
 #inicio .loaded .menuIntroBack {
   height: 75%;
 }
-/* line 316, style.scss */
+/* line 328, style.scss */
 #inicio .loaded .logoContainer {
   margin-top: 0%;
 }
-/* line 318, style.scss */
+/* line 330, style.scss */
 #inicio .loaded .logoContainer object {
   opacity: 1;
 }
-/* line 322, style.scss */
+/* line 334, style.scss */
 #inicio .loaded h2 {
   color: #fff;
 }
 
-/* line 331, style.scss */
+/* line 343, style.scss */
 #ourgrukology .naranja,
 .naranja {
   color: #ff8a00;
 }
 
-/* line 335, style.scss */
+/* line 347, style.scss */
 .separador, .separadorNaranaja {
   background-color: #fff;
   width: 100%;
   height: 2px;
 }
 
-/* line 340, style.scss */
+/* line 352, style.scss */
 .separadorNaranaja {
   background-color: #ff8a00;
 }
 
-/* line 344, style.scss */
+/* line 356, style.scss */
 .triScroll {
   margin: 40px auto 0;
   height: 21px;
   width: 35px;
   position: relative;
 }
-/* line 349, style.scss */
+/* line 361, style.scss */
 .triScroll .triScrollObject {
   display: block;
   max-width: 35px;
@@ -9083,7 +9099,7 @@ a:hover, a:focus {
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
-/* line 359, style.scss */
+/* line 371, style.scss */
 .triScroll.loaded .triScrollObject {
   bottom: 0;
   opacity: 1;
@@ -9091,14 +9107,14 @@ a:hover, a:focus {
 
 /* animacion inicio
 --------------------------------------------------------------------------------------- */
-/* line 433, style.scss */
+/* line 445, style.scss */
 .loaded .border > div,
 .loaded .card-container > div > div .frame > div {
   width: 100%;
   height: 100%;
 }
 
-/* line 439, style.scss */
+/* line 451, style.scss */
 .border {
   position: absolute;
   right: 0;
@@ -9106,7 +9122,7 @@ a:hover, a:focus {
   width: 3px;
   height: 100%;
 }
-/* line 445, style.scss */
+/* line 457, style.scss */
 .border div {
   transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
@@ -9118,7 +9134,7 @@ a:hover, a:focus {
   height: 0;
 }
 
-/* line 457, style.scss */
+/* line 469, style.scss */
 .title2 h2 {
   -webkit-transition-property: color;
   transition-property: color;
@@ -9129,36 +9145,36 @@ a:hover, a:focus {
   transition-timing-function: "easeInExpo";
   color: transparent;
 }
-/* line 460, style.scss */
+/* line 472, style.scss */
 .loaded .title2 h2 {
   color: #fff;
 }
 
-/* line 465, style.scss */
+/* line 477, style.scss */
 .verCent > div {
   display: table;
   height: 122px;
 }
-/* line 468, style.scss */
+/* line 480, style.scss */
 .verCent > div > div {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 473, style.scss */
+/* line 485, style.scss */
 .verCent h2 {
   margin: 0;
 }
-/* line 476, style.scss */
+/* line 488, style.scss */
 .verCent .text-right {
   position: relative;
 }
-/* line 479, style.scss */
+/* line 491, style.scss */
 .verCent .text-right > div {
   margin-right: -15px;
 }
 
 /*formas*/
-/* line 493, style.scss */
+/* line 505, style.scss */
 .sustrato {
   background: #fff;
   width: 100%;
@@ -9167,12 +9183,12 @@ a:hover, a:focus {
   padding: 8px 0 5px;
 }
 
-/* line 500, style.scss */
+/* line 512, style.scss */
 .form-group {
   margin-bottom: 5px;
 }
 
-/* line 503, style.scss */
+/* line 515, style.scss */
 .form-control {
   font-family: 'futura_bkbook';
   color: #4a4a4a;
@@ -9181,13 +9197,13 @@ a:hover, a:focus {
   height: 24px;
 }
 
-/* line 510, style.scss */
+/* line 522, style.scss */
 #iSolicitaTel,
 input[type="number"] {
   padding: 0 12px;
 }
 
-/* line 514, style.scss */
+/* line 526, style.scss */
 .form-horizontal .control-label {
   font-size: 21px;
   text-align: left;
@@ -9195,7 +9211,7 @@ input[type="number"] {
   margin-top: -2px;
 }
 
-/* line 520, style.scss */
+/* line 532, style.scss */
 .btn {
   border-radius: 0;
   border: none;
@@ -9209,24 +9225,24 @@ input[type="number"] {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 530, style.scss */
+/* line 542, style.scss */
 .btn:hover {
   background-color: #4a4a4a;
   color: #fff;
 }
 
-/* line 534, style.scss */
+/* line 546, style.scss */
 .noRight {
   padding-right: 5px;
 }
 
-/* line 537, style.scss */
+/* line 549, style.scss */
 .noLeft {
   padding-left: 0;
 }
 
 /*MENU*/
-/* line 542, style.scss */
+/* line 554, style.scss */
 .menuOver {
   width: 100%;
   background-color: rgba(255, 138, 0, 0.9);
@@ -9235,20 +9251,20 @@ input[type="number"] {
   z-index: 3;
   display: none;
 }
-/* line 549, style.scss */
+/* line 561, style.scss */
 .menuOver .container {
   opacity: 0;
 }
-/* line 552, style.scss */
+/* line 564, style.scss */
 .menuOver ul {
   padding: 5% 0 0 0;
   text-align: center;
 }
-/* line 555, style.scss */
+/* line 567, style.scss */
 .menuOver ul li {
   list-style: none;
 }
-/* line 559, style.scss */
+/* line 571, style.scss */
 .menuOver a {
   width: 100%;
   font: 16px 'futura_bkbook';
@@ -9256,11 +9272,11 @@ input[type="number"] {
   padding: 10px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
-/* line 565, style.scss */
+/* line 577, style.scss */
 .menuOver a:hover .separador, .menuOver a:hover .separadorNaranaja {
   background-color: #fff;
 }
-/* line 569, style.scss */
+/* line 581, style.scss */
 .menuOver .separador, .menuOver .separadorNaranaja {
   max-width: 34px;
   margin: 0 auto;
@@ -9270,17 +9286,17 @@ input[type="number"] {
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
-/* line 576, style.scss */
+/* line 588, style.scss */
 .menuOver .top {
   margin-bottom: 3px;
 }
-/* line 579, style.scss */
+/* line 591, style.scss */
 .menuOver .bottom {
   margin-top: 3px;
 }
 
 /*ESTRUCTUTA*/
-/* line 584, style.scss */
+/* line 596, style.scss */
 #imagenBack {
   position: relative;
   background: url("../img/backHome.jpg") no-repeat center center fixed;
@@ -9292,7 +9308,7 @@ input[type="number"] {
   width: 100%;
 }
 
-/* line 589, style.scss */
+/* line 601, style.scss */
 #archemy {
   position: relative;
   background: url("../img/backAlchemy.jpg") no-repeat center center ;
@@ -9302,38 +9318,38 @@ input[type="number"] {
   background-size: cover;
   overflow: hidden;
 }
-/* line 592, style.scss */
+/* line 604, style.scss */
 #archemy .container {
   position: relative;
 }
-/* line 595, style.scss */
+/* line 607, style.scss */
 #archemy .card-container {
   margin-top: 65px;
 }
-/* line 597, style.scss */
+/* line 609, style.scss */
 #archemy .card-container > div {
   position: relative;
 }
-/* line 599, style.scss */
+/* line 611, style.scss */
 .loaded #archemy .card-container > div {
   width: 100%;
 }
-/* line 604, style.scss */
+/* line 616, style.scss */
 #archemy .alquimia {
   margin-top: 135px;
 }
-/* line 607, style.scss */
+/* line 619, style.scss */
 #archemy .loaded .frame > div {
   width: 100%;
   height: 100%;
 }
-/* line 611, style.scss */
+/* line 623, style.scss */
 #archemy .alquimia h2 {
   display: block;
   height: 40px;
   clear: both;
 }
-/* line 615, style.scss */
+/* line 627, style.scss */
 #archemy .alquimia h2 span {
   -webkit-transition-property: all;
   transition-property: all;
@@ -9345,162 +9361,162 @@ input[type="number"] {
   float: left;
   padding-top: 1em;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(1) {
   -webkit-transition-delay: 0.03s;
   transition-delay: 0.03s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(2) {
   -webkit-transition-delay: 0.06s;
   transition-delay: 0.06s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(3) {
   -webkit-transition-delay: 0.09s;
   transition-delay: 0.09s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(4) {
   -webkit-transition-delay: 0.12s;
   transition-delay: 0.12s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(5) {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(6) {
   -webkit-transition-delay: 0.18s;
   transition-delay: 0.18s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(7) {
   -webkit-transition-delay: 0.21s;
   transition-delay: 0.21s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(8) {
   -webkit-transition-delay: 0.24s;
   transition-delay: 0.24s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(9) {
   -webkit-transition-delay: 0.27s;
   transition-delay: 0.27s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(10) {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(11) {
   -webkit-transition-delay: 0.33s;
   transition-delay: 0.33s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(12) {
   -webkit-transition-delay: 0.36s;
   transition-delay: 0.36s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(13) {
   -webkit-transition-delay: 0.39s;
   transition-delay: 0.39s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(14) {
   -webkit-transition-delay: 0.42s;
   transition-delay: 0.42s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(15) {
   -webkit-transition-delay: 0.45s;
   transition-delay: 0.45s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(16) {
   -webkit-transition-delay: 0.48s;
   transition-delay: 0.48s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(17) {
   -webkit-transition-delay: 0.51s;
   transition-delay: 0.51s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(18) {
   -webkit-transition-delay: 0.54s;
   transition-delay: 0.54s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(19) {
   -webkit-transition-delay: 0.57s;
   transition-delay: 0.57s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(20) {
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(21) {
   -webkit-transition-delay: 0.63s;
   transition-delay: 0.63s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(22) {
   -webkit-transition-delay: 0.66s;
   transition-delay: 0.66s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(23) {
   -webkit-transition-delay: 0.69s;
   transition-delay: 0.69s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(24) {
   -webkit-transition-delay: 0.72s;
   transition-delay: 0.72s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(25) {
   -webkit-transition-delay: 0.75s;
   transition-delay: 0.75s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(26) {
   -webkit-transition-delay: 0.78s;
   transition-delay: 0.78s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(27) {
   -webkit-transition-delay: 0.81s;
   transition-delay: 0.81s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(28) {
   -webkit-transition-delay: 0.84s;
   transition-delay: 0.84s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(29) {
   -webkit-transition-delay: 0.87s;
   transition-delay: 0.87s;
 }
-/* line 625, style.scss */
+/* line 637, style.scss */
 #archemy .alquimia h2 span:nth-child(30) {
   -webkit-transition-delay: 0.9s;
   transition-delay: 0.9s;
 }
-/* line 631, style.scss */
+/* line 643, style.scss */
 #archemy .alquimia h2.loaded span {
   padding-top: 0;
 }
 
-/* line 637, style.scss */
+/* line 649, style.scss */
 #backPortrai {
   position: relative;
   background: url("../img/portrait.jpg") no-repeat center center ;
@@ -9510,55 +9526,108 @@ input[type="number"] {
   background-size: cover;
 }
 
-/* line 640, style.scss */
+/* line 652, style.scss */
 #imgSocios {
   bottom: 0;
   right: 0;
   position: absolute;
 }
 
-/* line 645, style.scss */
+/* line 657, style.scss */
 #quehacemos {
   background-color: #353535;
 }
-/* line 647, style.scss */
+/* line 659, style.scss */
 #quehacemos .boxTitleContainer {
   margin-top: 80px;
 }
-/* line 650, style.scss */
+/* line 662, style.scss */
 #quehacemos .explain {
   margin-top: 72px;
 }
-/* line 653, style.scss */
+/* line 664, style.scss */
+#quehacemos .explain h2 {
+  border-bottom: 2px solid #ff8a00;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+/* line 670, style.scss */
+#quehacemos .explain p {
+  margin-top: 58px;
+}
+/* line 674, style.scss */
 #quehacemos .generaremos {
   font-size: 28px;
 }
-/* line 656, style.scss */
+/* line 677, style.scss */
 #quehacemos .square1 {
   margin-top: 26px;
 }
-/* line 659, style.scss */
+/* line 680, style.scss */
 #quehacemos .semiWrapper {
   margin: 80px 0 50px;
 }
-/* line 662, style.scss */
+/* line 683, style.scss */
 #quehacemos .borderNanja {
   border: 2px solid #ff7200;
   display: inline-block;
   height: 106px;
   width: 30px;
 }
-/* line 668, style.scss */
+/* line 689, style.scss */
 #quehacemos .borderNanja.left {
   border-right: none;
 }
-/* line 671, style.scss */
+/* line 692, style.scss */
 #quehacemos .borderNanja.right {
   border-left: none;
   float: right;
 }
+/* line 696, style.scss */
+#quehacemos .sq1, #quehacemos .sq2, #quehacemos .square {
+  position: absolute;
+}
+/* line 699, style.scss */
+#quehacemos .sq1 {
+  right: -95px;
+  bottom: -96px;
+  height: 74px;
+  width: 108px;
+}
+/* line 705, style.scss */
+#quehacemos .square.big {
+  left: 0;
+}
+/* line 708, style.scss */
+#quehacemos .square.normal {
+  right: 18px;
+  top: 46px;
+}
+/* line 712, style.scss */
+#quehacemos .square.small {
+  right: 0;
+  top: 12px;
+}
+/* line 716, style.scss */
+#quehacemos .sq2 {
+  width: 35px;
+  height: 40px;
+  right: -35px;
+  top: 0;
+}
+/* line 722, style.scss */
+#quehacemos .square5 {
+  bottom: 0;
+  left: 0;
+}
+/* line 726, style.scss */
+#quehacemos .square6 {
+  top: 0;
+  right: 0;
+}
 
-/* line 677, style.scss */
+/* line 732, style.scss */
 .imgArchemyFigure object {
   mix-blend-mode: luminosity;
   width: 140%;
@@ -9566,128 +9635,128 @@ input[type="number"] {
   margin-left: -20%;
 }
 
-/* line 684, style.scss */
+/* line 739, style.scss */
 #infography {
   background-color: #ff8a00;
   position: relative;
 }
-/* line 687, style.scss */
+/* line 742, style.scss */
 #infography .triangleInfo {
   width: 64px;
   margin: 0 auto;
   display: block;
 }
-/* line 692, style.scss */
+/* line 747, style.scss */
 #infography .fullLines {
   position: absolute;
   left: 0;
   width: 100%;
 }
-/* line 696, style.scss */
+/* line 751, style.scss */
 #infography .fullLines.bottom {
   bottom: 0;
   height: 24px;
 }
-/* line 700, style.scss */
+/* line 755, style.scss */
 #infography .fullLines .fullLine {
   height: 2px;
   width: 100%;
   background-color: #fff;
   position: absolute;
 }
-/* line 705, style.scss */
+/* line 760, style.scss */
 #infography .fullLines .fullLine.topUpper {
   top: 5px;
 }
-/* line 708, style.scss */
+/* line 763, style.scss */
 #infography .fullLines .fullLine.topBottom {
   top: 24px;
 }
-/* line 711, style.scss */
+/* line 766, style.scss */
 #infography .fullLines .fullLine.bottomUpper {
   top: 0;
 }
-/* line 714, style.scss */
+/* line 769, style.scss */
 #infography .fullLines .fullLine.bottomBottom {
   bottom: 12px;
 }
-/* line 718, style.scss */
+/* line 773, style.scss */
 #infography .fullLines .separator {
   background-color: #ff8a00;
   display: block;
   height: 7px;
   position: relative;
 }
-/* line 723, style.scss */
+/* line 778, style.scss */
 #infography .fullLines .separator.topUpper {
   margin: 1px auto 0;
   width: 96px;
 }
-/* line 727, style.scss */
+/* line 782, style.scss */
 #infography .fullLines .separator.topBottom {
   margin: 14px auto 0;
   width: 50%;
 }
-/* line 731, style.scss */
+/* line 786, style.scss */
 #infography .fullLines .separator.bottomUpper {
   margin: 0 auto 0;
   width: 60%;
 }
-/* line 735, style.scss */
+/* line 790, style.scss */
 #infography .fullLines .separator.bottomBottom {
   margin: 0 auto 0;
   width: 70%;
 }
-/* line 740, style.scss */
+/* line 795, style.scss */
 #infography .fullLines.infoLine {
   height: 3px;
   left: 0;
   top: 42%;
   background-color: #fff;
 }
-/* line 747, style.scss */
+/* line 802, style.scss */
 #infography .sliderInfography {
   margin: 25px 0 0;
 }
-/* line 750, style.scss */
+/* line 805, style.scss */
 #infography .infoTitle {
   height: 80px;
   display: table;
   width: 100%;
   position: relative;
 }
-/* line 755, style.scss */
+/* line 810, style.scss */
 #infography .infoTitle h4 {
   font-size: 21px;
   font-weight: lighter;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 762, style.scss */
+/* line 817, style.scss */
 #infography .infoImg {
   position: relative;
 }
-/* line 764, style.scss */
+/* line 819, style.scss */
 #infography .infoImg object {
   max-width: 102px;
   margin: 0 auto;
   display: block;
   background-color: #ff8a00;
 }
-/* line 772, style.scss */
+/* line 827, style.scss */
 #infography .infoExplain {
   position: relative;
   height: 160px;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 777, style.scss */
+/* line 832, style.scss */
 #infography .infoExplain p {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 783, style.scss */
+/* line 838, style.scss */
 .coverLine {
   width: 50%;
   height: 310px;
@@ -9695,49 +9764,84 @@ input[type="number"] {
   top: 5px;
   background-color: #ff8a00;
 }
-/* line 789, style.scss */
+/* line 844, style.scss */
 .content1 .coverLine {
   left: 0;
 }
-/* line 792, style.scss */
+/* line 847, style.scss */
 .content4 .coverLine {
   right: 0;
 }
 
-/* line 797, style.scss */
+/* line 852, style.scss */
 #ourgrukology {
   background-color: #f0f0ee;
   overflow: hidden;
 }
-/* line 800, style.scss */
+/* line 855, style.scss */
 #ourgrukology .mainOur {
   margin-top: 86px;
   z-index: 2;
   position: relative;
 }
-/* line 805, style.scss */
+/* line 860, style.scss */
 #ourgrukology p {
   color: #6e6e6e;
   margin-top: 70px;
 }
-/* line 809, style.scss */
-#ourgrukology h2 {
-  font-size: 30px;
-}
-/* line 812, style.scss */
-#ourgrukology h2, #ourgrukology h3 {
+/* line 864, style.scss */
+#ourgrukology .gris {
   color: #959595;
 }
-/* line 815, style.scss */
-#ourgrukology .buscamos {
-  margin-top: 140px;
+/* line 867, style.scss */
+#ourgrukology h2.gris, #ourgrukology h2.buscamos {
+  font-size: 30px;
+  margin-top: 0;
 }
-/* line 818, style.scss */
-#ourgrukology .verCent > div {
-  height: 60px;
+/* line 871, style.scss */
+#ourgrukology h2.buscamos {
+  margin-bottom: 0;
+}
+/* line 874, style.scss */
+#ourgrukology h3.gris {
+  margin-top: 15px;
+}
+/* line 877, style.scss */
+#ourgrukology .card-container h2 {
+  font-size: 38px;
+  margin: 0;
+  line-height: 1;
+  padding: 17px 0 7px;
+}
+/* line 883, style.scss */
+#ourgrukology .card-container .frame > div {
+  background-color: #959595;
+}
+/* line 886, style.scss */
+#ourgrukology .secondExplain {
+  margin-top: 130px;
+  position: relative;
+}
+/* line 890, style.scss */
+#ourgrukology .secondExplain .col-md-1 {
+  position: absolute;
+  height: 95%;
+  left: -55px;
+  border-right: 3px solid #959595;
+}
+/* line 896, style.scss */
+#ourgrukology .secondExplain .square {
+  position: absolute;
+  right: 55px;
+  top: 22px;
 }
 
-/* line 823, style.scss */
+/* line 902, style.scss */
+.card-container .frame > div {
+  background-color: #fff;
+}
+
+/* line 905, style.scss */
 #imageLiquid {
   width: 100%;
   z-index: 1;
@@ -9745,65 +9849,65 @@ input[type="number"] {
   position: relative;
 }
 
-/* line 829, style.scss */
+/* line 911, style.scss */
 #contacto p {
   font-size: 21px;
   line-height: 24px;
   font-family: bebas;
 }
 
-/* line 834, style.scss */
+/* line 916, style.scss */
 .formaSolicita {
   margin-bottom: 60px;
 }
 
-/* line 837, style.scss */
+/* line 919, style.scss */
 .direccion {
   margin-bottom: 20px;
 }
 
-/* line 840, style.scss */
+/* line 922, style.scss */
 .icon {
   margin-right: 10px;
 }
-/* line 842, style.scss */
+/* line 924, style.scss */
 .icon.telefono {
   font-size: 20px;
 }
-/* line 845, style.scss */
+/* line 927, style.scss */
 .icon.mail {
   font-size: 21px;
 }
 
-/* line 849, style.scss */
+/* line 931, style.scss */
 #backPortrai h3 {
   margin-top: 40px;
 }
-/* line 851, style.scss */
+/* line 933, style.scss */
 #backPortrai h3 .carreras {
   margin-top: 110px;
 }
 
-/* line 855, style.scss */
+/* line 937, style.scss */
 .formaCarreras {
   margin-bottom: 70px;
 }
-/* line 857, style.scss */
+/* line 939, style.scss */
 .formaCarreras h4 {
   margin: 12px 0 16px;
   line-height: 27px;
 }
 
-/* line 862, style.scss */
+/* line 944, style.scss */
 .customUpload {
   display: block;
 }
-/* line 864, style.scss */
+/* line 946, style.scss */
 .customUpload input {
   display: none;
 }
 
-/* line 868, style.scss */
+/* line 950, style.scss */
 .overlay {
   height: 100%;
   width: 100%;
@@ -9811,12 +9915,12 @@ input[type="number"] {
   mix-blend-mode: multiply;
 }
 
-/* line 874, style.scss */
+/* line 956, style.scss */
 #contacto .overlay {
   background: rgba(255, 150, 0, 0.8);
 }
 
-/* line 877, style.scss */
+/* line 959, style.scss */
 #logoContacto {
   width: 115px;
   margin: 0 auto;
@@ -9824,20 +9928,27 @@ input[type="number"] {
   padding: 55px 0 40px;
 }
 
-/* line 883, style.scss */
+/* line 965, style.scss */
 #carreras .overlay {
   background: rgba(213, 50, 0, 0.8);
 }
 
-/* line 886, style.scss */
+/* line 968, style.scss */
 #glog .overlay {
   background: rgba(118, 0, 147, 0.8);
 }
 
 /*GLOG*/
-/* line 890, style.scss */
+/* line 972, style.scss */
 #glog h1 {
   text-align: center;
   margin: 112px 0;
   font-weight: bold;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 983, style.scss */
+  .boxTitleContainer {
+    width: 75%;
+  }
 }

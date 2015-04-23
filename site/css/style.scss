@@ -5,10 +5,11 @@
 @import "bootstrap-compass";
 // Import Bootstrap for Sass
 //rewrite vars
+@import "breakpoint";
 @import "vars";
 @import "bootstrap";
-@import "breakpoint";
 @import "mixin";
+@import "customBreakpoints";
 /*=========================================
 =            Estilos generales            =
 =========================================*/
@@ -237,6 +238,10 @@ a {
     width: $squareTiny;
     height: $squareTiny;
   }
+  &.smaller{
+    width: $squareSmaller;
+    height: $squareSmaller;
+  }
   &.small{
     width: $squareSmall;
     height: $squareSmall;
@@ -244,6 +249,10 @@ a {
   &.normal{
     width: $squareNormal;
     height: $squareNormal;
+  }
+  &.semiBig{
+    width: $squareSemiBig;
+    height: $squareSemiBig;
   }
   &.big{
     width: $squareBig;
@@ -253,6 +262,9 @@ a {
     background-color: transparent;
     border:3px solid $naranja;
     @include box-sizing(border-box);
+  }
+  &.outer{
+    @include box-sizing(content-box);
   }
 }
 /*==============================
@@ -649,6 +661,15 @@ input[type="number"]{
   }
   .explain{
     margin-top: 72px;
+    h2{
+      border-bottom: 2px solid $naranja;
+      display: inline-block;
+      padding-bottom: 10px;
+      margin-bottom: 0;
+    }
+    p{
+      margin-top: 58px;
+    }
   }
   .generaremos{
     font-size: 28px;
@@ -671,6 +692,40 @@ input[type="number"]{
   .borderNanja.right{
     border-left: none;
     float: right;
+  }
+  .sq1, .sq2, .square{
+    position: absolute;
+  }
+  .sq1{
+    right: -95px;
+    bottom: -96px;
+    height: 74px;
+    width: 108px;
+  }
+  .square.big{
+    left: 0;
+  }
+  .square.normal{
+    right: 18px;
+    top: 46px;
+  }
+  .square.small{
+    right: 0;
+    top: 12px;
+  }
+  .sq2{
+    width: 35px;
+    height: 40px;
+    right: -35px;
+    top: 0;
+  }
+  .square5{
+    bottom: 0;
+    left: 0;
+  }
+  .square6{
+    top: 0;
+    right: 0;
   }
 }
 
@@ -799,26 +854,53 @@ input[type="number"]{
   overflow: hidden;
   .mainOur{
     margin-top: 86px;
-      z-index: 2;
-      position: relative;
+    z-index: 2;
+    position: relative;
   }
   p{
     color: #6e6e6e;
     margin-top: 70px;
   }
-  h2{
+  .gris{
+    color: $gris95;
+  }
+  h2.gris, h2.buscamos {
     font-size: 30px;
+    margin-top: 0;
+  } 
+  h2.buscamos{
+    margin-bottom: 0;
   }
-  h2, h3{
-    color: #959595;
+  h3.gris{
+    margin-top: 15px;
+  } 
+  .card-container h2{
+    font-size: 38px;
+    margin: 0;
+    line-height: 1;
+    padding: 17px 0 7px;
   }
-  .buscamos{
-    margin-top: 140px;
+  .card-container .frame > div {
+    background-color: $gris95;
   }
-  .verCent > div {
-    height: 60px;
-
+  .secondExplain{
+    margin-top: 130px;
+    position: relative;
   }
+  .secondExplain .col-md-1{
+    position: absolute;
+    height: 95%;
+    left: -55px;
+    border-right: 3px solid $gris95;
+  }
+  .secondExplain .square{
+    position: absolute;
+    right: 55px;
+    top: 22px;
+  }
+}
+.card-container .frame > div {
+  background-color: #fff;
 }
 #imageLiquid{
   width: 100%;
@@ -891,4 +973,15 @@ input[type="number"]{
   text-align: center;
   margin: 112px 0;
   font-weight: bold;
+}
+
+//mediaqueries
+@include breakpoint($small-desk) {
+  // .container{
+  //   color: red;
+  // }
+  .boxTitleContainer{
+    width: 75%;
+  }
+
 }
