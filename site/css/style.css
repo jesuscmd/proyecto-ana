@@ -8624,34 +8624,34 @@ button.close {
 /*=========================================
 =            Estilos generales            =
 =========================================*/
-/* line 16, style.scss */
+/* line 17, style.scss */
 html {
   height: 100%;
 }
 
-/* line 19, style.scss */
+/* line 20, style.scss */
 body {
   min-height: 100%;
 }
 
-/* line 23, style.scss */
+/* line 24, style.scss */
 section {
   position: relative;
 }
 
-/* line 26, style.scss */
+/* line 27, style.scss */
 p {
   font-family: 'futura_bkbook';
 }
 
-/* line 29, style.scss */
+/* line 30, style.scss */
 #contacto p,
 label,
 .btn {
   font-weight: lighter;
 }
 
-/* line 34, style.scss */
+/* line 35, style.scss */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
@@ -8668,26 +8668,26 @@ label,
   margin-left: .2em;
 }
 
-/* line 50, style.scss */
+/* line 51, style.scss */
 .icon-phone:before {
   content: '\e800';
 }
 
 /* '' */
-/* line 51, style.scss */
+/* line 52, style.scss */
 .icon-mail:before {
   content: '\e801';
 }
 
 /* '' */
-/* line 53, style.scss */
+/* line 54, style.scss */
 .logoMenu {
   max-width: 94px;
   margin: 50px auto 0 auto;
   display: block;
 }
 
-/* line 59, style.scss */
+/* line 60, style.scss */
 #mainMenu {
   position: fixed;
   left: 30px;
@@ -8697,29 +8697,29 @@ label,
   -o-transition: all 0.2s, 0.8s;
   transition: all 0.2s, 0.8s;
 }
-/* line 64, style.scss */
+/* line 65, style.scss */
 #mainMenu object {
   width: 50px;
   height: 30px;
 }
-/* line 68, style.scss */
+/* line 69, style.scss */
 #mainMenu svg {
   width: 48px;
   height: 35px;
 }
 @media (max-width: 991px) {
-  /* line 59, style.scss */
+  /* line 60, style.scss */
   #mainMenu {
     top: 40px;
     left: 15px;
   }
-  /* line 76, style.scss */
+  /* line 77, style.scss */
   #mainMenu svg {
     width: 35px;
   }
 }
 
-/* line 81, style.scss */
+/* line 82, style.scss */
 #languajeSwitch {
   z-index: 4;
   top: 56px;
@@ -8728,7 +8728,7 @@ label,
   background-color: transparent;
 }
 @media (max-width: 991px) {
-  /* line 81, style.scss */
+  /* line 82, style.scss */
   #languajeSwitch {
     top: 40px;
     right: 15px;
@@ -8737,7 +8737,7 @@ label,
   }
 }
 
-/* line 95, style.scss */
+/* line 96, style.scss */
 #topScroller {
   font-size: 24px;
   text-align: center;
@@ -8748,26 +8748,26 @@ label,
   opacity: 0;
 }
 @media (max-width: 991px) {
-  /* line 95, style.scss */
+  /* line 96, style.scss */
   #topScroller {
-    bottom: 0;
+    bottom: 15px;
     right: 15px;
     font-size: 14px;
     width: 35px;
     height: 35px;
   }
 }
-/* line 111, style.scss */
+/* line 112, style.scss */
 #topScroller object, #topScroller img {
   width: 16px;
   margin: 4px auto 0px;
   display: block;
 }
-/* line 116, style.scss */
+/* line 117, style.scss */
 #topScroller.cd-is-visible {
   opacity: 1;
 }
-/* line 119, style.scss */
+/* line 120, style.scss */
 #topScroller.cd-is-visible, #topScroller.cd-fade-out, #topScroller.no-touch:hover {
   -webkit-transition-property: "opacity, visibility";
   transition-property: "opacity, visibility";
@@ -8777,21 +8777,21 @@ label,
   transition-delay: 0;
   transition-timing-function: 0;
 }
-/* line 122, style.scss */
+/* line 123, style.scss */
 #topScroller.cd-is-visible {
   visibility: visible;
   opacity: 1;
 }
-/* line 126, style.scss */
+/* line 127, style.scss */
 #topScroller.cd-fade-out {
   opacity: .5;
 }
-/* line 129, style.scss */
+/* line 130, style.scss */
 #topScroller:hover {
   opacity: 1;
 }
 
-/* line 133, style.scss */
+/* line 134, style.scss */
 #loading-mask {
   display: block;
   position: fixed;
@@ -8803,13 +8803,12 @@ label,
   z-index: 999;
 }
 
-/* line 143, style.scss */
+/* line 144, style.scss */
 a {
-  font-size: 13px;
   color: white;
   cursor: pointer;
 }
-/* line 147, style.scss */
+/* line 148, style.scss */
 a:hover, a:focus {
   color: white;
   text-decoration: none !important;
@@ -8819,8 +8818,88 @@ a:hover, a:focus {
 /*======================================
 =            titulo animado            =
 ======================================*/
-/* line 156, style.scss */
-.border > div {
+/* line 159, style.scss */
+.card-container .content {
+  position: relative;
+}
+/* line 162, style.scss */
+.card-container h2 {
+  margin: 0;
+  color: transparent;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.73s;
+  transition-duration: 0.73s;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  transition-timing-function: "easeInExpo";
+}
+/* line 167, style.scss */
+.card-container .frame > div {
+  background-color: #fff;
+}
+/* line 171, style.scss */
+.card-container .verCent > div {
+  display: table;
+  height: 122px;
+}
+/* line 174, style.scss */
+.card-container .verCent > div > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 179, style.scss */
+.card-container .verCent .text-right {
+  position: relative;
+}
+@media (max-width: 672px) {
+  /* line 187, style.scss */
+  .card-container .verCent > div {
+    height: 90px;
+  }
+  /* line 190, style.scss */
+  .card-container h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 576px) {
+  /* line 195, style.scss */
+  .card-container h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 201, style.scss */
+  .card-container .verCent > div {
+    height: 56px;
+  }
+  /* line 204, style.scss */
+  .card-container h2 {
+    font-size: 19px;
+  }
+}
+
+/* line 209, style.scss */
+.border {
+  position: absolute;
+  right: -17px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+}
+/* line 215, style.scss */
+.border div {
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-delay: .25s;
+  -webkit-transition-delay: .25s;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  background: #fff;
   -webkit-transition-property: "width,height";
   transition-property: "width,height";
   -webkit-transition-duration: 0.73s;
@@ -8828,134 +8907,140 @@ a:hover, a:focus {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
   transition-timing-function: "ease-in-out";
+}
+
+/* line 230, style.scss */
+.frame {
+  position: absolute;
+}
+/* line 232, style.scss */
+.frame > div {
   overflow: hidden;
   position: absolute;
   background: #fff;
+  -webkit-transition-property: "width,height";
+  transition-property: "width,height";
+  -webkit-transition-duration: 0.73s;
+  transition-duration: 0.73s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  transition-timing-function: "ease-in-out";
+}
+/* line 238, style.scss */
+.frame.top {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2px;
+}
+/* line 243, style.scss */
+.frame.top > div {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+/* line 250, style.scss */
+.frame.right {
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+}
+/* line 255, style.scss */
+.frame.right > div {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+}
+/* line 262, style.scss */
+.frame.bottom {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+}
+/* line 267, style.scss */
+.frame.bottom > div {
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+/* line 274, style.scss */
+.frame.left {
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+}
+/* line 279, style.scss */
+.frame.left > div {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
 }
 
-/* line 164, style.scss */
+/* line 288, style.scss */
+.loaded h2 {
+  color: #fff;
+}
+/* line 291, style.scss */
+.loaded h2.naranja {
+  color: #ff8a00;
+}
+/* line 294, style.scss */
 .loaded .card-container > div {
   width: 100%;
   position: relative;
 }
-
-/* line 170, style.scss */
-.card-container .content {
-  position: relative;
-}
-/* line 173, style.scss */
-.card-container .frame {
-  position: absolute;
-}
-/* line 175, style.scss */
-.card-container .frame > div {
-  -webkit-transition-property: "width,height";
-  transition-property: "width,height";
-  -webkit-transition-duration: 0.73s;
-  transition-duration: 0.73s;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-  transition-timing-function: "ease-in-out";
-  overflow: hidden;
-  position: absolute;
-  background: #fff;
-}
-/* line 181, style.scss */
-.card-container .frame.top {
-  left: 0;
-  top: 0;
+/* line 298, style.scss */
+.loaded .border > div, .loaded .frame > div {
   width: 100%;
-  height: 2px;
-}
-/* line 186, style.scss */
-.card-container .frame.top > div {
-  left: 0;
-  top: 0;
-  width: 0;
   height: 100%;
-}
-/* line 193, style.scss */
-.card-container .frame.right {
-  right: 0;
-  top: 0;
-  width: 2px;
-  height: 100%;
-}
-/* line 198, style.scss */
-.card-container .frame.right > div {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 0;
-}
-/* line 205, style.scss */
-.card-container .frame.bottom {
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-}
-/* line 210, style.scss */
-.card-container .frame.bottom > div {
-  right: 0;
-  top: 0;
-  width: 0;
-  height: 100%;
-}
-/* line 217, style.scss */
-.card-container .frame.left {
-  left: 0;
-  bottom: 0;
-  width: 2px;
-  height: 100%;
-}
-/* line 222, style.scss */
-.card-container .frame.left > div {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 0;
 }
 
 /*===============================
 =            squares            =
 ===============================*/
-/* line 234, style.scss */
+/* line 307, style.scss */
 .square {
   background-color: #ff8a00;
   display: block;
 }
-/* line 237, style.scss */
+/* line 310, style.scss */
 .square.tiny {
   width: 12px;
   height: 12px;
 }
-/* line 241, style.scss */
+/* line 314, style.scss */
 .square.smaller {
   width: 14px;
   height: 14px;
 }
-/* line 245, style.scss */
+/* line 318, style.scss */
 .square.small {
   width: 18px;
   height: 18px;
 }
-/* line 249, style.scss */
+/* line 322, style.scss */
 .square.normal {
   width: 28px;
   height: 28px;
 }
-/* line 253, style.scss */
+/* line 326, style.scss */
 .square.semiBig {
   width: 38px;
   height: 38px;
 }
-/* line 257, style.scss */
+/* line 330, style.scss */
 .square.big {
   width: 48px;
   height: 48px;
 }
-/* line 261, style.scss */
+/* line 334, style.scss */
 .square.bordered {
   background-color: transparent;
   border: 3px solid #ff8a00;
@@ -8963,7 +9048,7 @@ a:hover, a:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 266, style.scss */
+/* line 339, style.scss */
 .square.outer {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -8973,18 +9058,36 @@ a:hover, a:focus {
 /*==============================
 =            Inicio            =
 ==============================*/
-/* line 274, style.scss */
+/* line 347, style.scss */
 #inicio .container,
 #inicio .container > .row,
-#inicio .container > .row > div,
+#inicio .iniciowrapper,
 #inicio .menuIntroCont {
   height: 100%;
 }
-/* line 280, style.scss */
+@media (max-width: 767px) {
+  /* line 354, style.scss */
+  #inicio .iniciowrapper {
+    padding: 0 125px;
+  }
+}
+@media (max-width: 576px) {
+  /* line 359, style.scss */
+  #inicio .iniciowrapper {
+    padding: 0 85px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 364, style.scss */
+  #inicio .iniciowrapper {
+    padding: 0 55px;
+  }
+}
+/* line 368, style.scss */
 #inicio #homepage {
   margin-top: 40%;
 }
-/* line 283, style.scss */
+/* line 371, style.scss */
 #inicio .menuIntroBack {
   width: 100%;
   height: 0;
@@ -8994,7 +9097,7 @@ a:hover, a:focus {
   -o-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
 }
-/* line 290, style.scss */
+/* line 378, style.scss */
 #inicio .logoContainer {
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.2);
@@ -9004,7 +9107,7 @@ a:hover, a:focus {
   -o-transition: all 0.75s ease-in-out 0.45s;
   transition: all 0.75s ease-in-out 0.45s;
 }
-/* line 297, style.scss */
+/* line 385, style.scss */
 #inicio .logoContainer object {
   max-width: 94px;
   margin: 50px auto 0 auto;
@@ -9015,19 +9118,19 @@ a:hover, a:focus {
   transition: all 0.75s ease-in-out 1.2s;
 }
 @media (max-width: 991px) {
-  /* line 297, style.scss */
+  /* line 385, style.scss */
   #inicio .logoContainer object {
     max-width: 74px;
     margin-top: 30px;
     margin-bottom: 15px;
   }
 }
-/* line 312, style.scss */
+/* line 400, style.scss */
 #inicio .card-container .frame > div {
   -webkit-transition-delay: 1.5s;
   transition-delay: 1.5s;
 }
-/* line 316, style.scss */
+/* line 404, style.scss */
 #inicio h2 {
   -webkit-transition-property: color;
   transition-property: color;
@@ -9036,56 +9139,55 @@ a:hover, a:focus {
   -webkit-transition-delay: 2.25s;
   transition-delay: 2.25s;
   transition-timing-function: "easeInExpo";
-  color: transparent;
 }
-/* line 321, style.scss */
+/* line 408, style.scss */
 #inicio .border > div {
   -webkit-transition-delay: 2.25s;
   transition-delay: 2.25s;
 }
-/* line 325, style.scss */
+/* line 412, style.scss */
 #inicio .loaded .menuIntroBack {
   height: 75%;
 }
-/* line 328, style.scss */
+/* line 415, style.scss */
 #inicio .loaded .logoContainer {
   margin-top: 0%;
 }
-/* line 330, style.scss */
+/* line 417, style.scss */
 #inicio .loaded .logoContainer object {
   opacity: 1;
 }
-/* line 334, style.scss */
+/* line 421, style.scss */
 #inicio .loaded h2 {
   color: #fff;
 }
 
-/* line 343, style.scss */
+/* line 430, style.scss */
 #ourgrukology .naranja,
 .naranja {
   color: #ff8a00;
 }
 
-/* line 347, style.scss */
+/* line 434, style.scss */
 .separador, .separadorNaranaja {
   background-color: #fff;
   width: 100%;
   height: 2px;
 }
 
-/* line 352, style.scss */
+/* line 439, style.scss */
 .separadorNaranaja {
   background-color: #ff8a00;
 }
 
-/* line 356, style.scss */
+/* line 443, style.scss */
 .triScroll {
   margin: 40px auto 0;
   height: 21px;
   width: 35px;
   position: relative;
 }
-/* line 361, style.scss */
+/* line 448, style.scss */
 .triScroll .triScrollObject {
   display: block;
   max-width: 35px;
@@ -9099,7 +9201,7 @@ a:hover, a:focus {
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
-/* line 371, style.scss */
+/* line 458, style.scss */
 .triScroll.loaded .triScrollObject {
   bottom: 0;
   opacity: 1;
@@ -9107,88 +9209,23 @@ a:hover, a:focus {
 
 /* animacion inicio
 --------------------------------------------------------------------------------------- */
-/* line 445, style.scss */
-.loaded .border > div,
-.loaded .card-container > div > div .frame > div {
-  width: 100%;
-  height: 100%;
-}
-
-/* line 451, style.scss */
-.border {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 3px;
-  height: 100%;
-}
-/* line 457, style.scss */
-.border div {
-  transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-delay: .25s;
-  -webkit-transition-delay: .25s;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 0;
-}
-
-/* line 469, style.scss */
-.title2 h2 {
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.73s;
-  transition-duration: 0.73s;
-  -webkit-transition-delay: 0;
-  transition-delay: 0;
-  transition-timing-function: "easeInExpo";
-  color: transparent;
-}
-/* line 472, style.scss */
-.loaded .title2 h2 {
-  color: #fff;
-}
-
-/* line 477, style.scss */
-.verCent > div {
-  display: table;
-  height: 122px;
-}
-/* line 480, style.scss */
-.verCent > div > div {
-  display: table-cell;
-  vertical-align: middle;
-}
-/* line 485, style.scss */
-.verCent h2 {
-  margin: 0;
-}
-/* line 488, style.scss */
-.verCent .text-right {
-  position: relative;
-}
-/* line 491, style.scss */
-.verCent .text-right > div {
-  margin-right: -15px;
-}
-
 /*formas*/
-/* line 505, style.scss */
+/* line 543, style.scss */
 .sustrato {
   background: #fff;
   width: 100%;
   text-align: center;
   color: #4a4a4a;
   padding: 8px 0 5px;
+  font-size: 25px;
 }
 
-/* line 512, style.scss */
+/* line 551, style.scss */
 .form-group {
   margin-bottom: 5px;
 }
 
-/* line 515, style.scss */
+/* line 554, style.scss */
 .form-control {
   font-family: 'futura_bkbook';
   color: #4a4a4a;
@@ -9197,21 +9234,22 @@ a:hover, a:focus {
   height: 24px;
 }
 
-/* line 522, style.scss */
+/* line 561, style.scss */
 #iSolicitaTel,
 input[type="number"] {
   padding: 0 12px;
 }
 
-/* line 526, style.scss */
+/* line 565, style.scss */
 .form-horizontal .control-label {
   font-size: 21px;
   text-align: left;
   padding-top: 0;
-  margin-top: -2px;
+  margin: 0;
+  line-height: 24px;
 }
 
-/* line 532, style.scss */
+/* line 572, style.scss */
 .btn {
   border-radius: 0;
   border: none;
@@ -9225,24 +9263,24 @@ input[type="number"] {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 542, style.scss */
+/* line 582, style.scss */
 .btn:hover {
   background-color: #4a4a4a;
   color: #fff;
 }
 
-/* line 546, style.scss */
+/* line 586, style.scss */
 .noRight {
   padding-right: 5px;
 }
 
-/* line 549, style.scss */
+/* line 589, style.scss */
 .noLeft {
   padding-left: 0;
 }
 
 /*MENU*/
-/* line 554, style.scss */
+/* line 594, style.scss */
 .menuOver {
   width: 100%;
   background-color: rgba(255, 138, 0, 0.9);
@@ -9251,20 +9289,20 @@ input[type="number"] {
   z-index: 3;
   display: none;
 }
-/* line 561, style.scss */
+/* line 601, style.scss */
 .menuOver .container {
   opacity: 0;
 }
-/* line 564, style.scss */
+/* line 604, style.scss */
 .menuOver ul {
   padding: 5% 0 0 0;
   text-align: center;
 }
-/* line 567, style.scss */
+/* line 607, style.scss */
 .menuOver ul li {
   list-style: none;
 }
-/* line 571, style.scss */
+/* line 611, style.scss */
 .menuOver a {
   width: 100%;
   font: 16px 'futura_bkbook';
@@ -9272,11 +9310,11 @@ input[type="number"] {
   padding: 10px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
-/* line 577, style.scss */
+/* line 617, style.scss */
 .menuOver a:hover .separador, .menuOver a:hover .separadorNaranaja {
   background-color: #fff;
 }
-/* line 581, style.scss */
+/* line 621, style.scss */
 .menuOver .separador, .menuOver .separadorNaranaja {
   max-width: 34px;
   margin: 0 auto;
@@ -9286,17 +9324,17 @@ input[type="number"] {
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
-/* line 588, style.scss */
+/* line 628, style.scss */
 .menuOver .top {
   margin-bottom: 3px;
 }
-/* line 591, style.scss */
+/* line 631, style.scss */
 .menuOver .bottom {
   margin-top: 3px;
 }
 
 /*ESTRUCTUTA*/
-/* line 596, style.scss */
+/* line 636, style.scss */
 #imagenBack {
   position: relative;
   background: url("../img/backHome.jpg") no-repeat center center fixed;
@@ -9308,7 +9346,7 @@ input[type="number"] {
   width: 100%;
 }
 
-/* line 601, style.scss */
+/* line 641, style.scss */
 #archemy {
   position: relative;
   background: url("../img/backAlchemy.jpg") no-repeat center center ;
@@ -9318,38 +9356,38 @@ input[type="number"] {
   background-size: cover;
   overflow: hidden;
 }
-/* line 604, style.scss */
+/* line 644, style.scss */
 #archemy .container {
   position: relative;
 }
-/* line 607, style.scss */
+/* line 647, style.scss */
 #archemy .card-container {
   margin-top: 65px;
 }
-/* line 609, style.scss */
+/* line 649, style.scss */
 #archemy .card-container > div {
   position: relative;
 }
-/* line 611, style.scss */
+/* line 651, style.scss */
 .loaded #archemy .card-container > div {
   width: 100%;
 }
-/* line 616, style.scss */
+/* line 656, style.scss */
 #archemy .alquimia {
   margin-top: 135px;
 }
-/* line 619, style.scss */
+/* line 659, style.scss */
 #archemy .loaded .frame > div {
   width: 100%;
   height: 100%;
 }
-/* line 623, style.scss */
+/* line 663, style.scss */
 #archemy .alquimia h2 {
   display: block;
   height: 40px;
   clear: both;
 }
-/* line 627, style.scss */
+/* line 667, style.scss */
 #archemy .alquimia h2 span {
   -webkit-transition-property: all;
   transition-property: all;
@@ -9361,162 +9399,162 @@ input[type="number"] {
   float: left;
   padding-top: 1em;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(1) {
   -webkit-transition-delay: 0.03s;
   transition-delay: 0.03s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(2) {
   -webkit-transition-delay: 0.06s;
   transition-delay: 0.06s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(3) {
   -webkit-transition-delay: 0.09s;
   transition-delay: 0.09s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(4) {
   -webkit-transition-delay: 0.12s;
   transition-delay: 0.12s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(5) {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(6) {
   -webkit-transition-delay: 0.18s;
   transition-delay: 0.18s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(7) {
   -webkit-transition-delay: 0.21s;
   transition-delay: 0.21s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(8) {
   -webkit-transition-delay: 0.24s;
   transition-delay: 0.24s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(9) {
   -webkit-transition-delay: 0.27s;
   transition-delay: 0.27s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(10) {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(11) {
   -webkit-transition-delay: 0.33s;
   transition-delay: 0.33s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(12) {
   -webkit-transition-delay: 0.36s;
   transition-delay: 0.36s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(13) {
   -webkit-transition-delay: 0.39s;
   transition-delay: 0.39s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(14) {
   -webkit-transition-delay: 0.42s;
   transition-delay: 0.42s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(15) {
   -webkit-transition-delay: 0.45s;
   transition-delay: 0.45s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(16) {
   -webkit-transition-delay: 0.48s;
   transition-delay: 0.48s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(17) {
   -webkit-transition-delay: 0.51s;
   transition-delay: 0.51s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(18) {
   -webkit-transition-delay: 0.54s;
   transition-delay: 0.54s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(19) {
   -webkit-transition-delay: 0.57s;
   transition-delay: 0.57s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(20) {
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(21) {
   -webkit-transition-delay: 0.63s;
   transition-delay: 0.63s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(22) {
   -webkit-transition-delay: 0.66s;
   transition-delay: 0.66s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(23) {
   -webkit-transition-delay: 0.69s;
   transition-delay: 0.69s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(24) {
   -webkit-transition-delay: 0.72s;
   transition-delay: 0.72s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(25) {
   -webkit-transition-delay: 0.75s;
   transition-delay: 0.75s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(26) {
   -webkit-transition-delay: 0.78s;
   transition-delay: 0.78s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(27) {
   -webkit-transition-delay: 0.81s;
   transition-delay: 0.81s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(28) {
   -webkit-transition-delay: 0.84s;
   transition-delay: 0.84s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(29) {
   -webkit-transition-delay: 0.87s;
   transition-delay: 0.87s;
 }
-/* line 637, style.scss */
+/* line 677, style.scss */
 #archemy .alquimia h2 span:nth-child(30) {
   -webkit-transition-delay: 0.9s;
   transition-delay: 0.9s;
 }
-/* line 643, style.scss */
+/* line 683, style.scss */
 #archemy .alquimia h2.loaded span {
   padding-top: 0;
 }
 
-/* line 649, style.scss */
+/* line 689, style.scss */
 #backPortrai {
   position: relative;
   background: url("../img/portrait.jpg") no-repeat center center ;
@@ -9526,108 +9564,118 @@ input[type="number"] {
   background-size: cover;
 }
 
-/* line 652, style.scss */
+/* line 692, style.scss */
 #imgSocios {
   bottom: 0;
   right: 0;
   position: absolute;
 }
 
-/* line 657, style.scss */
+/* line 697, style.scss */
 #quehacemos {
   background-color: #353535;
 }
-/* line 659, style.scss */
+/* line 699, style.scss */
 #quehacemos .boxTitleContainer {
   margin-top: 80px;
 }
-/* line 662, style.scss */
+/* line 702, style.scss */
 #quehacemos .explain {
   margin-top: 72px;
 }
-/* line 664, style.scss */
+/* line 704, style.scss */
 #quehacemos .explain h2 {
   border-bottom: 2px solid #ff8a00;
   display: inline-block;
   padding-bottom: 10px;
   margin-bottom: 0;
+  margin-top: 0;
 }
-/* line 670, style.scss */
+/* line 711, style.scss */
 #quehacemos .explain p {
   margin-top: 58px;
 }
-/* line 674, style.scss */
+/* line 715, style.scss */
+#quehacemos .generaremosWrapper {
+  display: table;
+  height: 106px;
+}
+/* line 719, style.scss */
 #quehacemos .generaremos {
   font-size: 28px;
+  display: table-cell;
+  vertical-align: middle;
 }
-/* line 677, style.scss */
+/* line 724, style.scss */
 #quehacemos .square1 {
-  margin-top: 26px;
+  top: 26px;
+  left: -26px;
 }
-/* line 680, style.scss */
+/* line 728, style.scss */
 #quehacemos .semiWrapper {
   margin: 80px 0 50px;
+  position: relative;
 }
-/* line 683, style.scss */
+/* line 732, style.scss */
 #quehacemos .borderNanja {
   border: 2px solid #ff7200;
   display: inline-block;
   height: 106px;
   width: 30px;
 }
-/* line 689, style.scss */
+/* line 738, style.scss */
 #quehacemos .borderNanja.left {
   border-right: none;
 }
-/* line 692, style.scss */
+/* line 741, style.scss */
 #quehacemos .borderNanja.right {
   border-left: none;
   float: right;
 }
-/* line 696, style.scss */
+/* line 745, style.scss */
 #quehacemos .sq1, #quehacemos .sq2, #quehacemos .square {
   position: absolute;
 }
-/* line 699, style.scss */
+/* line 748, style.scss */
 #quehacemos .sq1 {
   right: -95px;
   bottom: -96px;
   height: 74px;
   width: 108px;
 }
-/* line 705, style.scss */
+/* line 754, style.scss */
 #quehacemos .square.big {
   left: 0;
 }
-/* line 708, style.scss */
+/* line 757, style.scss */
 #quehacemos .square.normal {
   right: 18px;
   top: 46px;
 }
-/* line 712, style.scss */
+/* line 761, style.scss */
 #quehacemos .square.small {
   right: 0;
   top: 12px;
 }
-/* line 716, style.scss */
+/* line 765, style.scss */
 #quehacemos .sq2 {
   width: 35px;
   height: 40px;
   right: -35px;
   top: 0;
 }
-/* line 722, style.scss */
+/* line 771, style.scss */
 #quehacemos .square5 {
   bottom: 0;
   left: 0;
 }
-/* line 726, style.scss */
+/* line 775, style.scss */
 #quehacemos .square6 {
   top: 0;
   right: 0;
 }
 
-/* line 732, style.scss */
+/* line 781, style.scss */
 .imgArchemyFigure object {
   mix-blend-mode: luminosity;
   width: 140%;
@@ -9635,128 +9683,128 @@ input[type="number"] {
   margin-left: -20%;
 }
 
-/* line 739, style.scss */
+/* line 788, style.scss */
 #infography {
   background-color: #ff8a00;
   position: relative;
 }
-/* line 742, style.scss */
+/* line 791, style.scss */
 #infography .triangleInfo {
   width: 64px;
   margin: 0 auto;
   display: block;
 }
-/* line 747, style.scss */
+/* line 796, style.scss */
 #infography .fullLines {
   position: absolute;
   left: 0;
   width: 100%;
 }
-/* line 751, style.scss */
+/* line 800, style.scss */
 #infography .fullLines.bottom {
   bottom: 0;
   height: 24px;
 }
-/* line 755, style.scss */
+/* line 804, style.scss */
 #infography .fullLines .fullLine {
   height: 2px;
   width: 100%;
   background-color: #fff;
   position: absolute;
 }
-/* line 760, style.scss */
+/* line 809, style.scss */
 #infography .fullLines .fullLine.topUpper {
   top: 5px;
 }
-/* line 763, style.scss */
+/* line 812, style.scss */
 #infography .fullLines .fullLine.topBottom {
   top: 24px;
 }
-/* line 766, style.scss */
+/* line 815, style.scss */
 #infography .fullLines .fullLine.bottomUpper {
   top: 0;
 }
-/* line 769, style.scss */
+/* line 818, style.scss */
 #infography .fullLines .fullLine.bottomBottom {
   bottom: 12px;
 }
-/* line 773, style.scss */
+/* line 822, style.scss */
 #infography .fullLines .separator {
   background-color: #ff8a00;
   display: block;
   height: 7px;
   position: relative;
 }
-/* line 778, style.scss */
+/* line 827, style.scss */
 #infography .fullLines .separator.topUpper {
   margin: 1px auto 0;
   width: 96px;
 }
-/* line 782, style.scss */
+/* line 831, style.scss */
 #infography .fullLines .separator.topBottom {
   margin: 14px auto 0;
   width: 50%;
 }
-/* line 786, style.scss */
+/* line 835, style.scss */
 #infography .fullLines .separator.bottomUpper {
   margin: 0 auto 0;
   width: 60%;
 }
-/* line 790, style.scss */
+/* line 839, style.scss */
 #infography .fullLines .separator.bottomBottom {
   margin: 0 auto 0;
   width: 70%;
 }
-/* line 795, style.scss */
+/* line 844, style.scss */
 #infography .fullLines.infoLine {
   height: 3px;
   left: 0;
   top: 42%;
   background-color: #fff;
 }
-/* line 802, style.scss */
+/* line 851, style.scss */
 #infography .sliderInfography {
   margin: 25px 0 0;
 }
-/* line 805, style.scss */
+/* line 854, style.scss */
 #infography .infoTitle {
   height: 80px;
   display: table;
   width: 100%;
   position: relative;
 }
-/* line 810, style.scss */
+/* line 859, style.scss */
 #infography .infoTitle h4 {
   font-size: 21px;
   font-weight: lighter;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 817, style.scss */
+/* line 866, style.scss */
 #infography .infoImg {
   position: relative;
 }
-/* line 819, style.scss */
+/* line 868, style.scss */
 #infography .infoImg object {
   max-width: 102px;
   margin: 0 auto;
   display: block;
   background-color: #ff8a00;
 }
-/* line 827, style.scss */
+/* line 876, style.scss */
 #infography .infoExplain {
   position: relative;
   height: 160px;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 832, style.scss */
+/* line 881, style.scss */
 #infography .infoExplain p {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 838, style.scss */
+/* line 887, style.scss */
 .coverLine {
   width: 50%;
   height: 310px;
@@ -9764,84 +9812,80 @@ input[type="number"] {
   top: 5px;
   background-color: #ff8a00;
 }
-/* line 844, style.scss */
+/* line 893, style.scss */
 .content1 .coverLine {
   left: 0;
 }
-/* line 847, style.scss */
+/* line 896, style.scss */
 .content4 .coverLine {
   right: 0;
 }
 
-/* line 852, style.scss */
+/* line 901, style.scss */
 #ourgrukology {
   background-color: #f0f0ee;
   overflow: hidden;
 }
-/* line 855, style.scss */
-#ourgrukology .mainOur {
-  margin-top: 86px;
-  z-index: 2;
-  position: relative;
-}
-/* line 860, style.scss */
+/* line 905, style.scss */
 #ourgrukology p {
   color: #6e6e6e;
-  margin-top: 70px;
+  margin-top: 60px;
 }
-/* line 864, style.scss */
+/* line 909, style.scss */
 #ourgrukology .gris {
   color: #959595;
 }
-/* line 867, style.scss */
+/* line 912, style.scss */
 #ourgrukology h2.gris, #ourgrukology h2.buscamos {
   font-size: 30px;
   margin-top: 0;
 }
-/* line 871, style.scss */
+/* line 916, style.scss */
 #ourgrukology h2.buscamos {
   margin-bottom: 0;
 }
-/* line 874, style.scss */
+/* line 919, style.scss */
 #ourgrukology h3.gris {
   margin-top: 15px;
 }
-/* line 877, style.scss */
+/* line 923, style.scss */
 #ourgrukology .card-container h2 {
   font-size: 38px;
   margin: 0;
   line-height: 1;
   padding: 17px 0 7px;
 }
-/* line 883, style.scss */
+/* line 929, style.scss */
 #ourgrukology .card-container .frame > div {
   background-color: #959595;
 }
-/* line 886, style.scss */
+/* line 933, style.scss */
 #ourgrukology .secondExplain {
   margin-top: 130px;
   position: relative;
 }
-/* line 890, style.scss */
+/* line 937, style.scss */
 #ourgrukology .secondExplain .col-md-1 {
   position: absolute;
   height: 95%;
   left: -55px;
   border-right: 3px solid #959595;
 }
-/* line 896, style.scss */
+/* line 943, style.scss */
 #ourgrukology .secondExplain .square {
   position: absolute;
   right: 55px;
   top: 22px;
 }
 
-/* line 902, style.scss */
-.card-container .frame > div {
-  background-color: #fff;
+/* line 949, style.scss */
+.mainOur {
+  margin-top: 86px;
+  z-index: 2;
+  position: relative;
 }
 
-/* line 905, style.scss */
+/* line 955, style.scss */
 #imageLiquid {
   width: 100%;
   z-index: 1;
@@ -9849,65 +9893,66 @@ input[type="number"] {
   position: relative;
 }
 
-/* line 911, style.scss */
+/* line 961, style.scss */
 #contacto p {
   font-size: 21px;
   line-height: 24px;
   font-family: bebas;
 }
 
-/* line 916, style.scss */
+/* line 966, style.scss */
 .formaSolicita {
   margin-bottom: 60px;
 }
 
-/* line 919, style.scss */
+/* line 969, style.scss */
 .direccion {
   margin-bottom: 20px;
 }
 
-/* line 922, style.scss */
+/* line 972, style.scss */
 .icon {
   margin-right: 10px;
 }
-/* line 924, style.scss */
+/* line 974, style.scss */
 .icon.telefono {
   font-size: 20px;
 }
-/* line 927, style.scss */
+/* line 977, style.scss */
 .icon.mail {
   font-size: 21px;
 }
 
-/* line 931, style.scss */
+/* line 981, style.scss */
 #backPortrai h3 {
   margin-top: 40px;
 }
-/* line 933, style.scss */
+/* line 983, style.scss */
 #backPortrai h3 .carreras {
   margin-top: 110px;
 }
 
-/* line 937, style.scss */
+/* line 987, style.scss */
 .formaCarreras {
   margin-bottom: 70px;
 }
-/* line 939, style.scss */
+/* line 989, style.scss */
 .formaCarreras h4 {
   margin: 12px 0 16px;
   line-height: 27px;
 }
 
-/* line 944, style.scss */
+/* line 994, style.scss */
 .customUpload {
   display: block;
+  margin-bottom: 0;
 }
-/* line 946, style.scss */
+/* line 997, style.scss */
 .customUpload input {
   display: none;
 }
 
-/* line 950, style.scss */
+/* line 1001, style.scss */
 .overlay {
   height: 100%;
   width: 100%;
@@ -9915,12 +9960,12 @@ input[type="number"] {
   mix-blend-mode: multiply;
 }
 
-/* line 956, style.scss */
+/* line 1007, style.scss */
 #contacto .overlay {
   background: rgba(255, 150, 0, 0.8);
 }
 
-/* line 959, style.scss */
+/* line 1010, style.scss */
 #logoContacto {
   width: 115px;
   margin: 0 auto;
@@ -9928,27 +9973,286 @@ input[type="number"] {
   padding: 55px 0 40px;
 }
 
-/* line 965, style.scss */
+/* line 1016, style.scss */
 #carreras .overlay {
   background: rgba(213, 50, 0, 0.8);
 }
 
-/* line 968, style.scss */
+/* line 1019, style.scss */
 #glog .overlay {
   background: rgba(118, 0, 147, 0.8);
 }
 
 /*GLOG*/
-/* line 972, style.scss */
-#glog h1 {
+/* line 1023, style.scss */
+.glog {
   text-align: center;
   margin: 112px 0;
   font-weight: bold;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 983, style.scss */
+  /* line 1035, style.scss */
   .boxTitleContainer {
     width: 75%;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 2, _responsiveLayout.scss */
+  #quehacemos .explain {
+    float: right;
+  }
+}
+@media (max-width: 991px) {
+  /* line 7, _responsiveLayout.scss */
+  .mainOur {
+    margin-top: 30px;
+  }
+
+  /* line 10, _responsiveLayout.scss */
+  #quehacemos .explain p {
+    margin-top: 28px;
+  }
+
+  /* line 13, _responsiveLayout.scss */
+  #ourgrukology p {
+    margin-top: 40px;
+  }
+
+  /* line 16, _responsiveLayout.scss */
+  #ourgrukology h2.gris, #ourgrukology h2.buscamos {
+    font-size: 28px;
+  }
+
+  /* line 19, _responsiveLayout.scss */
+  #ourgrukology .secondExplain {
+    margin-top: 120px;
+  }
+
+  /* line 23, _responsiveLayout.scss */
+  #logoContacto {
+    width: 75px;
+    padding: 42px 0 22px;
+  }
+
+  /* line 27, _responsiveLayout.scss */
+  #contacto .separador, #contacto .separadorNaranaja {
+    height: 2px;
+  }
+
+  /* line 30, _responsiveLayout.scss */
+  .formaSolicita {
+    margin: 30px 0 40px;
+  }
+  /* line 32, _responsiveLayout.scss */
+  .formaSolicita .sustrato {
+    margin-top: 0;
+  }
+
+  /* line 36, _responsiveLayout.scss */
+  .formaCarreras {
+    margin: 50px 0;
+  }
+
+  /* line 40, _responsiveLayout.scss */
+  .direccion {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 50, _responsiveLayout.scss */
+  .container {
+    padding: 0 50px;
+  }
+
+  /* line 53, _responsiveLayout.scss */
+  #quehacemos .boxTitleContainer {
+    margin-top: 30px;
+  }
+
+  /* line 56, _responsiveLayout.scss */
+  #quehacemos .boxTitleContainer  {
+    margin-top: 30px;
+  }
+
+  /* line 59, _responsiveLayout.scss */
+  #ourgrukology .card-container h2 {
+    font-size: 25px;
+  }
+
+  /* line 62, _responsiveLayout.scss */
+  #ourgrukology h2.gris {
+    margin-top: 25px;
+  }
+
+  /* line 65, _responsiveLayout.scss */
+  #ourgrukology .secondExplain {
+    margin-top: 20px;
+  }
+
+  /* line 68, _responsiveLayout.scss */
+  #ourgrukology h2.buscamos {
+    margin-left: 20px;
+  }
+
+  /* line 71, _responsiveLayout.scss */
+  #ourgrukology .secondExplain .col-md-1 {
+    left: -15px;
+    border-width: 2px;
+  }
+
+  /* line 75, _responsiveLayout.scss */
+  #ourgrukology .secondExplain .square {
+    right: 10px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 131, _responsiveLayout.scss */
+  .square.bordered {
+    border-width: 1px;
+  }
+
+  /* line 142, _responsiveLayout.scss */
+  h2 {
+    font-size: 21px;
+    margin-bottom: 6px;
+  }
+
+  /* line 146, _responsiveLayout.scss */
+  h3 {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+
+  /* line 150, _responsiveLayout.scss */
+  h4 {
+    font-size: 17px;
+  }
+
+  /* line 153, _responsiveLayout.scss */
+  p  {
+    font-size: 12px;
+  }
+
+  /* line 159, _responsiveLayout.scss */
+  #quehacemos .semiWrapper {
+    margin: 40px 0 50px;
+  }
+
+  /* line 162, _responsiveLayout.scss */
+  .semiWrapper .col-xs-10 {
+    padding: 0;
+    width: 100%;
+  }
+
+  /* line 166, _responsiveLayout.scss */
+  #quehacemos .borderNanja {
+    width: 15px;
+    height: 60px;
+  }
+
+  /* line 170, _responsiveLayout.scss */
+  #quehacemos .generaremosWrapper {
+    height: 60px;
+  }
+
+  /* line 173, _responsiveLayout.scss */
+  .borderNanjaContainer {
+    position: absolute;
+  }
+  /* line 176, _responsiveLayout.scss */
+  .borderNanjaContainer.left {
+    left: -38px;
+  }
+  /* line 180, _responsiveLayout.scss */
+  .borderNanjaContainer.right {
+    right: -38px;
+  }
+
+  /* line 189, _responsiveLayout.scss */
+  #quehacemos h3.generaremos {
+    font-size: 15px;
+  }
+
+  /* line 192, _responsiveLayout.scss */
+  .separador, .separadorNaranaja {
+    height: 1px;
+  }
+
+  /* line 195, _responsiveLayout.scss */
+  .sustrato {
+    margin-bottom: 12px;
+  }
+
+  /* line 198, _responsiveLayout.scss */
+  #ourgrukology p {
+    margin-top: 10px;
+  }
+
+  /* line 201, _responsiveLayout.scss */
+  #ourgrukology p,
+  #quehacemos p {
+    font-size: 12px;
+  }
+
+  /* line 205, _responsiveLayout.scss */
+  #ourgrukology h2.buscamos {
+    margin-left: 10px;
+  }
+
+  /* line 208, _responsiveLayout.scss */
+  #imageLiquid {
+    top: -20px;
+  }
+
+  /* line 211, _responsiveLayout.scss */
+  #contacto p {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 0px;
+  }
+  /* line 215, _responsiveLayout.scss */
+  #contacto p i {
+    font-size: 12px;
+  }
+
+  /* line 219, _responsiveLayout.scss */
+  .form-horizontal .control-label {
+    font-size: 15px;
+  }
+
+  /* line 222, _responsiveLayout.scss */
+  .form-control {
+    font-size: 13px;
+  }
+
+  /* line 225, _responsiveLayout.scss */
+  .formaSolicita {
+    margin-bottom: 40px;
+  }
+
+  /* line 228, _responsiveLayout.scss */
+  .formaCarreras h4 {
+    line-height: 20px;
+  }
+
+  /* line 231, _responsiveLayout.scss */
+  .glog {
+    font-size: 68px;
+    margin: 73px 0;
+  }
+  /* line 234, _responsiveLayout.scss */
+  .glog .arrowGo {
+    height: 48px;
+  }
+}
+@media (max-width: 360px) {
+  /* line 241, _responsiveLayout.scss */
+  .glog {
+    font-size: 60px;
+  }
+  /* line 243, _responsiveLayout.scss */
+  .glog .arrowGo {
+    height: 42px;
   }
 }

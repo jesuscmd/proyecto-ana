@@ -10,6 +10,7 @@
 @import "bootstrap";
 @import "mixin";
 @import "customBreakpoints";
+
 /*=========================================
 =            Estilos generales            =
 =========================================*/
@@ -102,7 +103,7 @@ label,
   opacity: 0;
   @extend %transicionHover;
   @include breakpoint(max-width $screen-sm-max) {
-    bottom: 0;
+    bottom: 15px;
     right: 15px;
     font-size: 14px;
     width: 35px;
@@ -141,7 +142,7 @@ label,
   z-index: 999;
 }
 a {
-  font-size: 13px;
+  //font-size: 13px;
   color: white;
   cursor: pointer;
   &:hover,&:focus{
@@ -153,79 +154,151 @@ a {
 /*======================================
 =            titulo animado            =
 ======================================*/
-.border > div {
-  @include templateAnimation( 0.73s, 'width,height' , 0s, 'ease-in-out');
-  overflow: hidden;
-  position: absolute;
-  background: #fff;
-}
-
 //titulo animado
-.loaded .card-container > div {
-  width: 100%;
-  position: relative;
-}
-
 .card-container{
   .content {
     position: relative;
   }
-  .frame {
+  h2{
+    margin: 0;
+    color: transparent;
+    @include templateAnimation( 0.73s, color, 0, 'easeInExpo');
+  }
+  .frame > div {
+    background-color: #fff;
+  }
+  .verCent {
+    >div{
+      display: table;
+      height: 122px;
+      >div{
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    .text-right {
+      position: relative;
+    }
+  }
+  // @include breakpoint($max-screen-sm){
+  //   padding:0 25px;
+  // }
+  @include breakpoint($max-screen-st) {
+    .verCent > div {
+      height: 90px;
+    }
+    h2{
+      font-size: 30px;
+    }
+  };
+  @include breakpoint($max-screen-bp) {
+    h2{
+      font-size: 25px;
+    }
+  };
+  @include breakpoint($max-screen-xs) {
+    //padding:0 10px;
+    .verCent > div {
+      height: 56px;
+    }
+    h2 {
+      font-size: 19px;
+    }
+  }
+}
+.border{
+  position: absolute;
+  right: -17px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  div{
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-delay: .25s;
+    -webkit-transition-delay: .25s;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
     position: absolute;
+    background: #fff;
+    @include templateAnimation( 0.73s, 'width,height' , 0s, 'ease-in-out');
+  }
+}
+.frame {
+  position: absolute;
+  > div {
+    overflow: hidden;
+    position: absolute;
+    background: #fff;
+    @include templateAnimation( 0.73s, 'width,height' , 0s, 'ease-in-out');
+  }
+  &.top {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
     > div {
-      @include templateAnimation( 0.73s, 'width,height' , 0s, 'ease-in-out');
-      overflow: hidden;
-      position: absolute;
-      background: #fff;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
     }
-    &.top {
+  }
+  &.right {
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    > div {
       left: 0;
       top: 0;
       width: 100%;
-      height: 2px;
-      > div {
-        left: 0;
-        top: 0;
-        width: 0;
-        height: 100%;
-      }
+      height: 0;
     }
-    &.right {
+  }
+  &.bottom {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    > div {
       right: 0;
       top: 0;
-      width: 2px;
+      width: 0;
       height: 100%;
-      > div {
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 0;
-      }
     }
-    &.bottom {
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 2px;
-      > div {
-        right: 0;
-        top: 0;
-        width: 0;
-        height: 100%;
-      }
-    }
-    &.left {
+  }
+  &.left {
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    > div {
       left: 0;
       bottom: 0;
-      width: 2px;
-      height: 100%;
-      > div {
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 0;
-      }
+      width: 100%;
+      height: 0;
     }
+  }
+}
+.loaded {
+  h2{
+    color:#fff;
+  }
+  h2.naranja {
+    color: $naranja;
+  }
+  .card-container > div {
+    width: 100%;
+    position: relative;
+  }
+  & .border > div,
+  & .frame > div {
+    width: 100%;
+    height: 100%;
   }
 }
 /*===============================
@@ -273,9 +346,24 @@ a {
 #inicio{
   .container, 
   .container > .row, 
-  .container > .row > div,
+  .iniciowrapper,
   .menuIntroCont {
     height: 100%;
+  }
+  @include breakpoint($max-screen-sm) {
+    .iniciowrapper{
+      padding: 0 125px;
+    }
+  }
+  @include breakpoint($max-screen-bp) {
+    .iniciowrapper{
+      padding: 0 85px;
+    }
+  }
+  @include breakpoint($max-screen-xs) {
+    .iniciowrapper{
+      padding: 0 55px;
+    }
   }
   #homepage{
     margin-top: 40%;
@@ -315,7 +403,6 @@ a {
   $inicioDelay : $inicioDelay + .75s;
   h2{
     @include templateAnimation( 0.73s, color, $inicioDelay, 'easeInExpo');
-    color: transparent;
   }
   $inicioDelay : $inicioDelay;
   .border > div{
@@ -442,56 +529,7 @@ a {
 //   position: relative;
 // }
 
-.loaded .border > div,
-.loaded .card-container > div > div .frame > div {
-  width: 100%;
-  height: 100%;
-}
 
-.border{
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 3px;
-  height: 100%;
-  div{
-    transition-duration: 0.5s;
-    -webkit-transition-duration: 0.5s;
-    transition-delay: .25s;
-    -webkit-transition-delay: .25s;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 0;
-  }
-}
-
-.title2 h2{
-    @include templateAnimation( 0.73s, color, 0, 'easeInExpo');
-    color: transparent;
-  .loaded & {
-      color:#fff;
-  }
-}
-.verCent {
-  >div{
-    display: table;
-    height: 122px;
-    >div{
-      display: table-cell;
-      vertical-align: middle;
-    }
-  }
-  h2{
-    margin: 0;
-  }
-  .text-right {
-    position: relative;
-  }
-  .text-right>div{
-    margin-right: -15px;
-  }
-}
 
 .test{
   //position: absolute;
@@ -508,6 +546,7 @@ a {
   text-align: center;
   color: #4a4a4a;
   padding: 8px 0 5px;
+  font-size: 25px;
 }
 .form-group {
   margin-bottom: 5px;
@@ -527,7 +566,8 @@ input[type="number"]{
   font-size: 21px;
   text-align: left;
   padding-top: 0;
-  margin-top: -2px;
+  margin: 0;
+  line-height: 24px;
 }
 .btn{
   border-radius: 0;
@@ -666,19 +706,28 @@ input[type="number"]{
       display: inline-block;
       padding-bottom: 10px;
       margin-bottom: 0;
+      margin-top: 0;
     }
     p{
       margin-top: 58px;
     }
   }
+  .generaremosWrapper {
+    display: table;
+    height: 106px;
+  }
   .generaremos{
     font-size: 28px;
+    display: table-cell;
+    vertical-align: middle;
   }
   .square1{
-    margin-top: 26px;
+    top: 26px;
+    left: -26px;
   }
   .semiWrapper{
     margin: 80px 0 50px;
+    position: relative;
   }
   .borderNanja{
     border: 2px solid #ff7200;
@@ -852,14 +901,10 @@ input[type="number"]{
 #ourgrukology{
   background-color: #f0f0ee;
   overflow: hidden;
-  .mainOur{
-    margin-top: 86px;
-    z-index: 2;
-    position: relative;
-  }
+  
   p{
     color: #6e6e6e;
-    margin-top: 70px;
+    margin-top: 60px;
   }
   .gris{
     color: $gris95;
@@ -874,14 +919,16 @@ input[type="number"]{
   h3.gris{
     margin-top: 15px;
   } 
-  .card-container h2{
-    font-size: 38px;
-    margin: 0;
-    line-height: 1;
-    padding: 17px 0 7px;
-  }
-  .card-container .frame > div {
-    background-color: $gris95;
+  .card-container {
+    h2{
+      font-size: 38px;
+      margin: 0;
+      line-height: 1;
+      padding: 17px 0 7px;
+    }
+    .frame > div {
+      background-color: $gris95;
+    }
   }
   .secondExplain{
     margin-top: 130px;
@@ -899,9 +946,12 @@ input[type="number"]{
     top: 22px;
   }
 }
-.card-container .frame > div {
-  background-color: #fff;
+.mainOur{
+  margin-top: 86px;
+  z-index: 2;
+  position: relative;
 }
+
 #imageLiquid{
   width: 100%;
   z-index: 1;
@@ -943,6 +993,7 @@ input[type="number"]{
 }
 .customUpload{
   display: block;
+  margin-bottom: 0;
   input{
     display: none;
   }
@@ -969,11 +1020,12 @@ input[type="number"]{
   background: rgba(118, 0, 147, .8);
 }
 /*GLOG*/
-#glog h1{
+.glog{
   text-align: center;
   margin: 112px 0;
   font-weight: bold;
 }
+
 
 //mediaqueries
 @include breakpoint($small-desk) {
@@ -985,3 +1037,6 @@ input[type="number"]{
   }
 
 }
+ 
+@import "responsiveLayout";
+
