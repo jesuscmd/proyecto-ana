@@ -8,7 +8,7 @@ $screen-ss :604px;
 //BIG PHONE
 $screen-bp: 576px;
 // MICRO SMALL 
-$screen-ms :360px; 
+$screen-ms :330px; 
 
 $screen-lg : 1200px;
 $screen-lg-min : $screen-lg - 1;
@@ -25,6 +25,6 @@ $max-screen-ss : max-width $screen-ss; 			//max 604px;
 
 $max-screen-bp : max-width $screen-bp; 			//max 576px;
 $max-screen-xs : max-width $screen-xs-min;		//max 480px;
-$max-screen-ms : max-width $screen-ms;			//max 360px;
+$max-screen-ms : max-width $screen-ms;			//max 330px;
 
 $range-sm-st : (max-width $screen-sm-max) (min-width $screen-st); //max 991px min 672px

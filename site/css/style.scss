@@ -352,19 +352,14 @@ a {
   }
   @include breakpoint($max-screen-sm) {
     .iniciowrapper{
-      padding: 0 125px;
+      padding: 0 10%;
     }
   }
-  @include breakpoint($max-screen-bp) {
-    .iniciowrapper{
-      padding: 0 85px;
-    }
-  }
-  @include breakpoint($max-screen-xs) {
-    .iniciowrapper{
-      padding: 0 55px;
-    }
-  }
+  // @include breakpoint($max-screen-bp) {
+  //   .iniciowrapper{
+  //     padding: 0 85px;
+  //   }
+  // }
   #homepage{
     margin-top: 40%;
   }
@@ -693,6 +688,7 @@ input[type="number"]{
   bottom: 0;
   right: 0;
   position: absolute;
+  max-width: 556px;
 }
 #quehacemos{
   background-color: #353535;
@@ -788,6 +784,7 @@ input[type="number"]{
 #infography{
   background-color: $naranja;
   position: relative;
+    overflow: hidden;
   .triangleInfo{
     width: 64px;
     margin: 0 auto;
@@ -843,10 +840,21 @@ input[type="number"]{
     }
     &.infoLine{
       height: 3px;
-      left: 0;
-      top: 42%;
       background-color: #fff;
+      position: relative;
+      width: initial;
     }
+  }
+  .content1 .infoLine {
+      margin-left:50%;
+  }
+  .content4 .infoLine {
+    margin-right: 50%;
+  }
+  .infoLineContainer {
+    position: absolute;
+    top: 41%;
+    width: 100%;
   }
   .sliderInfography{
     margin: 25px 0 0;
@@ -874,9 +882,10 @@ input[type="number"]{
 
   }
   .infoExplain {
+    width:100%;
     position: relative;
     height: 160px;
-    display: table-cell;
+    display: inline-table;
     vertical-align: middle;
     p{
       display: table-cell;
@@ -1025,7 +1034,17 @@ input[type="number"]{
   margin: 112px 0;
   font-weight: bold;
 }
+//override slider 
 
+.slick-prev {
+  left: 35px;
+}
+.slick-next {
+  right: 35px;
+}
+.slick-prev, .slick-next {
+  top: 78%;
+}
 
 //mediaqueries
 @include breakpoint($small-desk) {

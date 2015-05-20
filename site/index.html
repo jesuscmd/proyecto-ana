@@ -21,7 +21,11 @@
     <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-144x144.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+
+
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
@@ -131,7 +135,7 @@
         <section id="archemy" class="full-height">
           <div class="container full-height">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-6">
                 <div class="row">
                   <div class="col-md-offset-1 col-md-8 boxTitleContainer">
                     <div class="card-container home title2">
@@ -162,7 +166,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-12">
+                  <div class="col-md-12 imgArchemyFigureContainer">
                     <div class="col-md-12">
                       <div class="imgArchemyFigure">
                         <object data="img/archemyFigure.svg" type="image/svg+xml">
@@ -173,7 +177,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-6">
                 <div class="row">
                   <div class="col-md-offset-2 col-md-9">
                     <div class="alquimia">
@@ -330,7 +334,8 @@
             </div>
           </div>
         </section>
-        <section id="infography" class="">
+        <section id="infography" >
+
           <div class="container">
             <div class="row">
               <div class="col-md-12">
@@ -346,63 +351,81 @@
               <div class="separator topBottom"></div>
             </div>
             <div class="row">
-              <div class="col-md-offset-2 col-md-8">
+              <div class="col-md-offset-2 col-md-8 col-sm-12">
                 <div class="sliderInfography">
                   <div class="row">
-                    <div class="fullLines infoLine"></div>
-                    <div class="col-md-3 content1">
-                      <div class="coverLine"></div>
-                      <div class="infoTitle">
-                        <h4 class="text-center">MINERÍA DE DATOS</h4>
+                    <!-- <div class="infoLineContainer">
+                      <div class="fullLines infoLine"></div>
+                    </div> -->
+                    <div class="infography-slider">
+                      
+                      <div class="col-md-3 col-sm-3 contentInfoSlider content1">
+                        <div class="infoLineContainer">
+                          <div class="fullLines infoLine"></div>
+                        </div>
+                        <div class="coverLine"></div>
+                        <div class="infoTitle">
+                          <h4 class="text-center">MINERÍA DE DATOS</h4>
+                        </div>
+                        <div class="infoImg">
+                          <object class="info1" data="img/info1.svg" type="image/svg+xml">
+                            <img src="img/info1.png" />
+                          </object>
+                        </div>
+                        <div class="infoExplain">
+                          <p class="text-center">Predecir el comportamiento de los clientes.</p>
+                        </div>
                       </div>
-                      <div class="infoImg">
-                        <object class="info1" data="img/info1.svg" type="image/svg+xml">
-                          <img src="img/info1.png" />
-                        </object>
+                      <div class="col-md-3 col-sm-3 contentInfoSlider content2">
+                        <div class="infoLineContainer">
+                          <div class="fullLines infoLine"></div>
+                        </div>
+                        <div class="infoTitle">
+                          <h4 class="text-center">Marketing cuantitativo</h4>
+                        </div>
+                        <div class="infoImg">
+                          <object class="info2" data="img/info2.svg" type="image/svg+xml">
+                            <img src="img/info2.png" />
+                          </object>
+                        </div>
+                        <div class="infoExplain">
+                          <p class="text-center">Representar el comportamiento de los mercados con modelos dinámicos.</p>
+                        </div>
                       </div>
-                      <div class="infoExplain">
-                        <p class="text-center">Predecir el comportamiento de los clientes.</p>
+                      <div class="col-md-3 col-sm-3 contentInfoSlider content3">
+                        <div class="infoLineContainer">
+                          <div class="fullLines infoLine"></div>
+                        </div>
+                        <div class="infoTitle">
+                          <h4 class="text-center">Marketing cualitativo</h4>
+                        </div>
+                        <div class="infoImg">
+                          <object class="info3" data="img/info3.svg" type="image/svg+xml">
+                            <img src="img/info3.png" />
+                          </object>
+                        </div>
+                        <div class="infoExplain">
+                          <p class="text-center">Atrae al cliente y concreta la venta implementando análisis de datos.</p>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-3 content2">
-                      <div class="infoTitle">
-                        <h4 class="text-center">Marketing cuantitativo</h4>
+                      <div class="col-md-3 col-sm-3 contentInfoSlider content4">
+                        <div class="infoLineContainer">
+                          <div class="fullLines infoLine"></div>
+                        </div>
+                        <div class="coverLine"></div>
+                        <div class="infoTitle">
+                          <h4 class="text-center">generación de demanda</h4>
+                        </div>
+                        <div class="infoImg">
+                          <object class="info4" data="img/info4.svg" type="image/svg+xml">
+                            <img src="img/info4.png" />
+                          </object>
+                        </div>
+                        <div class="infoExplain">
+                          <p class="text-center">Establece comunicación con el mercado meta.</p>
+                        </div>
                       </div>
-                      <div class="infoImg">
-                        <object class="info2" data="img/info2.svg" type="image/svg+xml">
-                          <img src="img/info2.png" />
-                        </object>
-                      </div>
-                      <div class="infoExplain">
-                        <p class="text-center">Representar el comportamiento de los mercados con modelos dinámicos.</p>
-                      </div>
-                    </div>
-                    <div class="col-md-3 content3">
-                      <div class="infoTitle">
-                        <h4 class="text-center">Marketing cualitativo</h4>
-                      </div>
-                      <div class="infoImg">
-                        <object class="info3" data="img/info3.svg" type="image/svg+xml">
-                          <img src="img/info3.png" />
-                        </object>
-                      </div>
-                      <div class="infoExplain">
-                        <p class="text-center">Atrae al cliente y concreta la venta implementando análisis de datos.</p>
-                      </div>
-                    </div>
-                    <div class="col-md-3 content4">
-                      <div class="coverLine"></div>
-                      <div class="infoTitle">
-                        <h4 class="text-center">generación de demanda</h4>
-                      </div>
-                      <div class="infoImg">
-                        <object class="info4" data="img/info4.svg" type="image/svg+xml">
-                          <img src="img/info4.png" />
-                        </object>
-                      </div>
-                      <div class="infoExplain">
-                        <p class="text-center">Establece comunicación con el mercado meta.</p>
-                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -414,10 +437,10 @@
               <div class="fullLine bottomBottom"></div>
               <div class="separator bottomBottom"></div>
             </div>
-
-
           </div>
+          
         </section>
+        
         <section id="ourgrukology" class="full-height loaded">
 
           <div class="container">
@@ -712,7 +735,10 @@
     <script type="text/javascript" src="js/ScrollMagic.min.js"></script>
     <script type="text/javascript" src="js/animation.gsap.min.js"></script>
     <script type="text/javascript" src="js/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
     <script type="text/javascript" src="js/custom.js"></script>
+
 
 </body>
 </html>
