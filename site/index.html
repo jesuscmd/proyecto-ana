@@ -544,29 +544,29 @@
                                         <div class="col-sm-offset-2 col-sm-8 col-md-12">
                                             <h2 class="sustrato">Solicita un Gruk</h2>
                                             <div class="form-horizontal" id="iSolicitud" >
-                                                <div id="contact_results"></div>
+                                                <div id="contact_results" class="row"></div>
                                                 <div class="form-group">
                                                     <label for="iSolicitaNombre" class="col-sm-3 col-xs-3 control-label">Nombre:</label>
                                                     <div class="col-sm-9 col-xs-9">
-                                                        <input type="text" class="form-control" id="iSolicitaNombre">
+                                                        <input type="text" class="form-control innomb" id="iSolicitaNombre" required='true'>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="iSolicitaTel" class="col-sm-3 col-xs-3 control-label">Teléfono:</label>
                                                     <div class="col-sm-9 col-xs-9">
-                                                        <input type="number" class="form-control" id="iSolicitaTel">
+                                                        <input type="number" class="form-control intel" id="iSolicitaTel" required='true'>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="iSolicitaEmail" class="col-sm-3 col-xs-3  control-label">Email:</label>
                                                     <div class="col-sm-9 col-xs-9">
-                                                        <input type="email" class="form-control" id="iSolicitaEmail">
+                                                        <input type="email" class="form-control inMail" id="iSolicitaEmail" required='true'>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="iSolicitaSolicitud" class="col-sm-3 col-xs-3  control-label">Solicitud:</label>
                                                     <div class="col-sm-9 col-xs-9">
-                                                        <textarea class="form-control" id="iSolicitaSolicitud"></textarea>
+                                                        <textarea class="form-control inpMess" id="iSolicitaSolicitud"  required='true'></textarea>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -592,24 +592,26 @@
                     <div class="col-md-12 formaCarreras">
                       <h2 class="sustrato carreras">Carreras</h2>
                       <h4>Te estamos buscando, llena el siguiente formulario y conviértete en un Gruk!</h4>
-                      <div id="contact_results"></div>
+                      <div id="contact_results" class="row">
+                      </div>
+
                       <div class="form-horizontal">
                         <div class="form-group">
                           <label for="iSolicitaNombre" class="col-sm-3 col-xs-3  control-label">Nombre:</label>
                           <div class="col-sm-9 col-xs-9">
-                            <input type="text" class="form-control" id="iCarreraNombre">
+                            <input type="text" class="form-control innomb" id="iCarreraNombre">
                           </div>
                         </div>
                         <div class="form-group">
                           <label for="iCarreraTel" class="col-sm-3 col-xs-3  control-label">Teléfono:</label>
                           <div class="col-sm-9 col-xs-9">
-                            <input type="number" class="form-control" id="iCarreraTel">
+                            <input type="number" class="form-control intel" id="iCarreraTel">
                           </div>
                         </div>
                         <div class="form-group">
                           <label for="iCarreraEmail" class="col-sm-3 col-xs-3  control-label">Email:</label>
                           <div class="col-sm-9 col-xs-9">
-                            <input type="email" class="form-control" id="iCarreraEmail">
+                            <input type="email" class="form-control inMail" id="iCarreraEmail">
                           </div>
                         </div>
                         <div class="form-group">
@@ -617,7 +619,7 @@
                           <div class="col-sm-9 col-xs-9">
                             <div class="row">
                               <div class="col-md-6 col-xs-5 noRight">
-                                <input type="text" class="form-control" id="iCarreraFileName">
+                                <input type="text" class="form-control" id="iCarreraFileName" disabled>
                               </div>
                               <div class="col-md-6 col-xs-7 noLeft">
                                 <label class="customUpload">

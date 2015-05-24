@@ -142,7 +142,7 @@ new ScrollMagic.Scene({
 	})
 	.setClassToggle("#archemy .container > div ", "loaded")
 	//.setTween("#imagenBack", 0.5, {opacity: "0"}) // trigger a TweenMax.to tween
-	//.addIndicators() // add indicators (requires plugin)
+	.addIndicators() // add indicators (requires plugin)
 	.addTo(controller);
 
 new ScrollMagic.Scene({
@@ -151,7 +151,7 @@ new ScrollMagic.Scene({
 		triggerHook: 1
 	})
 	.setClassToggle(".alquimia h2", "loaded") // add class toggle
-	//.addIndicators() // add indicators (requires plugin)
+	.addIndicators() // add indicators (requires plugin)
 	.addTo(controller)
 ;
 
@@ -178,7 +178,6 @@ jQuery(document).ready(function($){
 			$back_to_top.addClass('cd-fade-out');
 		}
 	});
-
 	//smooth scroll to top
 	$back_to_top.on('click', function(event){
 		event.preventDefault();
@@ -196,62 +195,243 @@ jQuery(document).ready(function($){
 //
 /////////////////////////////////////////////////////////////////////////// */
 
+var setAnswerTemplate = function (msg, error) {
+    var stageMessage;
+    if (error) {
+        stageMessage = 'error';
+        currentImage = 'errorArrow';
+    } else {
+        currentImage = 'okArrow';
+    }
+    return '<div class="col-md-3 col-sm-3 col-xs-3">' +
+      '<h4>' +
+        '<object class="img-responsive okArrow" data="img/' + currentImage + '.svg" type="image/svg+xml">' +
+           '<img class="img-responsive okArrow" src="img/' + currentImage + '.png" />' +
+        '</object>'+
+      '</h4>'+
+    '</div>'+
+    '<div class="col-md-9 col sm-9 col-xs-9">' +
+      '<h4 class="' + stageMessage + '"">' + msg + '</h4>' +
+    '</div>';
+}
+var contacto_msg = "";
+
+var check_min_length = function(value, minLength) {
+    if(value >= minLength ){
+        return false;
+    } else {
+        return true;
+    }
+}
+$("#iSolicitaTel, #iCarreraTel").keydown(function (e) {
+    // Allow: backspace, delete, tab, escape, enter and .
+    if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110]) !== -1 ||
+         // Allow: Ctrl+A
+        (e.keyCode == 65 && e.ctrlKey === true) ||
+         // Allow: Ctrl+C
+        (e.keyCode == 67 && e.ctrlKey === true) ||
+         // Allow: Ctrl+X
+        (e.keyCode == 88 && e.ctrlKey === true) ||
+         // Allow: home, end, left, right
+        (e.keyCode >= 35 && e.keyCode <= 39)) {
+             // let it happen, don't do anything
+             return;
+    }
+    // Ensure that it is a number and stop the keypress
+    if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+        e.preventDefault();
+    }
+});
+var timerHideMsg;
+var showAnswer = function(targetForm, message){
+    contacto_msg = message;
+};
+launchMessage = function(val, s){
+    var selector = s.find('#contact_results');
+    var output = setAnswerTemplate(contacto_msg, !val);//message error
+
+    if (selector.html()=='') {
+        selector.html(output).slideDown();
+    } else {
+        if(selector.css('display') == 'block') {
+            selector.fadeOut(function(){
+                selector.html();
+                selector.html(output).fadeIn();
+            });
+        } else {
+            selector.html();
+            selector.html(output).slideDown();
+        }
+    }
+
+
+}
+var watchElement = function(event){
+    var minLenght = event.data.minLenght;
+    if ($(this).data('oldVal') != $(this).val()) {
+        $(this).data('oldVal', $(this).val());
+        if($(this).val().length >= minLenght){
+            $(this).parent().parent().removeClass('has-error');
+        } else {
+            $(this).parent().parent().addClass('has-error');
+        }
+    }
+};
+var watchMail = function(event){
+    if(email_reg.test($.trim($(this).val()))){
+        $(this).parent().parent().removeClass('has-error');
+    } else {
+        $(this).parent().parent().addClass('has-error');
+    }
+};
+var watchMessage = function(event){
+    var minLenght = event.data.minLenght;
+    if($(this).val().length >= minLenght){
+        $(this).parent().parent().removeClass('has-error');
+     } else {
+        $(this).parent().parent().addClass('has-error');
+    }
+};
+var chechName = function (s) {
+    selector = s.find('.innomb');
+    if (check_min_length(selector.val().length, 3 ) ){
+        contacto_msg = "El nombre requiere al menos tres caracteres.";
+        selector.parent().parent().addClass('has-error', true);
+        selector.bind("propertychange change click keyup input paste", { minLenght: 3}, watchElement);
+        return false;
+    } else {
+        selector.removeClass('has-error');
+        selector.unbind("propertychange change click keyup input paste", watchElement);
+        return true;
+    }
+}
+var chechTel = function (s) {
+    selector = s.find('.intel');
+    if (check_min_length(selector.val().length, 5 ) ){
+        contacto_msg = "El teléfono requiere al menos cinco caracteres.";
+        selector.parent().parent().addClass('has-error', true);
+        selector.bind("propertychange change click keyup input paste", { minLenght: 5}, watchElement);
+        return false;
+    } else {
+        selector.removeClass('has-error');
+        selector.unbind("propertychange change click keyup input paste", watchElement);
+        return true;
+    }
+}
+var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; 
+var chechMail = function (s) {
+    selector = s.find('.inMail');
+    if(!email_reg.test($.trim(selector.val())) || selector.val() == ''){
+        contacto_msg = "Ingrese un e-mail válido."
+        selector.parent().parent().addClass('has-error', true);
+        selector.bind("propertychange change click keyup input paste", { minLenght: 3}, watchMail);
+        return false;
+    } else {
+        selector.removeClass('has-error');
+        selector.unbind("propertychange change click keyup input paste", watchMail);
+        return true;
+    }
+}
+var chechMessage = function (s) {
+    selector = s.find('.inpMess');
+    if (check_min_length(selector.val().length, 6 ) ){
+        contacto_msg = "El mensaje requiere al menos seis caracteres.";
+        selector.parent().parent().addClass('has-error', true);
+        selector.bind("propertychange change click keyup input paste", { minLenght: 6}, watchMessage);
+        return false;
+    } else {
+        selector.removeClass('has-error');
+        selector.unbind("propertychange change click keyup input paste", watchMessage);
+        return true;
+    }
+}
+$('#iCarreraCV').change(function(e){
+    $('#iCarreraFileName').val($(this).val().split('\\').pop());
+});
+
 $(document).ready(function() {
     $("#submit_contacto").click(function() { 
-       
+        var currentForm = $(".formaSolicita");
         var proceed = true;
-        //simple validation at client's end
-        //loop through each field and we simply change border color to red for invalid fields       
-        $(".formaSolicita input[required=true], .formaSolicita textarea[required=true]").each(function(){
-            $(this).css('border-color',''); 
-            if(!$.trim($(this).val())){ //if this field is empty 
-                $(this).css('border-color','red'); //change border color to red   
-                proceed = false; //set do not proceed flag
-            }
-            //check invalid email
-            var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; 
-            if($(this).attr("type")=="email" && !email_reg.test($.trim($(this).val()))){
-                $(this).css('border-color','red'); //change border color to red   
-                proceed = false; //set do not proceed flag              
-            }   
-        });
-       
-        if(proceed) //everything looks good! proceed...
-        {
-            //get input field values data to be sent to server
+        if(chechName(currentForm) < proceed){
+            proceed = false;
+        }
+        if(chechTel(currentForm) < proceed){
+            proceed = false;
+        }
+        if(chechMail(currentForm) < proceed){
+            proceed = false;
+        } 
+        if(chechMessage(currentForm) < proceed){
+            proceed = false;
+        } 
+        if(proceed == true) {
             post_data = {
                 'user_name'     : $('input#iSolicitaNombre').val(), 
                 'user_email'    : $('input#iSolicitaEmail').val(), 
-                //'country_code'  : $('input[name=phone1]').val(), 
                 'phone_number'  : $('input#iSolicitaTel').val(), 
-                //'subject'       : $('select[name=subject]').val(), 
                 'msg'           : $('textarea#iSolicitaSolicitud').val()
             };
-            
-            //Ajax post data to server
             $.post('partials/contact_us.php', post_data, function(response){  
-                if(response.type == 'error'){ //load json data from server and output message     
-                    output = '<div class="error">'+response.text+'</div>';
-                }else{
-                    output = '<div class="success">'+response.text+'</div>';
-                    //reset values in all input fields
-                    $(".formaSolicita  input[required=true], .formaSolicita textarea[required=true]").val(''); 
-                    //$(".formaSolicita #contact_body").slideUp(); //hide form after success
+                if(response.type == 'error'){ //load json data from server and output message 
+                    contacto_msg = 'Ha ocurrido un error, inténtelo más tarde.';
+                    proceed = false;
+                    launchMessage(proceed, currentForm); 
+                } else {
+                    contacto_msg = 'Tu solicitud ha sido enviada con éxito ¿Deseas enviar otra solucitud?';
+                    $("#iSolicitaNombre, #iSolicitaEmail, #iSolicitaTel, #iSolicitaSolicitud").val(''); 
+                    launchMessage(proceed, currentForm);
                 }
-                $(".formaSolicita #contact_results").hide().html(output).slideDown();
             }, 'json');
+        } else {
+            launchMessage(proceed, currentForm);
         }
     });
-    
-    //reset previously set border colors and hide all message on .keyup()
-    $(".formaSolicita  input[required=true], .formaSolicita textarea[required=true]").keyup(function() { 
-        $(this).css('border-color',''); 
-        $("#result").slideUp();
-    });
 
-    $("#submit_carrera").click(function() { 
-       
+    $("#submit_carrera").click(function() {
+
+        var currentForm = $(".formaCarreras"); 
         var proceed = true;
+        if(chechName(currentForm) < proceed){
+            proceed = false;
+        }
+        if(chechTel(currentForm) < proceed){
+            proceed = false;
+        }
+        if(chechMail(currentForm) < proceed){
+            proceed = false;
+        }
+
+        // if($('#iCarreraFileName').val()){
+
+        //     //subir archivo, al confirmar, lanzar lo demás
+        // } 
+
+        if(proceed == true) {
+            if (iCarreraCV) {};
+            post_data = {
+                'user_name'     : $('input#iCarreraNombre').val(), 
+                'user_email'    : $('input#iCarreraEmail').val(), 
+                'phone_number'  : $('input#iCarreraTel').val() 
+                //'msg'           : $('textarea#iSolicitaSolicitud').val()
+            };
+            $.post('partials/carreras.php', post_data, function(response){  
+                if(response.type == 'error'){ //load json data from server and output message 
+                    contacto_msg = 'Ha ocurrido un error, inténtelo más tarde.';
+                    proceed = false;
+                    launchMessage(proceed, currentForm); 
+                } else {
+                    contacto_msg = 'Tu mensaje ha sido enviada con éxito ¿Deseas enviar otra mensaje?';
+                    $("#iCarreraNombre, #iCarreraTel, #iCarreraEmail, #iCarreraCV").val(''); 
+                    launchMessage(proceed, currentForm);
+                }
+            }, 'json');
+        } else {
+            launchMessage(proceed, currentForm);
+        }
+
+
+        /*$.isNumeric($('#').val());
         //simple validation at client's end
         //loop through each field and we simply change border color to red for invalid fields       
         $("#iCarrera input[required=true], #iCarrera textarea[required=true]").each(function(){
@@ -283,23 +463,42 @@ $(document).ready(function() {
             //Ajax post data to server
             $.post('partials/carreras.php', post_data, function(response){  
                 if(response.type == 'error'){ //load json data from server and output message     
-                    output = '<div class="error">'+response.text+'</div>';
+                    output = '<div class="col-md-3 col-sm-3 col-xs-3">' +
+                      '<h4>' +
+                        '<object class="img-responsive okArrow" data="img/errorArrow.svg" type="image/svg+xml">' +
+                           '<img class="img-responsive okArrow" src="img/errorArrow.png" />' +
+                        '</object>'+
+                      '</h4>'+
+                    '</div>'+
+                    '<div class="col-md-9 col sm-9 col-xs-9">' +
+                      '<h4 class="error">' + response.text + '</h4>' +
+                    '</div>';
                 }else{
-                    output = '<div class="success">'+response.text+'</div>';
+                    output =  '<div class="col-md-3 col-sm-3 col-xs-3">' +
+                          '<h4>' +
+                            '<object class="img-responsive okArrow" data="img/OKarrow.svg" type="image/svg+xml">' +
+                               '<img class="img-responsive okArrow" src="img/OKarrow.png" />' +
+                            '</object>' +
+                          '</h4>' +
+                        '</div>' +
+                        '<div class="col-md-9 col sm-9 col-xs-9">' +
+                          '<h4>' + response.text + '</h4>' +
+                        '</div>';
+
                     //reset values in all input fields
-                    $("#iCarrera  input[required=true], #iCarrera textarea[required=true]").val(''); 
-                    //$("#iCarrera #contact_body").slideUp(); //hide form after success
+                    $("#iCarreraNombre, #iCarreraTel, #iCarreraEmail, #iCarreraFileName, #iCarreraCV").val(''); 
+                    //$(".formaSolicita #contact_body").slideUp(); //hide form after success
                 }
                 $("#iCarrera #contact_results").hide().html(output).slideDown();
             }, 'json');
-        }
+        }*/
     });
     
     //reset previously set border colors and hide all message on .keyup()
-    $("#iCarrera  input[required=true], #iCarrera textarea[required=true]").keyup(function() { 
-        $(this).css('border-color',''); 
-        $("#result").slideUp();
-    });
+    // $("#iCarrera  input[required=true], #iCarrera textarea[required=true]").keyup(function() { 
+    //     $(this).css('border-color',''); 
+    //     $("#result").slideUp();
+    // });
 });
 
 

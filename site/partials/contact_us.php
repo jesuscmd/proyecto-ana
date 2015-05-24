@@ -1,7 +1,9 @@
 <?php
 if($_POST)
 {
-    $to_email       = "hello@gruk.me"; //Recipient email, Replace with own email here
+    $to_email       = "hellono@gruk.me"; //Recipient email, Replace with own email here
+
+    //$to_email       = "jesuscmd@gmail.com"; //Recipient email, Replace with own email here
     
     //check if its an ajax request, exit if not
     if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
@@ -57,13 +59,12 @@ if($_POST)
     
     $send_mail = mail($to_email, "nuevo contacto", $message_body, $headers);
     
-    if(!$send_mail)
-    {
+    if (!$send_mail){
         //If mail couldn't be sent output error. Check your PHP email configuration (if it ever happens)
-        $output = json_encode(array('type'=>'error', 'text' => 'Could not send mail! Please check your PHP mail configuration.'));
+        $output = json_encode(array('type'=>'error'));
         die($output);
-    }else{
-        $output = json_encode(array('type'=>'message', 'text' => 'Tu solicitud ha sido enviado con éxito. ¿Deseas enviar otra solicitud?'));
+    } else {
+        $output = json_encode(array('type'=>'message'));
         die($output);
     }
 }
