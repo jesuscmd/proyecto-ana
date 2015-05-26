@@ -652,6 +652,8 @@ input[type="number"]{
   }
   .alquimia{
     margin-top: 135px;
+    position: relative;
+    z-index: 1;
   }
   .loaded .frame > div{
     width: 100%;
@@ -688,7 +690,7 @@ input[type="number"]{
 }
 #imgSocios{
   bottom: 0;
-  right: 0;
+  right: 30%;
   position: absolute;
   max-width: 556px;
 }
@@ -1024,6 +1026,20 @@ h4.error,
   input{
     display: none;
   }
+}
+#progress {
+  @extend .progress;
+  height: 5px;
+  border-radius: 0;
+  margin: 5px 0 0;
+  opacity: 0;
+}
+#files h4 {
+  margin: 0;
+}
+.progress-bar {
+  @extend .progress-bar;
+  background-color: $naranja;
 }
 .overlay{
   height: 100%;

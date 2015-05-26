@@ -142,7 +142,7 @@ new ScrollMagic.Scene({
 	})
 	.setClassToggle("#archemy .container > div ", "loaded")
 	//.setTween("#imagenBack", 0.5, {opacity: "0"}) // trigger a TweenMax.to tween
-	.addIndicators() // add indicators (requires plugin)
+	//.addIndicators() // add indicators (requires plugin)
 	.addTo(controller);
 
 new ScrollMagic.Scene({
@@ -151,7 +151,7 @@ new ScrollMagic.Scene({
 		triggerHook: 1
 	})
 	.setClassToggle(".alquimia h2", "loaded") // add class toggle
-	.addIndicators() // add indicators (requires plugin)
+	//.addIndicators() // add indicators (requires plugin)
 	.addTo(controller)
 ;
 
@@ -345,9 +345,7 @@ var chechMessage = function (s) {
         return true;
     }
 }
-$('#iCarreraCV').change(function(e){
-    $('#iCarreraFileName').val($(this).val().split('\\').pop());
-});
+
 
 $(document).ready(function() {
     $("#submit_contacto").click(function() { 
@@ -392,6 +390,7 @@ $(document).ready(function() {
 
         var currentForm = $(".formaCarreras"); 
         var proceed = true;
+
         if(chechName(currentForm) < proceed){
             proceed = false;
         }
@@ -402,25 +401,46 @@ $(document).ready(function() {
             proceed = false;
         }
 
+
+        
+
         // if($('#iCarreraFileName').val()){
 
         //     //subir archivo, al confirmar, lanzar lo demás
         // } 
 
         if(proceed == true) {
-            if (iCarreraCV) {};
             post_data = {
                 'user_name'     : $('input#iCarreraNombre').val(), 
                 'user_email'    : $('input#iCarreraEmail').val(), 
                 'phone_number'  : $('input#iCarreraTel').val() 
                 //'msg'           : $('textarea#iSolicitaSolicitud').val()
             };
-            $.post('partials/carreras.php', post_data, function(response){  
+            if (arrayFiles.length){
+                post_data.files = {};
+
+                $.each(arrayFiles, function(index, value){
+                    post_data.files[index] = value;
+                });
+
+                //post_data.push({'files' : arrayFiles });
+            };
+            console.log(post_data);
+            $.post('partials/carreras.php', post_data, function(response){ 
+
                 if(response.type == 'error'){ //load json data from server and output message 
                     contacto_msg = 'Ha ocurrido un error, inténtelo más tarde.';
                     proceed = false;
                     launchMessage(proceed, currentForm); 
                 } else {
+                    console.log(response); 
+                    $('#iCarreraFileName').val("");
+                    $('#files').fadeOut(function(){
+                        $('#files').empty();
+                    });
+                    $('#progress .progress-bar').animate({width: 0}, function(){
+                        $('#progress').animate({opacity:0});
+                    });
                     contacto_msg = 'Tu mensaje ha sido enviada con éxito ¿Deseas enviar otra mensaje?';
                     $("#iCarreraNombre, #iCarreraTel, #iCarreraEmail, #iCarreraCV").val(''); 
                     launchMessage(proceed, currentForm);
@@ -499,7 +519,57 @@ $(document).ready(function() {
     //     $(this).css('border-color',''); 
     //     $("#result").slideUp();
     // });
+
+
+
 });
+
+/* ////////////////////////////////////////////////////////////////////////////
+//
+// uploader
+//
+/////////////////////////////////////////////////////////////////////////// */
+
+var arrayFiles = [];
+
+$('#iCarreraCV').change(function(e){
+    $('#iCarreraFileName').val($(this).val().split('\\').pop());
+    $('#progress').animate({opacity:1});
+});
+
+    // When the server is ready...
+$(function () {
+    'use strict';
+    
+    // Define the url to send the image data to
+    var url = 'partials/file.php';
+    
+    // Call the fileupload widget and set some parameters
+    $('#iCarreraCV').fileupload({
+        url: url,
+        dataType: 'json',
+        done: function (e, data) {
+            // Add each uploaded file name to the #files list
+            $.each(data.result.files, function (index, file) {
+                $('<h4/>').text(file.name + " subido").appendTo('#files');
+                arrayFiles.push(file.name);
+                console.log(arrayFiles);
+                
+            });
+        },
+        progressall: function (e, data) {
+            // Update the progress bar while files are being uploaded
+            var progress = parseInt(data.loaded / data.total * 100, 10);
+            $('#progress .progress-bar').css(
+                'width',
+                progress + '%'
+            );
+        }
+    });
+});
+
+
+
 
 
 /* ////////////////////////////////////////////////////////////////////////////

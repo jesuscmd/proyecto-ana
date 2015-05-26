@@ -6660,7 +6660,7 @@ a.thumbnail.active {
   }
 }
 /* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_progress-bars.scss */
-.progress {
+.progress, #progress {
   overflow: hidden;
   height: 20px;
   margin-bottom: 20px;
@@ -6697,7 +6697,7 @@ a.thumbnail.active {
 }
 
 /* line 64, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_progress-bars.scss */
-.progress.active .progress-bar,
+.progress.active .progress-bar, .active#progress .progress-bar,
 .progress-bar.active {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
   -o-animation: progress-bar-stripes 2s linear infinite;
@@ -9357,19 +9357,21 @@ input[type="number"] {
 /* line 653, style.scss */
 #archemy .alquimia {
   margin-top: 135px;
+  position: relative;
+  z-index: 1;
 }
-/* line 656, style.scss */
+/* line 658, style.scss */
 #archemy .loaded .frame > div {
   width: 100%;
   height: 100%;
 }
-/* line 660, style.scss */
+/* line 662, style.scss */
 #archemy .alquimia h2 {
   display: block;
   height: 40px;
   clear: both;
 }
-/* line 664, style.scss */
+/* line 666, style.scss */
 #archemy .alquimia h2 span {
   -webkit-transition-property: all;
   transition-property: all;
@@ -9381,162 +9383,162 @@ input[type="number"] {
   float: left;
   padding-top: 1em;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(1) {
   -webkit-transition-delay: 0.03s;
   transition-delay: 0.03s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(2) {
   -webkit-transition-delay: 0.06s;
   transition-delay: 0.06s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(3) {
   -webkit-transition-delay: 0.09s;
   transition-delay: 0.09s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(4) {
   -webkit-transition-delay: 0.12s;
   transition-delay: 0.12s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(5) {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(6) {
   -webkit-transition-delay: 0.18s;
   transition-delay: 0.18s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(7) {
   -webkit-transition-delay: 0.21s;
   transition-delay: 0.21s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(8) {
   -webkit-transition-delay: 0.24s;
   transition-delay: 0.24s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(9) {
   -webkit-transition-delay: 0.27s;
   transition-delay: 0.27s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(10) {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(11) {
   -webkit-transition-delay: 0.33s;
   transition-delay: 0.33s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(12) {
   -webkit-transition-delay: 0.36s;
   transition-delay: 0.36s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(13) {
   -webkit-transition-delay: 0.39s;
   transition-delay: 0.39s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(14) {
   -webkit-transition-delay: 0.42s;
   transition-delay: 0.42s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(15) {
   -webkit-transition-delay: 0.45s;
   transition-delay: 0.45s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(16) {
   -webkit-transition-delay: 0.48s;
   transition-delay: 0.48s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(17) {
   -webkit-transition-delay: 0.51s;
   transition-delay: 0.51s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(18) {
   -webkit-transition-delay: 0.54s;
   transition-delay: 0.54s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(19) {
   -webkit-transition-delay: 0.57s;
   transition-delay: 0.57s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(20) {
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(21) {
   -webkit-transition-delay: 0.63s;
   transition-delay: 0.63s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(22) {
   -webkit-transition-delay: 0.66s;
   transition-delay: 0.66s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(23) {
   -webkit-transition-delay: 0.69s;
   transition-delay: 0.69s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(24) {
   -webkit-transition-delay: 0.72s;
   transition-delay: 0.72s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(25) {
   -webkit-transition-delay: 0.75s;
   transition-delay: 0.75s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(26) {
   -webkit-transition-delay: 0.78s;
   transition-delay: 0.78s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(27) {
   -webkit-transition-delay: 0.81s;
   transition-delay: 0.81s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(28) {
   -webkit-transition-delay: 0.84s;
   transition-delay: 0.84s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(29) {
   -webkit-transition-delay: 0.87s;
   transition-delay: 0.87s;
 }
-/* line 674, style.scss */
+/* line 676, style.scss */
 #archemy .alquimia h2 span:nth-child(30) {
   -webkit-transition-delay: 0.9s;
   transition-delay: 0.9s;
 }
-/* line 680, style.scss */
+/* line 682, style.scss */
 #archemy .alquimia h2.loaded span {
   padding-top: 0;
 }
 
-/* line 686, style.scss */
+/* line 688, style.scss */
 #backPortrai {
   position: relative;
   background: url("../img/portrait.jpg") no-repeat center center ;
@@ -9546,27 +9548,27 @@ input[type="number"] {
   background-size: cover;
 }
 
-/* line 689, style.scss */
+/* line 691, style.scss */
 #imgSocios {
   bottom: 0;
-  right: 0;
+  right: 30%;
   position: absolute;
   max-width: 556px;
 }
 
-/* line 695, style.scss */
+/* line 697, style.scss */
 #quehacemos {
   background-color: #353535;
 }
-/* line 697, style.scss */
+/* line 699, style.scss */
 #quehacemos .boxTitleContainer {
   margin-top: 80px;
 }
-/* line 700, style.scss */
+/* line 702, style.scss */
 #quehacemos .explain {
   margin-top: 72px;
 }
-/* line 702, style.scss */
+/* line 704, style.scss */
 #quehacemos .explain h2 {
   border-bottom: 2px solid #ff8a00;
   display: inline-block;
@@ -9574,91 +9576,91 @@ input[type="number"] {
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 709, style.scss */
+/* line 711, style.scss */
 #quehacemos .explain p {
   margin-top: 58px;
 }
-/* line 713, style.scss */
+/* line 715, style.scss */
 #quehacemos .generaremosWrapper {
   display: table;
   height: 106px;
 }
-/* line 717, style.scss */
+/* line 719, style.scss */
 #quehacemos .generaremos {
   font-size: 28px;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 722, style.scss */
+/* line 724, style.scss */
 #quehacemos .square1 {
   top: 26px;
   left: -26px;
 }
-/* line 726, style.scss */
+/* line 728, style.scss */
 #quehacemos .semiWrapper {
   margin: 80px 0 50px;
   position: relative;
 }
-/* line 730, style.scss */
+/* line 732, style.scss */
 #quehacemos .borderNanja {
   border: 2px solid #ff7200;
   display: inline-block;
   height: 106px;
   width: 30px;
 }
-/* line 736, style.scss */
+/* line 738, style.scss */
 #quehacemos .borderNanja.left {
   border-right: none;
 }
-/* line 739, style.scss */
+/* line 741, style.scss */
 #quehacemos .borderNanja.right {
   border-left: none;
   float: right;
 }
-/* line 743, style.scss */
+/* line 745, style.scss */
 #quehacemos .sq1, #quehacemos .sq2, #quehacemos .square {
   position: absolute;
 }
-/* line 746, style.scss */
+/* line 748, style.scss */
 #quehacemos .sq1 {
   right: -95px;
   bottom: -96px;
   height: 74px;
   width: 108px;
 }
-/* line 752, style.scss */
+/* line 754, style.scss */
 #quehacemos .square.big {
   left: 0;
 }
-/* line 755, style.scss */
+/* line 757, style.scss */
 #quehacemos .square.normal {
   right: 18px;
   top: 46px;
 }
-/* line 759, style.scss */
+/* line 761, style.scss */
 #quehacemos .square.small {
   right: 0;
   top: 12px;
 }
-/* line 763, style.scss */
+/* line 765, style.scss */
 #quehacemos .sq2 {
   width: 35px;
   height: 40px;
   right: -35px;
   top: 0;
 }
-/* line 769, style.scss */
+/* line 771, style.scss */
 #quehacemos .square5 {
   bottom: 0;
   left: 0;
 }
-/* line 773, style.scss */
+/* line 775, style.scss */
 #quehacemos .square6 {
   top: 0;
   right: 0;
 }
 
-/* line 779, style.scss */
+/* line 781, style.scss */
 .imgArchemyFigure object {
   mix-blend-mode: luminosity;
   width: 140%;
@@ -9666,130 +9668,130 @@ input[type="number"] {
   margin-left: -20%;
 }
 
-/* line 786, style.scss */
+/* line 788, style.scss */
 #infography {
   background-color: #ff8a00;
   position: relative;
   overflow: hidden;
 }
-/* line 790, style.scss */
+/* line 792, style.scss */
 #infography .triangleInfo {
   width: 64px;
   margin: 0 auto;
   display: block;
 }
-/* line 795, style.scss */
+/* line 797, style.scss */
 #infography .fullLines {
   position: absolute;
   left: 0;
   width: 100%;
 }
-/* line 799, style.scss */
+/* line 801, style.scss */
 #infography .fullLines.bottom {
   bottom: 0;
   height: 24px;
 }
-/* line 803, style.scss */
+/* line 805, style.scss */
 #infography .fullLines .fullLine {
   height: 2px;
   width: 100%;
   background-color: #fff;
   position: absolute;
 }
-/* line 808, style.scss */
+/* line 810, style.scss */
 #infography .fullLines .fullLine.topUpper {
   top: 5px;
 }
-/* line 811, style.scss */
+/* line 813, style.scss */
 #infography .fullLines .fullLine.topBottom {
   top: 24px;
 }
-/* line 814, style.scss */
+/* line 816, style.scss */
 #infography .fullLines .fullLine.bottomUpper {
   top: 0;
 }
-/* line 817, style.scss */
+/* line 819, style.scss */
 #infography .fullLines .fullLine.bottomBottom {
   bottom: 12px;
 }
-/* line 821, style.scss */
+/* line 823, style.scss */
 #infography .fullLines .separator {
   background-color: #ff8a00;
   display: block;
   height: 7px;
   position: relative;
 }
-/* line 826, style.scss */
+/* line 828, style.scss */
 #infography .fullLines .separator.topUpper {
   margin: 1px auto 0;
   width: 96px;
 }
-/* line 830, style.scss */
+/* line 832, style.scss */
 #infography .fullLines .separator.topBottom {
   margin: 14px auto 0;
   width: 50%;
 }
-/* line 834, style.scss */
+/* line 836, style.scss */
 #infography .fullLines .separator.bottomUpper {
   margin: 0 auto 0;
   width: 60%;
 }
-/* line 838, style.scss */
+/* line 840, style.scss */
 #infography .fullLines .separator.bottomBottom {
   margin: 0 auto 0;
   width: 70%;
 }
-/* line 843, style.scss */
+/* line 845, style.scss */
 #infography .fullLines.infoLine {
   height: 3px;
   background-color: #fff;
   position: relative;
   width: initial;
 }
-/* line 850, style.scss */
+/* line 852, style.scss */
 #infography .content1 .infoLine {
   margin-left: 50%;
 }
-/* line 853, style.scss */
+/* line 855, style.scss */
 #infography .content4 .infoLine {
   margin-right: 50%;
 }
-/* line 856, style.scss */
+/* line 858, style.scss */
 #infography .infoLineContainer {
   position: absolute;
   top: 41%;
   width: 100%;
 }
-/* line 861, style.scss */
+/* line 863, style.scss */
 #infography .sliderInfography {
   margin: 25px 0 0;
 }
-/* line 864, style.scss */
+/* line 866, style.scss */
 #infography .infoTitle {
   height: 80px;
   display: table;
   width: 100%;
   position: relative;
 }
-/* line 869, style.scss */
+/* line 871, style.scss */
 #infography .infoTitle h4 {
   font-size: 21px;
   font-weight: lighter;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 876, style.scss */
+/* line 878, style.scss */
 #infography .infoImg {
   position: relative;
 }
-/* line 878, style.scss */
+/* line 880, style.scss */
 #infography .infoImg object {
   max-width: 102px;
   margin: 0 auto;
   display: block;
   background-color: #ff8a00;
 }
-/* line 886, style.scss */
+/* line 888, style.scss */
 #infography .infoExplain {
   width: 100%;
   position: relative;
@@ -9797,13 +9799,13 @@ input[type="number"] {
   display: inline-table;
   vertical-align: middle;
 }
-/* line 892, style.scss */
+/* line 894, style.scss */
 #infography .infoExplain p {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 898, style.scss */
+/* line 900, style.scss */
 .coverLine {
   width: 50%;
   height: 310px;
@@ -9811,80 +9813,80 @@ input[type="number"] {
   top: 5px;
   background-color: #ff8a00;
 }
-/* line 904, style.scss */
+/* line 906, style.scss */
 .content1 .coverLine {
   left: 0;
 }
-/* line 907, style.scss */
+/* line 909, style.scss */
 .content4 .coverLine {
   right: 0;
 }
 
-/* line 912, style.scss */
+/* line 914, style.scss */
 #ourgrukology {
   background-color: #f0f0ee;
   overflow: hidden;
 }
-/* line 916, style.scss */
+/* line 918, style.scss */
 #ourgrukology p {
   color: #6e6e6e;
   margin-top: 60px;
 }
-/* line 920, style.scss */
+/* line 922, style.scss */
 #ourgrukology .gris {
   color: #959595;
 }
-/* line 923, style.scss */
+/* line 925, style.scss */
 #ourgrukology h2.gris, #ourgrukology h2.buscamos {
   font-size: 30px;
   margin-top: 0;
 }
-/* line 927, style.scss */
+/* line 929, style.scss */
 #ourgrukology h2.buscamos {
   margin-bottom: 0;
 }
-/* line 930, style.scss */
+/* line 932, style.scss */
 #ourgrukology h3.gris {
   margin-top: 15px;
 }
-/* line 934, style.scss */
+/* line 936, style.scss */
 #ourgrukology .card-container h2 {
   font-size: 38px;
   margin: 0;
   line-height: 1;
   padding: 17px 0 7px;
 }
-/* line 940, style.scss */
+/* line 942, style.scss */
 #ourgrukology .card-container .frame > div {
   background-color: #959595;
 }
-/* line 944, style.scss */
+/* line 946, style.scss */
 #ourgrukology .secondExplain {
   margin-top: 130px;
   position: relative;
 }
-/* line 948, style.scss */
+/* line 950, style.scss */
 #ourgrukology .secondExplain .col-md-1 {
   position: absolute;
   height: 95%;
   left: -55px;
   border-right: 3px solid #959595;
 }
-/* line 954, style.scss */
+/* line 956, style.scss */
 #ourgrukology .secondExplain .square {
   position: absolute;
   right: 55px;
   top: 22px;
 }
 
-/* line 960, style.scss */
+/* line 962, style.scss */
 .mainOur {
   margin-top: 86px;
   z-index: 2;
   position: relative;
 }
 
-/* line 966, style.scss */
+/* line 968, style.scss */
 #imageLiquid {
   width: 100%;
   z-index: 1;
@@ -9892,87 +9894,105 @@ input[type="number"] {
   position: relative;
 }
 
-/* line 972, style.scss */
+/* line 974, style.scss */
 #contacto p {
   font-size: 21px;
   line-height: 24px;
   font-family: bebas;
 }
 
-/* line 977, style.scss */
+/* line 979, style.scss */
 .okArrow {
   max-height: 2em;
 }
 
-/* line 980, style.scss */
+/* line 982, style.scss */
 #contact_results {
   display: none;
 }
 
-/* line 983, style.scss */
+/* line 985, style.scss */
 #contact_results h4 {
   margin-top: 0;
 }
 
-/* line 988, style.scss */
+/* line 990, style.scss */
 h4.error,
 .has-error .form-control {
   color: #660000;
 }
 
-/* line 993, style.scss */
+/* line 995, style.scss */
 .formaSolicita {
   margin-bottom: 60px;
 }
 
-/* line 996, style.scss */
+/* line 998, style.scss */
 .direccion {
   margin-bottom: 20px;
 }
 
-/* line 999, style.scss */
+/* line 1001, style.scss */
 .icon {
   margin-right: 10px;
 }
-/* line 1001, style.scss */
+/* line 1003, style.scss */
 .icon.telefono {
   font-size: 20px;
 }
-/* line 1004, style.scss */
+/* line 1006, style.scss */
 .icon.mail {
   font-size: 21px;
 }
 
-/* line 1008, style.scss */
+/* line 1010, style.scss */
 #backPortrai h3 {
   margin-top: 40px;
 }
-/* line 1010, style.scss */
+/* line 1012, style.scss */
 #backPortrai h3 .carreras {
   margin-top: 110px;
 }
 
-/* line 1014, style.scss */
+/* line 1016, style.scss */
 .formaCarreras {
   margin-bottom: 70px;
 }
-/* line 1016, style.scss */
+/* line 1018, style.scss */
 .formaCarreras h4 {
   margin: 12px 0 16px;
   line-height: 27px;
 }
 
-/* line 1021, style.scss */
+/* line 1023, style.scss */
 .customUpload {
   display: block;
   margin-bottom: 0;
 }
-/* line 1024, style.scss */
+/* line 1026, style.scss */
 .customUpload input {
   display: none;
 }
 
-/* line 1028, style.scss */
+/* line 1030, style.scss */
+#progress {
+  height: 5px;
+  border-radius: 0;
+  margin: 5px 0 0;
+  opacity: 0;
+}
+
+/* line 1037, style.scss */
+#files h4  {
+  margin: 0;
+}
+
+/* line 1040, style.scss */
+.progress-bar {
+  background-color: #ff8a00;
+}
+
+/* line 1044, style.scss */
 .overlay {
   height: 100%;
   width: 100%;
@@ -9980,12 +10000,12 @@ h4.error,
   mix-blend-mode: multiply;
 }
 
-/* line 1034, style.scss */
+/* line 1050, style.scss */
 #contacto .overlay {
   background: rgba(255, 150, 0, 0.8);
 }
 
-/* line 1037, style.scss */
+/* line 1053, style.scss */
 #logoContacto {
   width: 115px;
   margin: 0 auto;
@@ -9993,41 +10013,41 @@ h4.error,
   padding: 55px 0 40px;
 }
 
-/* line 1043, style.scss */
+/* line 1059, style.scss */
 #carreras .overlay {
   background: rgba(213, 50, 0, 0.8);
 }
 
-/* line 1046, style.scss */
+/* line 1062, style.scss */
 #glog .overlay {
   background: rgba(118, 0, 147, 0.8);
 }
 
 /*GLOG*/
-/* line 1050, style.scss */
+/* line 1066, style.scss */
 .glog {
   text-align: center;
   margin: 112px 0;
   font-weight: bold;
 }
 
-/* line 1057, style.scss */
+/* line 1073, style.scss */
 .slick-prev {
   left: 35px;
 }
 
-/* line 1060, style.scss */
+/* line 1076, style.scss */
 .slick-next {
   right: 35px;
 }
 
-/* line 1063, style.scss */
+/* line 1079, style.scss */
 .slick-prev, .slick-next {
   top: 78%;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 1072, style.scss */
+  /* line 1088, style.scss */
   .boxTitleContainer {
     width: 75%;
   }

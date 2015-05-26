@@ -2,7 +2,6 @@
 if($_POST)
 {
     $to_email       = "hello@gruk.me"; //Recipient email, Replace with own email here
-    
     //check if its an ajax request, exit if not
     if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
         
@@ -18,6 +17,18 @@ if($_POST)
     $user_email     = filter_var($_POST["user_email"], FILTER_SANITIZE_EMAIL);
     //$country_code   = filter_var($_POST["country_code"], FILTER_SANITIZE_NUMBER_INT);
     $phone_number   = filter_var($_POST["phone_number"], FILTER_SANITIZE_NUMBER_INT);
+
+
+    $archivos = "";
+
+
+    if(isset($_POST["files"])) {
+        $archivos = "\r\n" . "Archivos incluidos:" . "\r\n";
+        $files   = $_POST["files"];
+        foreach ($files as &$value) {
+            $archivos = $archivos . "<a href='/partials/files/". $value ."'>" . $value. "</a>" . "\r\n";
+        }
+    }
     //$subject        = filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
     //$message        = filter_var($_POST["msg"], FILTER_SANITIZE_STRING);
     
