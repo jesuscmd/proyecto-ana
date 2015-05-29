@@ -64,9 +64,9 @@ class UploadHandler
             // Enable to provide file downloads via GET requests to the PHP script:
             'download_via_php' => false,
             // Defines which files can be displayed inline when downloaded:
-            'inline_file_types' => '/\.(gif|jpe?g|png|docx|doc|pdf)$/i',
+            'inline_file_types' => '/\.(gif|jpg|png|docx|doc|pdf)$/i',
             // Defines which files (based on their names) are accepted for upload:
-            'accept_file_types' => '/\.(gif|jpe?g|png|docx|doc|pdf)$/i',
+            'accept_file_types' => '/\.(gif|jpg|png|docx|doc|pdf)$/i',
             // The php.ini settings upload_max_filesize and post_max_size
             // take precedence over the following max_file_size setting:
             'max_file_size' => null,

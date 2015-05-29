@@ -9082,9 +9082,9 @@ a:hover, a:focus {
   height: 0;
   background-color: #ff9100;
   background-color: rgba(255, 145, 0, 0.8);
-  -webkit-transition: all 0.5s ease-in-out 2s;
-  -o-transition: all 0.5s ease-in-out 2s;
-  transition: all 0.5s ease-in-out 2s;
+  -webkit-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
 }
 /* line 376, style.scss */
 #inicio .logoContainer {
@@ -9092,9 +9092,9 @@ a:hover, a:focus {
   background-color: rgba(255, 255, 255, 0.2);
   margin-top: -100%;
   height: 100%;
-  -webkit-transition: all 0.75s ease-in-out 2.45s;
-  -o-transition: all 0.75s ease-in-out 2.45s;
-  transition: all 0.75s ease-in-out 2.45s;
+  -webkit-transition: all 0.75s ease-in-out 0.4s;
+  -o-transition: all 0.75s ease-in-out 0.4s;
+  transition: all 0.75s ease-in-out 0.4s;
 }
 /* line 383, style.scss */
 #inicio .logoContainer object {
@@ -9102,9 +9102,10 @@ a:hover, a:focus {
   margin: 50px auto 0 auto;
   display: block;
   margin-bottom: 20px;
-  -webkit-transition: all 0.75s ease-in-out 3.2s;
-  -o-transition: all 0.75s ease-in-out 3.2s;
-  transition: all 0.75s ease-in-out 3.2s;
+  opacity: 0;
+  -webkit-transition: all 0.75s ease-in-out 1.15s;
+  -o-transition: all 0.75s ease-in-out 1.15s;
+  transition: all 0.75s ease-in-out 1.15s;
 }
 @media (max-width: 991px) {
   /* line 383, style.scss */
@@ -9114,77 +9115,76 @@ a:hover, a:focus {
     margin-bottom: 15px;
   }
 }
-/* line 398, style.scss */
+/* line 399, style.scss */
 #inicio .card-container .frame > div {
-  -webkit-transition-delay: 4.7s;
-  transition-delay: 4.7s;
+  -webkit-transition-delay: 1.65s;
+  transition-delay: 1.65s;
 }
-/* line 402, style.scss */
+/* line 403, style.scss */
 #inicio h2 {
-  -webkit-transition: all 0.73s ease-in-out 5.45s;
-  -o-transition: all 0.73s ease-in-out 5.45s;
-  transition: all 0.73s ease-in-out 5.45s;
+  -webkit-transition: all 0.73s ease-in-out 2.4s;
+  -o-transition: all 0.73s ease-in-out 2.4s;
+  transition: all 0.73s ease-in-out 2.4s;
 }
-/* line 406, style.scss */
+/* line 407, style.scss */
 #inicio .border > div {
-  -webkit-transition-delay: 5.55s;
-  transition-delay: 5.55s;
+  -webkit-transition-delay: 2.5s;
+  transition-delay: 2.5s;
 }
 /* line 410, style.scss */
-#inicio .loaded .menuIntroBack {
-  height: 75%;
-}
-/* line 413, style.scss */
-#inicio .loaded .logoContainer {
-  margin-top: 0%;
-}
-/* line 415, style.scss */
-#inicio .loaded .logoContainer object {
-  opacity: 1;
-}
-/* line 419, style.scss */
-#inicio .loaded h2 {
-  color: #fff;
-}
-/* line 424, style.scss */
 #inicio .triScroll {
   margin: 40px auto 0;
   height: 21px;
   width: 35px;
   position: relative;
 }
-/* line 430, style.scss */
+/* line 416, style.scss */
 #inicio .triScrollObject {
   display: block;
   max-width: 35px;
   position: absolute;
   bottom: -50px;
   opacity: 0;
-  -webkit-transition: all 0.55s ease-in-out 6.4;
-  -o-transition: all 0.55s ease-in-out 6.4;
-  transition: all 0.55s ease-in-out 6.4;
+  -webkit-transition: all 0.55s ease-in-out 2.5s;
+  -o-transition: all 0.55s ease-in-out 2.5s;
+  transition: all 0.55s ease-in-out 2.5s;
 }
-
-/* line 441, style.scss */
-.loaded .triScrollObject {
+/* line 426, style.scss */
+#inicio .loaded .menuIntroBack {
+  height: 75%;
+}
+/* line 429, style.scss */
+#inicio .loaded .logoContainer {
+  margin-top: 0%;
+}
+/* line 431, style.scss */
+#inicio .loaded .logoContainer object {
+  opacity: 1;
+}
+/* line 435, style.scss */
+#inicio .loaded h2 {
+  color: #fff;
+}
+/* line 438, style.scss */
+#inicio .loaded .triScrollObject {
   bottom: 0;
   opacity: 1;
 }
 
-/* line 446, style.scss */
+/* line 444, style.scss */
 #ourgrukology .naranja,
 .naranja {
   color: #ff8a00;
 }
 
-/* line 450, style.scss */
+/* line 448, style.scss */
 .separador, .separadorNaranaja {
   background-color: #fff;
   width: 100%;
   height: 2px;
 }
 
-/* line 455, style.scss */
+/* line 453, style.scss */
 .separadorNaranaja {
   background-color: #ff8a00;
 }
@@ -9192,7 +9192,7 @@ a:hover, a:focus {
 /* animacion inicio
 --------------------------------------------------------------------------------------- */
 /*formas*/
-/* line 540, style.scss */
+/* line 538, style.scss */
 .sustrato {
   background: #fff;
   width: 100%;
@@ -9202,12 +9202,12 @@ a:hover, a:focus {
   font-size: 25px;
 }
 
-/* line 548, style.scss */
+/* line 546, style.scss */
 .form-group {
   margin-bottom: 5px;
 }
 
-/* line 551, style.scss */
+/* line 549, style.scss */
 .form-control {
   font-family: 'futura_bkbook';
   color: #4a4a4a;
@@ -9216,13 +9216,13 @@ a:hover, a:focus {
   height: 24px;
 }
 
-/* line 558, style.scss */
+/* line 556, style.scss */
 #iSolicitaTel,
 input[type="number"] {
   padding: 0 12px;
 }
 
-/* line 562, style.scss */
+/* line 560, style.scss */
 .form-horizontal .control-label {
   font-size: 21px;
   text-align: left;
@@ -9231,7 +9231,7 @@ input[type="number"] {
   line-height: 24px;
 }
 
-/* line 569, style.scss */
+/* line 567, style.scss */
 .btn {
   border-radius: 0;
   border: none;
@@ -9245,24 +9245,24 @@ input[type="number"] {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 579, style.scss */
+/* line 577, style.scss */
 .btn:hover {
   background-color: #4a4a4a;
   color: #fff;
 }
 
-/* line 583, style.scss */
+/* line 581, style.scss */
 .noRight {
   padding-right: 5px;
 }
 
-/* line 586, style.scss */
+/* line 584, style.scss */
 .noLeft {
   padding-left: 0;
 }
 
 /*MENU*/
-/* line 591, style.scss */
+/* line 589, style.scss */
 .menuOver {
   width: 100%;
   background-color: rgba(255, 138, 0, 0.9);
@@ -9271,20 +9271,20 @@ input[type="number"] {
   z-index: 3;
   display: none;
 }
-/* line 598, style.scss */
+/* line 596, style.scss */
 .menuOver .container {
   opacity: 0;
 }
-/* line 601, style.scss */
+/* line 599, style.scss */
 .menuOver ul {
   padding: 5% 0 0 0;
   text-align: center;
 }
-/* line 604, style.scss */
+/* line 602, style.scss */
 .menuOver ul li {
   list-style: none;
 }
-/* line 608, style.scss */
+/* line 606, style.scss */
 .menuOver a {
   width: 100%;
   font: 16px 'futura_bkbook';
@@ -9292,11 +9292,11 @@ input[type="number"] {
   padding: 10px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
-/* line 614, style.scss */
+/* line 612, style.scss */
 .menuOver a:hover .separador, .menuOver a:hover .separadorNaranaja {
   background-color: #fff;
 }
-/* line 618, style.scss */
+/* line 616, style.scss */
 .menuOver .separador, .menuOver .separadorNaranaja {
   max-width: 34px;
   margin: 0 auto;
@@ -9306,17 +9306,17 @@ input[type="number"] {
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
-/* line 625, style.scss */
+/* line 623, style.scss */
 .menuOver .top {
   margin-bottom: 3px;
 }
-/* line 628, style.scss */
+/* line 626, style.scss */
 .menuOver .bottom {
   margin-top: 3px;
 }
 
 /*ESTRUCTUTA*/
-/* line 633, style.scss */
+/* line 631, style.scss */
 #imagenBack {
   position: relative;
   background: url("../img/backHome.jpg") no-repeat center center fixed;
@@ -9328,7 +9328,7 @@ input[type="number"] {
   width: 100%;
 }
 
-/* line 638, style.scss */
+/* line 636, style.scss */
 #archemy {
   position: relative;
   background: url("../img/backAlchemy.jpg") no-repeat center center ;
@@ -9338,40 +9338,40 @@ input[type="number"] {
   background-size: cover;
   overflow: hidden;
 }
-/* line 641, style.scss */
+/* line 639, style.scss */
 #archemy .container {
   position: relative;
 }
-/* line 644, style.scss */
+/* line 642, style.scss */
 #archemy .card-container {
   margin-top: 65px;
 }
-/* line 646, style.scss */
+/* line 644, style.scss */
 #archemy .card-container > div {
   position: relative;
 }
-/* line 648, style.scss */
+/* line 646, style.scss */
 .loaded #archemy .card-container > div {
   width: 100%;
 }
-/* line 653, style.scss */
+/* line 651, style.scss */
 #archemy .alquimia {
   margin-top: 135px;
   position: relative;
   z-index: 1;
 }
-/* line 658, style.scss */
+/* line 656, style.scss */
 #archemy .loaded .frame > div {
   width: 100%;
   height: 100%;
 }
-/* line 662, style.scss */
+/* line 660, style.scss */
 #archemy .alquimia h2 {
   display: block;
   height: 40px;
   clear: both;
 }
-/* line 666, style.scss */
+/* line 664, style.scss */
 #archemy .alquimia h2 span {
   -webkit-transition-property: all;
   transition-property: all;
@@ -9383,162 +9383,162 @@ input[type="number"] {
   float: left;
   padding-top: 1em;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(1) {
   -webkit-transition-delay: 0.03s;
   transition-delay: 0.03s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(2) {
   -webkit-transition-delay: 0.06s;
   transition-delay: 0.06s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(3) {
   -webkit-transition-delay: 0.09s;
   transition-delay: 0.09s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(4) {
   -webkit-transition-delay: 0.12s;
   transition-delay: 0.12s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(5) {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(6) {
   -webkit-transition-delay: 0.18s;
   transition-delay: 0.18s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(7) {
   -webkit-transition-delay: 0.21s;
   transition-delay: 0.21s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(8) {
   -webkit-transition-delay: 0.24s;
   transition-delay: 0.24s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(9) {
   -webkit-transition-delay: 0.27s;
   transition-delay: 0.27s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(10) {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(11) {
   -webkit-transition-delay: 0.33s;
   transition-delay: 0.33s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(12) {
   -webkit-transition-delay: 0.36s;
   transition-delay: 0.36s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(13) {
   -webkit-transition-delay: 0.39s;
   transition-delay: 0.39s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(14) {
   -webkit-transition-delay: 0.42s;
   transition-delay: 0.42s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(15) {
   -webkit-transition-delay: 0.45s;
   transition-delay: 0.45s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(16) {
   -webkit-transition-delay: 0.48s;
   transition-delay: 0.48s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(17) {
   -webkit-transition-delay: 0.51s;
   transition-delay: 0.51s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(18) {
   -webkit-transition-delay: 0.54s;
   transition-delay: 0.54s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(19) {
   -webkit-transition-delay: 0.57s;
   transition-delay: 0.57s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(20) {
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(21) {
   -webkit-transition-delay: 0.63s;
   transition-delay: 0.63s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(22) {
   -webkit-transition-delay: 0.66s;
   transition-delay: 0.66s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(23) {
   -webkit-transition-delay: 0.69s;
   transition-delay: 0.69s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(24) {
   -webkit-transition-delay: 0.72s;
   transition-delay: 0.72s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(25) {
   -webkit-transition-delay: 0.75s;
   transition-delay: 0.75s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(26) {
   -webkit-transition-delay: 0.78s;
   transition-delay: 0.78s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(27) {
   -webkit-transition-delay: 0.81s;
   transition-delay: 0.81s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(28) {
   -webkit-transition-delay: 0.84s;
   transition-delay: 0.84s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(29) {
   -webkit-transition-delay: 0.87s;
   transition-delay: 0.87s;
 }
-/* line 676, style.scss */
+/* line 674, style.scss */
 #archemy .alquimia h2 span:nth-child(30) {
   -webkit-transition-delay: 0.9s;
   transition-delay: 0.9s;
 }
-/* line 682, style.scss */
+/* line 680, style.scss */
 #archemy .alquimia h2.loaded span {
   padding-top: 0;
 }
 
-/* line 688, style.scss */
+/* line 686, style.scss */
 #backPortrai {
   position: relative;
   background: url("../img/portrait.jpg") no-repeat center center ;
@@ -9548,7 +9548,7 @@ input[type="number"] {
   background-size: cover;
 }
 
-/* line 691, style.scss */
+/* line 689, style.scss */
 #imgSocios {
   bottom: 0;
   right: 30%;
@@ -9556,19 +9556,19 @@ input[type="number"] {
   max-width: 556px;
 }
 
-/* line 697, style.scss */
+/* line 695, style.scss */
 #quehacemos {
   background-color: #353535;
 }
-/* line 699, style.scss */
+/* line 697, style.scss */
 #quehacemos .boxTitleContainer {
   margin-top: 80px;
 }
-/* line 702, style.scss */
+/* line 700, style.scss */
 #quehacemos .explain {
   margin-top: 72px;
 }
-/* line 704, style.scss */
+/* line 702, style.scss */
 #quehacemos .explain h2 {
   border-bottom: 2px solid #ff8a00;
   display: inline-block;
@@ -9576,91 +9576,91 @@ input[type="number"] {
   margin-bottom: 0;
   margin-top: 0;
 }
-/* line 711, style.scss */
+/* line 709, style.scss */
 #quehacemos .explain p {
   margin-top: 58px;
 }
-/* line 715, style.scss */
+/* line 713, style.scss */
 #quehacemos .generaremosWrapper {
   display: table;
   height: 106px;
 }
-/* line 719, style.scss */
+/* line 717, style.scss */
 #quehacemos .generaremos {
   font-size: 28px;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 724, style.scss */
+/* line 722, style.scss */
 #quehacemos .square1 {
   top: 26px;
   left: -26px;
 }
-/* line 728, style.scss */
+/* line 726, style.scss */
 #quehacemos .semiWrapper {
   margin: 80px 0 50px;
   position: relative;
 }
-/* line 732, style.scss */
+/* line 730, style.scss */
 #quehacemos .borderNanja {
   border: 2px solid #ff7200;
   display: inline-block;
   height: 106px;
   width: 30px;
 }
-/* line 738, style.scss */
+/* line 736, style.scss */
 #quehacemos .borderNanja.left {
   border-right: none;
 }
-/* line 741, style.scss */
+/* line 739, style.scss */
 #quehacemos .borderNanja.right {
   border-left: none;
   float: right;
 }
-/* line 745, style.scss */
+/* line 743, style.scss */
 #quehacemos .sq1, #quehacemos .sq2, #quehacemos .square {
   position: absolute;
 }
-/* line 748, style.scss */
+/* line 746, style.scss */
 #quehacemos .sq1 {
   right: -95px;
   bottom: -96px;
   height: 74px;
   width: 108px;
 }
-/* line 754, style.scss */
+/* line 752, style.scss */
 #quehacemos .square.big {
   left: 0;
 }
-/* line 757, style.scss */
+/* line 755, style.scss */
 #quehacemos .square.normal {
   right: 18px;
   top: 46px;
 }
-/* line 761, style.scss */
+/* line 759, style.scss */
 #quehacemos .square.small {
   right: 0;
   top: 12px;
 }
-/* line 765, style.scss */
+/* line 763, style.scss */
 #quehacemos .sq2 {
   width: 35px;
   height: 40px;
   right: -35px;
   top: 0;
 }
-/* line 771, style.scss */
+/* line 769, style.scss */
 #quehacemos .square5 {
   bottom: 0;
   left: 0;
 }
-/* line 775, style.scss */
+/* line 773, style.scss */
 #quehacemos .square6 {
   top: 0;
   right: 0;
 }
 
-/* line 781, style.scss */
+/* line 779, style.scss */
 .imgArchemyFigure object {
   mix-blend-mode: luminosity;
   width: 140%;
@@ -9668,130 +9668,130 @@ input[type="number"] {
   margin-left: -20%;
 }
 
-/* line 788, style.scss */
+/* line 786, style.scss */
 #infography {
   background-color: #ff8a00;
   position: relative;
   overflow: hidden;
 }
-/* line 792, style.scss */
+/* line 790, style.scss */
 #infography .triangleInfo {
   width: 64px;
   margin: 0 auto;
   display: block;
 }
-/* line 797, style.scss */
+/* line 795, style.scss */
 #infography .fullLines {
   position: absolute;
   left: 0;
   width: 100%;
 }
-/* line 801, style.scss */
+/* line 799, style.scss */
 #infography .fullLines.bottom {
   bottom: 0;
   height: 24px;
 }
-/* line 805, style.scss */
+/* line 803, style.scss */
 #infography .fullLines .fullLine {
   height: 2px;
   width: 100%;
   background-color: #fff;
   position: absolute;
 }
-/* line 810, style.scss */
+/* line 808, style.scss */
 #infography .fullLines .fullLine.topUpper {
   top: 5px;
 }
-/* line 813, style.scss */
+/* line 811, style.scss */
 #infography .fullLines .fullLine.topBottom {
   top: 24px;
 }
-/* line 816, style.scss */
+/* line 814, style.scss */
 #infography .fullLines .fullLine.bottomUpper {
   top: 0;
 }
-/* line 819, style.scss */
+/* line 817, style.scss */
 #infography .fullLines .fullLine.bottomBottom {
   bottom: 12px;
 }
-/* line 823, style.scss */
+/* line 821, style.scss */
 #infography .fullLines .separator {
   background-color: #ff8a00;
   display: block;
   height: 7px;
   position: relative;
 }
-/* line 828, style.scss */
+/* line 826, style.scss */
 #infography .fullLines .separator.topUpper {
   margin: 1px auto 0;
   width: 96px;
 }
-/* line 832, style.scss */
+/* line 830, style.scss */
 #infography .fullLines .separator.topBottom {
   margin: 14px auto 0;
   width: 50%;
 }
-/* line 836, style.scss */
+/* line 834, style.scss */
 #infography .fullLines .separator.bottomUpper {
   margin: 0 auto 0;
   width: 60%;
 }
-/* line 840, style.scss */
+/* line 838, style.scss */
 #infography .fullLines .separator.bottomBottom {
   margin: 0 auto 0;
   width: 70%;
 }
-/* line 845, style.scss */
+/* line 843, style.scss */
 #infography .fullLines.infoLine {
   height: 3px;
   background-color: #fff;
   position: relative;
   width: initial;
 }
-/* line 852, style.scss */
+/* line 850, style.scss */
 #infography .content1 .infoLine {
   margin-left: 50%;
 }
-/* line 855, style.scss */
+/* line 853, style.scss */
 #infography .content4 .infoLine {
   margin-right: 50%;
 }
-/* line 858, style.scss */
+/* line 856, style.scss */
 #infography .infoLineContainer {
   position: absolute;
   top: 41%;
   width: 100%;
 }
-/* line 863, style.scss */
+/* line 861, style.scss */
 #infography .sliderInfography {
   margin: 25px 0 0;
 }
-/* line 866, style.scss */
+/* line 864, style.scss */
 #infography .infoTitle {
   height: 80px;
   display: table;
   width: 100%;
   position: relative;
 }
-/* line 871, style.scss */
+/* line 869, style.scss */
 #infography .infoTitle h4 {
   font-size: 21px;
   font-weight: lighter;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 878, style.scss */
+/* line 876, style.scss */
 #infography .infoImg {
   position: relative;
 }
-/* line 880, style.scss */
+/* line 878, style.scss */
 #infography .infoImg object {
   max-width: 102px;
   margin: 0 auto;
   display: block;
   background-color: #ff8a00;
 }
-/* line 888, style.scss */
+/* line 886, style.scss */
 #infography .infoExplain {
   width: 100%;
   position: relative;
@@ -9799,13 +9799,13 @@ input[type="number"] {
   display: inline-table;
   vertical-align: middle;
 }
-/* line 894, style.scss */
+/* line 892, style.scss */
 #infography .infoExplain p {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 900, style.scss */
+/* line 898, style.scss */
 .coverLine {
   width: 50%;
   height: 310px;
@@ -9813,80 +9813,80 @@ input[type="number"] {
   top: 5px;
   background-color: #ff8a00;
 }
-/* line 906, style.scss */
+/* line 904, style.scss */
 .content1 .coverLine {
   left: 0;
 }
-/* line 909, style.scss */
+/* line 907, style.scss */
 .content4 .coverLine {
   right: 0;
 }
 
-/* line 914, style.scss */
+/* line 912, style.scss */
 #ourgrukology {
   background-color: #f0f0ee;
   overflow: hidden;
 }
-/* line 918, style.scss */
+/* line 916, style.scss */
 #ourgrukology p {
   color: #6e6e6e;
   margin-top: 60px;
 }
-/* line 922, style.scss */
+/* line 920, style.scss */
 #ourgrukology .gris {
   color: #959595;
 }
-/* line 925, style.scss */
+/* line 923, style.scss */
 #ourgrukology h2.gris, #ourgrukology h2.buscamos {
   font-size: 30px;
   margin-top: 0;
 }
-/* line 929, style.scss */
+/* line 927, style.scss */
 #ourgrukology h2.buscamos {
   margin-bottom: 0;
 }
-/* line 932, style.scss */
+/* line 930, style.scss */
 #ourgrukology h3.gris {
   margin-top: 15px;
 }
-/* line 936, style.scss */
+/* line 934, style.scss */
 #ourgrukology .card-container h2 {
   font-size: 38px;
   margin: 0;
   line-height: 1;
   padding: 17px 0 7px;
 }
-/* line 942, style.scss */
+/* line 940, style.scss */
 #ourgrukology .card-container .frame > div {
   background-color: #959595;
 }
-/* line 946, style.scss */
+/* line 944, style.scss */
 #ourgrukology .secondExplain {
   margin-top: 130px;
   position: relative;
 }
-/* line 950, style.scss */
+/* line 948, style.scss */
 #ourgrukology .secondExplain .col-md-1 {
   position: absolute;
   height: 95%;
   left: -55px;
   border-right: 3px solid #959595;
 }
-/* line 956, style.scss */
+/* line 954, style.scss */
 #ourgrukology .secondExplain .square {
   position: absolute;
   right: 55px;
   top: 22px;
 }
 
-/* line 962, style.scss */
+/* line 960, style.scss */
 .mainOur {
   margin-top: 86px;
   z-index: 2;
   position: relative;
 }
 
-/* line 968, style.scss */
+/* line 966, style.scss */
 #imageLiquid {
   width: 100%;
   z-index: 1;
@@ -9894,87 +9894,87 @@ input[type="number"] {
   position: relative;
 }
 
-/* line 974, style.scss */
+/* line 972, style.scss */
 #contacto p {
   font-size: 21px;
   line-height: 24px;
   font-family: bebas;
 }
 
-/* line 979, style.scss */
+/* line 977, style.scss */
 .okArrow {
   max-height: 2em;
 }
 
-/* line 982, style.scss */
+/* line 980, style.scss */
 #contact_results {
   display: none;
 }
 
-/* line 985, style.scss */
+/* line 983, style.scss */
 #contact_results h4 {
   margin-top: 0;
 }
 
-/* line 990, style.scss */
+/* line 988, style.scss */
 h4.error,
 .has-error .form-control {
   color: #660000;
 }
 
-/* line 995, style.scss */
+/* line 993, style.scss */
 .formaSolicita {
   margin-bottom: 60px;
 }
 
-/* line 998, style.scss */
+/* line 996, style.scss */
 .direccion {
   margin-bottom: 20px;
 }
 
-/* line 1001, style.scss */
+/* line 999, style.scss */
 .icon {
   margin-right: 10px;
 }
-/* line 1003, style.scss */
+/* line 1001, style.scss */
 .icon.telefono {
   font-size: 20px;
 }
-/* line 1006, style.scss */
+/* line 1004, style.scss */
 .icon.mail {
   font-size: 21px;
 }
 
-/* line 1010, style.scss */
+/* line 1008, style.scss */
 #backPortrai h3 {
   margin-top: 40px;
 }
-/* line 1012, style.scss */
+/* line 1010, style.scss */
 #backPortrai h3 .carreras {
   margin-top: 110px;
 }
 
-/* line 1016, style.scss */
+/* line 1014, style.scss */
 .formaCarreras {
   margin-bottom: 70px;
 }
-/* line 1018, style.scss */
+/* line 1016, style.scss */
 .formaCarreras h4 {
   margin: 12px 0 16px;
   line-height: 27px;
 }
 
-/* line 1023, style.scss */
+/* line 1021, style.scss */
 .customUpload {
   display: block;
   margin-bottom: 0;
 }
-/* line 1026, style.scss */
+/* line 1024, style.scss */
 .customUpload input {
   display: none;
 }
 
-/* line 1030, style.scss */
+/* line 1028, style.scss */
 #progress {
   height: 5px;
   border-radius: 0;
@@ -9982,17 +9982,17 @@ h4.error,
   opacity: 0;
 }
 
-/* line 1037, style.scss */
+/* line 1035, style.scss */
 #files h4  {
   margin: 0;
 }
 
-/* line 1040, style.scss */
+/* line 1038, style.scss */
 .progress-bar {
   background-color: #ff8a00;
 }
 
-/* line 1044, style.scss */
+/* line 1042, style.scss */
 .overlay {
   height: 100%;
   width: 100%;
@@ -10000,12 +10000,12 @@ h4.error,
   mix-blend-mode: multiply;
 }
 
-/* line 1050, style.scss */
+/* line 1048, style.scss */
 #contacto .overlay {
   background: rgba(255, 150, 0, 0.8);
 }
 
-/* line 1053, style.scss */
+/* line 1051, style.scss */
 #logoContacto {
   width: 115px;
   margin: 0 auto;
@@ -10013,41 +10013,41 @@ h4.error,
   padding: 55px 0 40px;
 }
 
-/* line 1059, style.scss */
+/* line 1057, style.scss */
 #carreras .overlay {
   background: rgba(213, 50, 0, 0.8);
 }
 
-/* line 1062, style.scss */
+/* line 1060, style.scss */
 #glog .overlay {
   background: rgba(118, 0, 147, 0.8);
 }
 
 /*GLOG*/
-/* line 1066, style.scss */
+/* line 1064, style.scss */
 .glog {
   text-align: center;
   margin: 112px 0;
   font-weight: bold;
 }
 
-/* line 1073, style.scss */
+/* line 1071, style.scss */
 .slick-prev {
   left: 35px;
 }
 
-/* line 1076, style.scss */
+/* line 1074, style.scss */
 .slick-next {
   right: 35px;
 }
 
-/* line 1079, style.scss */
+/* line 1077, style.scss */
 .slick-prev, .slick-next {
   top: 78%;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 1088, style.scss */
+  /* line 1086, style.scss */
   .boxTitleContainer {
     width: 75%;
   }

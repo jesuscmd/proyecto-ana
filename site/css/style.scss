@@ -362,7 +362,7 @@ a {
       padding: 0 10%;
     }
   }
-  $inicioDelay : 2;
+  $inicioDelay : 0;
   #homepage{
     margin-top: 40%;
   }
@@ -371,22 +371,23 @@ a {
     height: 0;
     background-color:#ff9100;
     background-color: rgba(255, 145, 0, 0.8);
-    @include single-transition(all,0.5s, ease-in-out ,#{$inicioDelay}s);
+    @include single-transition(all, 0.7s, ease ,#{$inicioDelay}s);
   }
   .logoContainer{
     background-color: #fff;
     background-color: rgba(255,255,255,0.2);
     margin-top: -100%;
     height: 100%;
-    $inicioDelay : $inicioDelay + .45;
+    $inicioDelay : $inicioDelay + .4;
     @include single-transition(all,0.75s, ease-in-out, #{$inicioDelay}s);
     object{
       max-width: 94px;
       margin: 50px auto 0 auto;
       display: block;
       margin-bottom: 20px;
+      opacity: 0;
       $inicioDelay : $inicioDelay + .75;
-      @include single-transition(all,0.75s, ease-in-out, #{$inicioDelay}s);
+      @include single-transition(all, 0.75s, ease-in-out, #{$inicioDelay}s);
       @include breakpoint(max-width $screen-sm-max) {
         max-width: 74px;
         margin-top: 30px;
@@ -394,7 +395,7 @@ a {
       }
     }
   }
-  $inicioDelay : $inicioDelay + 1.5;
+  $inicioDelay : $inicioDelay + .5;
   .card-container .frame > div {
     @include transition-delay(#{$inicioDelay}s);
   }
@@ -405,6 +406,21 @@ a {
   $inicioDelay : $inicioDelay + 0.1;
   .border > div{
     @include transition-delay(#{$inicioDelay}s);
+  }
+  .triScroll{ 
+    margin: 40px auto 0;
+    height: 21px;
+    width: 35px;
+    position: relative; 
+  }
+  .triScrollObject{
+    display: block;
+    max-width: 35px;
+    position: absolute;
+    bottom: -50px;
+    opacity: 0;
+    //$inicioDelay : $inicioDelay + .85;
+    @include single-transition( all, 0.55s , ease-in-out , #{$inicioDelay}s);
   }
   .loaded {
     .menuIntroBack {
@@ -419,30 +435,12 @@ a {
     h2 {
       color:#fff;
     }
-    
+    .triScrollObject{
+      bottom: 0;
+      opacity: 1;
+    }
   }
-  .triScroll{
-    margin: 40px auto 0;
-    height: 21px;
-    width: 35px;
-    position: relative; 
-  }
-  .triScrollObject{
-    display: block;
-    max-width: 35px;
-    position: absolute;
-    bottom: -50px;
-    opacity: 0;
-    $inicioDelay : $inicioDelay + .85;
-    @include single-transition( all, 0.55s , ease-in-out , #{$inicioDelay});
-  }
-  
 }
-.loaded .triScrollObject{
-    bottom: 0;
-    opacity: 1;
-}
-
 #ourgrukology .naranja,
 .naranja{
   color: $naranja;

@@ -33,31 +33,14 @@ $(window).load(function(){
 	//
 	/////////////////////////////////////// */
 	
-
-	//$('.menuIntroBack').css({'height':pageHeight*.75, 'margin-top':-pageHeight*.75});
-
 	positionContent();
-	$('#loading-mask').fadeOut(750, function(){
+	$('#loading-mask').fadeOut(1750, function(){
 
 		setTimeout(function(){
 			$('#inicio .container').addClass('loaded');
-			// setTimeout(function(){
-			// 	$('#block1 .card-container').addClass('loaded');
-			// 	// $(document).on('click','.triScroll', function() {
-			// 	//   alert('User clicked on "foo."');
-			// 	// });
-				
-			// 	$('.triScroll').addClass('loaded');
-
-			// 	//atachArrowOver();
-				
-			// }, 550);
-		}, 450);
+		}, 100);
 	});
 
-	
-
-	
 });
 
 /* ////////////////////////////////////////////////////////////////////////////
@@ -97,7 +80,7 @@ button.addEventListener('click', function() {
 
 $(".menuOver a").on('click', function(){
 	cerrarMenu($(this).data('anchor'));
-//cerramos el menu y mostramos el contenido y hacemos un fadeOut
+    //cerramos el menu y mostramos el contenido y hacemos un fadeOut
 })
 
 var cerrarMenu = function(anchor){
@@ -425,7 +408,6 @@ $(document).ready(function() {
 
                 //post_data.push({'files' : arrayFiles });
             };
-            console.log(post_data);
             $.post('partials/carreras.php', post_data, function(response){ 
 
                 if(response.type == 'error'){ //load json data from server and output message 
@@ -449,79 +431,7 @@ $(document).ready(function() {
         } else {
             launchMessage(proceed, currentForm);
         }
-
-
-        /*$.isNumeric($('#').val());
-        //simple validation at client's end
-        //loop through each field and we simply change border color to red for invalid fields       
-        $("#iCarrera input[required=true], #iCarrera textarea[required=true]").each(function(){
-            $(this).css('border-color',''); 
-            if(!$.trim($(this).val())){ //if this field is empty 
-                $(this).css('border-color','red'); //change border color to red   
-                proceed = false; //set do not proceed flag
-            }
-            //check invalid email
-            var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; 
-            if($(this).attr("type")=="email" && !email_reg.test($.trim($(this).val()))){
-                $(this).css('border-color','red'); //change border color to red   
-                proceed = false; //set do not proceed flag              
-            }   
-        });
-       
-        if(proceed) //everything looks good! proceed...
-        {
-            //get input field values data to be sent to server
-            post_data = {
-                'user_name'     : $('input#iCarreraNombre').val(), 
-                'user_email'    : $('input#iCarreraEmail').val(), 
-                //'country_code'  : $('input[name=phone1]').val(), 
-                'phone_number'  : $('input#iCarreraTel').val(), 
-                //'subject'       : $('select[name=subject]').val(), 
-                //'msg'           : $('textarea#iSolicitaSolicitud').val()
-            };
-            
-            //Ajax post data to server
-            $.post('partials/carreras.php', post_data, function(response){  
-                if(response.type == 'error'){ //load json data from server and output message     
-                    output = '<div class="col-md-3 col-sm-3 col-xs-3">' +
-                      '<h4>' +
-                        '<object class="img-responsive okArrow" data="img/errorArrow.svg" type="image/svg+xml">' +
-                           '<img class="img-responsive okArrow" src="img/errorArrow.png" />' +
-                        '</object>'+
-                      '</h4>'+
-                    '</div>'+
-                    '<div class="col-md-9 col sm-9 col-xs-9">' +
-                      '<h4 class="error">' + response.text + '</h4>' +
-                    '</div>';
-                }else{
-                    output =  '<div class="col-md-3 col-sm-3 col-xs-3">' +
-                          '<h4>' +
-                            '<object class="img-responsive okArrow" data="img/OKarrow.svg" type="image/svg+xml">' +
-                               '<img class="img-responsive okArrow" src="img/OKarrow.png" />' +
-                            '</object>' +
-                          '</h4>' +
-                        '</div>' +
-                        '<div class="col-md-9 col sm-9 col-xs-9">' +
-                          '<h4>' + response.text + '</h4>' +
-                        '</div>';
-
-                    //reset values in all input fields
-                    $("#iCarreraNombre, #iCarreraTel, #iCarreraEmail, #iCarreraFileName, #iCarreraCV").val(''); 
-                    //$(".formaSolicita #contact_body").slideUp(); //hide form after success
-                }
-                $("#iCarrera #contact_results").hide().html(output).slideDown();
-            }, 'json');
-        }*/
     });
-    
-    //reset previously set border colors and hide all message on .keyup()
-    // $("#iCarrera  input[required=true], #iCarrera textarea[required=true]").keyup(function() { 
-    //     $(this).css('border-color',''); 
-    //     $("#result").slideUp();
-    // });
-
-
-
 });
 
 /* ////////////////////////////////////////////////////////////////////////////
@@ -533,8 +443,7 @@ $(document).ready(function() {
 var arrayFiles = [];
 
 $('#iCarreraCV').change(function(e){
-    $('#iCarreraFileName').val($(this).val().split('\\').pop());
-    $('#progress').animate({opacity:1});
+    
 });
 
     // When the server is ready...
@@ -543,9 +452,33 @@ $(function () {
     
     // Define the url to send the image data to
     var url = 'partials/file.php';
-    
+    var currentForm = $(".formaCarreras"); 
+
     // Call the fileupload widget and set some parameters
     $('#iCarreraCV').fileupload({
+        add: function(e, data) {
+            var uploadErrors = [];
+            var acceptFileTypes = /(\.|\/)(jpe?g|png|docx|doc|pdf)$/i;
+            if(data.originalFiles[0]['type'].length && !acceptFileTypes.test(data.originalFiles[0]['type'])) {
+                contacto_msg = 'Únicamente puedes subir archivos jpg, png, doc, docx y pdf.';
+                launchMessage(false, currentForm);
+                uploadErrors.push('Not an accepted file type');
+            }
+            if(data.originalFiles[0]['size'] > 5*1024*1024) {
+                contacto_msg = 'El archivo es demasiado grande, el límite es de 5M.';
+                launchMessage(false, currentForm);
+                uploadErrors.push('Too big');
+            }
+            if(uploadErrors.length == 0) {
+                $('#iCarreraFileName').val($(this).val().split('\\').pop());
+                if($('#progress .progress-bar').css('width') != '0px'){
+                    $('#progress .progress-bar').css('width', 0);
+                }
+                $('#progress').animate({opacity:1}, function(){
+                    data.submit();
+                });
+            }
+        },
         url: url,
         dataType: 'json',
         done: function (e, data) {
@@ -553,7 +486,7 @@ $(function () {
             $.each(data.result.files, function (index, file) {
                 $('<h4/>').text(file.name + " subido").appendTo('#files');
                 arrayFiles.push(file.name);
-                console.log(arrayFiles);
+                currentForm.find('#iCarreraFileName').val('');
                 
             });
         },
